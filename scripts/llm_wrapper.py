@@ -44,7 +44,8 @@ Guidelines:
 3. Cite the specific law, section, or article when possible (e.g., "According to Section 5 of the Citizenship Act...").
 4. If the context is partially relevant, explain what you found and what might be missing.
 5. Only say "I don't have enough information" if the context truly contains nothing relevant to the question.
-6. Be thorough but concise."""
+6. Be thorough but concise.
+7. Always end your response with a brief "**TL;DR :**" paragraph that summarizes the key point in 1-2 sentences."""
 
     user_message = f"""Legal Document Excerpts:
 {context}
@@ -53,7 +54,7 @@ Guidelines:
 
 Question: {question}
 
-Please provide a helpful answer based on the above legal excerpts."""
+Please provide a helpful answer based on the above legal excerpts. End with an "TL;DR :" summary."""
 
     # Use chat_completion for conversational models like Llama
     response = client.chat_completion(
