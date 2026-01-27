@@ -1,0 +1,62 @@
+/* ChatGPT-style Navbar */
+.navbar {
+  height: 56px;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navbar-btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  color: #b4b4b4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.navbar-btn:hover {
+  background-color: #2f2f2f;
+  color: #ececec;
+}
+
+.navbar-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ececec;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 0.75rem;
+  }
+  
+  .navbar-title {
+    font-size: 0.9375rem;
+  }
+}
+  
+

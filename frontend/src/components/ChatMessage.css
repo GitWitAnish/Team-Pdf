@@ -1,0 +1,67 @@
+/* ChatGPT-style Sources */
+.sources-section {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+}
+
+.sources-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid #424242;
+  border-radius: 1rem;
+  color: #b4b4b4;
+  font-size: 0.8125rem;
+  padding: 0.5rem 0.875rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.sources-toggle:hover {
+  color: #ececec;
+  background-color: #2f2f2f;
+}
+
+.sources-content {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border: 1px solid #2f2f2f;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  animation: expandDown 0.2s ease;
+}
+
+@keyframes expandDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sources-content strong {
+  color: #10a37f;
+}
+
+.sources-content blockquote {
+  border-left: 3px solid #10a37f;
+  background-color: #212121;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #b4b4b4;
+}
+
+.sources-content p {
+  margin-bottom: 0.75rem;
+}
+
+.sources-content p:last-child {
+  margin-bottom: 0;
+}
