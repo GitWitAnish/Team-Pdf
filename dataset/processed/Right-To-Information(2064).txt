@@ -3,112 +3,112 @@ Date of Authentication and publication
 5 Shrawan (21 July 2007)
 An act No 4 of the year 2064
 AN ACT TO MAKE PROVISION FOR RIGHT TO INFORMATION
-Preamble, Whereas; it is expedient to make the functions of the sate open and
-transparent in accordance with the democratic system and to make responsible and
-accountable to the citizen; to make the access of citizens simple and easy to the
-information of public importance held in public bodies; to protect sensitive information
-that could make adverse impact on the interest of the nation and citizen, and for the
-necessity to have legal provisions to protect the right of the citizen to be well-informed
+Preamble, Whereas; it is expedient to make the functions of t he sate open and
+transparent in accordance with the democratic syste m and to make responsible and
+accountable to the citizen; to make the access of c itizens simple and easy to the
+information of public importance held in public bod ies; to protect sensitive information
+that could make adverse impact on the interest of t he nation and citizen, and for the
+necessity to have legal provisions to protect the r ight of the citizen to be well-informed
 and to bring it into practice, the 'Legislature-Parliament' has enacted this Act.
 Chapterone
 Preliminary
-Short title and commencement: (1) This Act may be called 'Right to
+1. Short title and commencement : (1) This Act may be called 'Right to
 Information Act, 2064 B.S. (2007 A.D.).
 (2) This Act shall come into force from the 30
 (Thirty) day of certification.
-Definition: Unless the subject or context otherwise requires, in this Act:
-"Public Body" means the following body and institution list:
-A body under the constitution,
-A body established by an Act,
-A body formed by the Government of Nepal,
-Institution or foundation established by the law, public service.
-Political Party or organization registered under the preventing law.
-Body Corporate under the full or partial ownership or under control
-of the Government of Nepal or such body receiving grants from the
+2. Definition : Unless the subject or context otherwise requires, in this Act:
+(a) "Public Body" means the following body and ins titution list:
+(1) A body under the constitution,
+(2) A body established by an Act,
+(3) A body formed by the Government of Nepal,
+(4) Institution or foundation established by the l aw, public service.
+(5) Political Party or organization registered und er the preventing law.
+(6) Body Corporate under the full or partial owner ship or under control
+of the Government of Nepal or such body receiving g rants from the
 Government of Nepal.
-Body Corporate formed by a Body established by the Government of
+(7) Body Corporate formed by a Body established by the Government of
 Nepal or the law upon entering into an agreement,
-Non-Governmental Organization/Institutions operated by obtaining
+(8) Non-Governmental Organization/Institutions ope rated by obtaining
 money directly or indirectly from the Government of Nepal or
 Foreign Government or International Organizations/Institutions,
-Any other Body or Institution prescribed as Public Body by the
+(9) Any other Body or Institution prescribed as Pu blic Body by the
 Government of Nepal by publishing notice in the Gazette.
-"Information" means any written document, material, or information related
-to the functions, proceedings thereof or decision of public importance made
+(b) "Information" means any written document, mate rial, or information related
+to the functions, proceedings thereof or decision o f public importance made
 by a Public Body.
-"Public Importance" means a subject related directly or indirectly with the
+(c) "Public Importance" means a subject related di rectly or indirectly with the
 interest of citizens.
-"Document" means any kind of scripted document and the word shall also
-includes any audio visual material collected and updated through a
+(d) "Document" means any kind of scripted document and the word shall also
+includes any audio visual material collected and up dated through a
 mechanical medium or that can be printed or retrieved.
-"Right to Information" means the right to ask for and obtain information of
-public importance held in the Public Bodies and this term shall also include
-the right to study or observation of any written document, material held in
+(e) "Right to Information" means the right to ask for and obtain information of
+public importance held in the Public Bodies and thi s term shall also include
+the right to study or observation of any written do cument, material held in
 Public Body or proceedings of such Public Body; to obtain a verified copy
-of such document, to visit or observe the place where any construction of
-public importance is going on and to obtain verified sample of any material
+of such document, to visit or observe the place whe re any construction of
+public importance is going on and to obtain verifie d sample of any material
 or to obtain information held in any type of machine through such machine.
-"Information Authority" means a person appointed in pursuant to with
+(f) "Information Authority" means a person appoint ed in pursuant to with
 
 Section 6.
-"Chief" means the Chief of a Public Body.
-"Commission" means the National Information Commission constituted in
+(g) "Chief" means the Chief of a Public Body.
+(h) "Commission" means the National Information Co mmission constituted in
 pursuant to Section 11.
-"Chief Information Commissioner" means a person appointed pursuant to
+(i) "Chief Information Commissioner" means a perso n appointed pursuant to
 
 Section 11.
-"Information Commissioner" means a person appointed pursuant Section
-"Prescribed" or "as prescribed" means prescribed or as prescribed in Rules
+(j) "Information Commissioner" means a person appo inted pursuant Section
+(k) "Prescribed" or "as prescribed" means prescrib ed or as prescribed in Rules
 framed under this Act.
 
 Chapter2
-Right to Information and Provision Regarding the Flow of Information
-Right to Information: (1) Every citizen shall, subject to this Act have the right
+Right to Information and Provision Regarding the F low of Information
+3. Right to Information : (1) Every citizen shall, subject to this Act have t he right
 to information.
-(2) Every citizen shall have access to the information held in the public
+(2) Every citizen shall have access to the informa tion held in the public
 Bodies.
-(3) Notwithstanding anything provided in Sections (1) and (2), the
+(3) Notwithstanding anything provided in Sections ( 1) and (2), the
 information held by a Public Body on the following subject matters shall not be
 disseminated:
-(a) which seriously jeopardizes the sovereignty, integrity, national
+(a) which seriously jeopardizes the sovereignty, i ntegrity, national
 security, public peace, stability and international relations of Nepal.
-(b) which directly affects the investigation, inquiry and prosecution of a
+(b) which directly affects the investigation, inqu iry and prosecution of a
 crime.
-(c) Which seriously affects on the protection of economic, trade or
-monetary interest or intellectual property or banking or trade
+(c) Which seriously affects on the protection of e conomic, trade or
+monetary interest or intellectual property or banki ng or trade
 privacy.
-(d) Which directly jeopardizes the harmonious relationship subsisted
+(d) Which directly jeopardizes the harmonious rela tionship subsisted
 among various cast or communities.
-(e) Which interferes on individual privacy and security of body, life,
+(e) Which interferes on individual privacy and sec urity of body, life,
 property or health of a person.
-Provided that, a public Body shall not refrain from the
-responsibility of dissemination of information without appropriate
+Provided that, a public Body shall not refrain fr om the
+responsibility of dissemination of information with out appropriate
 and adequate reason not to flow the information.
-(4) If a Public Body has both the information in its record that can be made
+(4) If a Public Body has both the information in it s record that can be made
 public and that cannot be made public in accordance with this Act, the Information
-Officer shall have to provide information to the applicant after separating the
+Officer shall have to provide information to the ap plicant after separating the
 information which can be made public.
-Responsibility of a Public Body: (1) Each Public Body has to respect and
+4. Responsibility of a Public Body : (1) Each Public Body has to respect and
 protect the right to information of citizen.
-(2) Public Body shall have following responsibilities for the purpose of
+(2) Public Body shall have following responsibiliti es for the purpose of
 Sub-Section (1):
-(a) to classify and update information and make them public, publish
+(a) to classify and update information and make th em public, publish
 and broadcast,
-(b) to make the citizens' access to information simple and easy,
-(c) to conduct its functions openly and transparently,
-(d) to provide appropriate training and orientation to its staffs,
-(3) Public Body may use different national languages and mass media
-while publishing, broadcasting or making information public in accordance with
+(b) to make the citizens' access to information si mple and easy,
+(c) to conduct its functions openly and transparen tly,
+(d) to provide appropriate training and orientatio n to its staffs,
+(3) Public Body may use different national language s and mass media
+while publishing, broadcasting or making informatio n public in accordance with
 Section (a) of Section (2).
-Updating and Publication of Information: (1) A Public Body shall keep its
+5. Updating and Publication of Information : (1) A Public Body shall keep its
 information updated.
-(2) A Public Body, as long as possible, shall update at least of twenty years
-old information from the commencement of this Act related to it in pursuant to
+(2) A Public Body, as long as possible, shall updat e at least of twenty years
+old information from the commencement of this Act r elated to it in pursuant to
 Sub-Section (1).
 (3) A Public Body shall enlist and publish its following information:
 (a) structure and nature of Body,
 (b) functions, duties, and powers of Body,
-(c) number of employees and working details of Body,
+(c) number of employees and working details of Bod y,
 (d) service to be rendered by the Body,
 (e) branch and responsible officer of the service providing Body,
 (f) fee and time limit required for service,
@@ -123,336 +123,333 @@ transactions.
 (4) Public Body shall have to update and publish the information in
 accordance with Sub-Section (3) within three months from the date of
 commencement of this Act and in every three months thereafter.
-Provision of Information Officer: (1) A Public Body shall arrange for an
+Provision of Information Officer : ( 1) A Public Body shall arrange for an
 Information Officer for the purpose of disseminating information held in its office.
-(2) For the purpose of disseminating information in accordance with Sub Section (1), the Chief has to regularly provide information held in the office to the
+(2) For the purpose of disseminating information in accordance with Sub Section (1), the Chief has to regularly provide inf ormation held in the office to the
 Information Officer.
 (3) Public Body shall set up an Information Section for the purpose of
 disseminating information as per necessity.
-Procedures of Acquiring Information: (1) A Nepali Citizen, who is
-interested to obtain any information under this Act, shall submit an application
-before concerned Information Officer by stating reason to receive such
+7. Procedures of Acquiring Information : (1) A Nepali Citizen, who is
+interested to obtain any information under this Act , shall submit an application
+before concerned Information Officer by stating rea son to receive such
 information.
-(2) If an application is received pursuant to Sub-Section (1), Information
+(2) If an application is received pursuant to Sub-S ection (1), Information
 Officer should provide the information immediately if the information by its
-nature could be provided immediately and has to provide within fifteen days from
-the date of application if the information by its nature could not be provided
+nature could be provided immediately and has to pro vide within fifteen days from
+the date of application if the information by its n ature could not be provided
 immediately.
-(3) If information cannot be provided immediately pursuant to Sub-Section
+(3) If information cannot be provided immediately p ursuant to Sub-Section
 (2), Information Officer should instantly give a notice with reason to the applicant.
-(4) Notwithstanding anything contained in Sub-Section (3), if the requested
-information is related to the security of life of person, the information officer
+(4) Notwithstanding anything contained in Sub-Secti on (3), if the requested
+information is related to the security of life of p erson, the information officer
 should provide such information within Twenty Four hours of such request.
 (5) Information Officer has to provide information in the format as
 demanded by the applicant as much as possible.
-(6) Notwithstanding anything contained in Sub-Section (5), if any
+(6) Notwithstanding anything contained in Sub-Secti on (5), if any
 possibility subsist that the source of information may be damaged or destroyed or
 spoilt if it is provided in the format as requested by the applicant, the Information
-Officer shall provide such information in appropriate format with stating reason
+Officer shall provide such information in appropria te format with stating reason
 thereof.
-(7) If any individual submitted an application to study or observe the
+(7) If any individual submitted an application to s tudy or observe the
 document, material or activity pursuant to Sub-Section (1), the Information Officer
-shall provide a reasonable time to the applicant for the study and observation of
+shall provide a reasonable time to the applicant fo r the study and observation of
 such document, material or activity.
-(8) While examining the application received in pursuant to Sub-Section
-(1), it is found that the information demanded by the applicant is not related to
-such Body, the Information Officer should give notification to the applicant
+(8) While examining the application received in pur suant to Sub-Section
+(1), it is found that the information demanded by t he applicant is not related to
+such Body, the Information Officer should give noti fication to the applicant
 immediately.
-Fee for information: (1) Applicant shall pay fee as prescribed while requesting
+8. Fee for information : (1) Applicant shall pay fee as prescribed while req uesting
 information pursuant with Section 7.
 Provided that, if different fees are prescribed for any specific information in the
 prevailing law, it shall be collected accordingly.
 (2) The fee structure, pursuant to Sub-Section (1), shall be based on the
 actual cost of providing information.
-(3) If the fee prescribed pursuant to Sub-Section (2) is deemed more than
+(3) If the fee prescribed pursuant to Sub-Section ( 2) is deemed more than
 the actual price, the concerned person may file a petition before the Commission.
-(4) While examining the petition pursuant to Sub-Section (3), the
-commission may order to review the fee if it is found in contrary to Sub-Section
-Complaint may be made: (1) If, Information Officer, does not provide
-information, denies to provide information, partially provides information,
-provides wrong information or does not provide information by stating that the
-applicant is not a stakeholder, the concerned person shall make a complaint to the
+(4) While examining the petition pursuant to Sub-Se ction (3), the
+commission may order to review the fee if it is fou nd in contrary to Sub-Section
+9 Complaint may be made : (1) If, Information Officer, does not provide
+information, denies to provide information, partial ly provides information,
+provides wrong information or does not provide info rmation by stating that the
+applicant is not a stakeholder, the concerned perso n shall make a complaint to the
 Chief within (7) days from the date of information denied or partially information
 received.
-(2) While investigating the complaint received pursuant to Sub-Section (1),
-the Chief shall order the Information Officer to provide information as demanded
-by applicant if it is found that the information was denied or partially provided or
+(2) While investigating the complaint received purs uant to Sub-Section (1),
+the Chief shall order the Information Officer to pr ovide information as demanded
+by applicant if it is found that the information wa s denied or partially provided or
 wrong information was provided and the Information Officer has to provide
 information to the concerned applicant if such order is issued.
-(3) While conducting investigation pursuant Sub-Section (2), if it is found
-that the Information Officer denied to provide information or partially provided
+(3) While conducting investigation pursuant Sub-Sec tion (2), if it is found
+that the Information Officer denied to provide info rmation or partially provided
 the information knowingly or with mala fide intention or provided wrong
 information, the Chief may take departmental action against such Information
 Officer.
-(4) While investigating pursuant to Sub-Section (2), if it is found that the
-information cannot be provided; the Chief shall make a decision accordingly and
+(4) While investigating pursuant to Sub-Section (2) , if it is found that the
+information cannot be provided; the Chief shall mak e a decision accordingly and
 provide a notice stating the reasons to the applicant.
-Appeal can be made: (1) An individual, who is aggrieved by the decision of the
-Chief made pursuant to Sub-Section (4) of Section 9, shall appeal before the
+10. Appeal can be made : (1) An individual, who is aggrieved by the decision of the
+Chief made pursuant to Sub-Section (4) of Section 9 , shall appeal before the
 Commission within Thirty Five (35) days of the notice of decision received.
 (2) Commission may summon and take statement of the concerned Chief or
-Information Officer, order to submit a document, take statement of witness and
-evidence or demand copy of the document from a Public Body while deciding the
+Information Officer, order to submit a document, ta ke statement of witness and
+evidence or demand copy of the document from a Publ ic Body while deciding the
 appeal received pursuant Sub-Section (1).
-(3) In the course of proceeding and deciding the appeal pursuant to Sub Section (2), the Commission may do as following:
-(a) May order the concerned Chief to provide information, within a
+(3) In the course of proceeding and deciding the ap peal pursuant to Sub Section (2), the Commission may do as following:
+(a) May order the concerned Chief to provide infor mation, within a
 given time, to the appellant without fee, if appeal is found
 reasonable.
-(b) May dismiss the appeal if it is found not reasonable.
+(b) May dismiss the appeal if it is found not reaso nable.
 (4) The Commission has to give final verdict on the appeal within sixty
 days of the appeal.
-(5) Other procedures to be followed by the commission during appeal
+(5) Other procedures to be followed by the commissi on during appeal
 pursuant to this Section shall be as prescribed.
 
 Chapter 3
 Provision Regarding Commission
-Provision Regarding Commission: (1) There shall be an independent National
-Information Commission for the protection, promotion and practice of right to
+11. Provision Regarding Commission : (1) There shall be an independent National
+Information Commission for the protection, promotio n and practice of right to
 information.
 (2) A Chief Information Commissioner and two other Information
 Commissioners shall be in the commission.
-(3) In order to appoint Chief Information Commissioner and Information
+(3) In order to appoint Chief Information Commissio ner and Information
 Commissioner, there shall be a committee comprised as follows:
 (a) The Speaker – Chairperson
 (b) Minister or State Minister for Information and Communication –
 Member
 (c) President, Federation of Nepalese Journalists – Member
 (4) The Government of Nepal, on the recommendation of the Committee
-under Sub-Section (3), shall appoint a Chief Information Commissioner and
-Information Commissioners, at least one female shall be included in such
+under Sub-Section (3), shall appoint a Chief Inform ation Commissioner and
+Information Commissioners, at least one female shal l be included in such
 appointment.
-(5) The Committee pursuant Sub-Section (3) shall follow the inclusive
-principle as much as possible while recommending for appointment of Chief
+(5) The Committee pursuant Sub-Section (3) shall fo llow the inclusive
+principle as much as possible while recommending fo r appointment of Chief
 Information Commissioner and Information Commissioners.
-(6) The procedures of recommendation pursuant to Sub-Section (3) shall be
+(6) The procedures of recommendation pursuant to Su b-Section (3) shall be
 as determined by the Recommendation Committee itself.
-Qualifications: One shall have the following qualifications to be appointed for
+12. Qualifications: One shall have the following qualifications to be a ppointed for
 the post of the Chief Information Commissioner and Information Commissioners:
 (a) Nepali citizen,
-(b) holding at least a Bachelor Degree from a recognized University,
-(c) having at least fifteen years of working experience in the field of
-communication,
-justice,
-public
-administration,
+(b) holding at least a Bachelor Degree from a reco gnized University,
+(c) having at least fifteen years of working expe rience in the field of
+Mass communication, law justice, public administrat ion,
 information technology or management.
 Disqualifications: A person with any of the following disqualification shall be
-disqualified to be appointed in the post of Chief Information Commissioner and
+disqualified to be appointed in the post of Chief I nformation Commissioner and
 Information Commissioners:
 (a) not having the qualification pursuant Section 12,
-(b) convicted by the court in a criminal offence with moral turpitude,
-(c) incumbent employee of Government or Public institution,
+(b) convicted by the court in a criminal offence w ith moral turpitude,
+(c) incumbent employee of Government or Public ins titution,
 (d) incumbent in any political position,
-(e) Disqualified for appointment under the prevailing laws.
-Tenure of Office: (1) The tenure of office of the Chief Information
+(e) Disqualified for appointment under the prevail ing laws.
+Tenure of Office : (1) The tenure of office of the Chief Information
 Commissioner and the Information Commissioner shall be for five years and s/he
 shall not be re-appointed in the same Post.
-(2) Notwithstanding anything contained in Sub-Section (1), the Information
-Commissioner may be re-appointed in the post of Chief Information
+(2) Notwithstanding anything contained in Sub-Secti on (1), the Information
+Commissioner may be re-appointed in the post of Chi ef Information
 Commissioner subject to the provision of tenure of office stated in the same Sub Section.
-(3) The recommendation committee pursuant to Sub-Section (3) of Section
-11, shall recommend for new appointment of Chief Information Commissioner
-and Information Commissioners one month period to the expiry of the tenure of
+(3) The recommendation committee pursuant to Sub-Se ction (3) of Section
+11, shall recommend for new appointment of Chief In formation Commissioner
+and Information Commissioners one month period to t he expiry of the tenure of
 the office .
-Post to be Vacated: The post the Chief Information Commissioner and
+15. Post to be Vacated : The post the Chief Information Commissioner and
 Information Commissioner shall be considered vacant under the following
 conditions:
 (a) In case of his/her death,
 (b) In case, s/he completes the age of 65 years,
 (c) In case, s/he tenders resignation to the Prime Minister,
 (d) In case, his/her term of office is completed,
-(e) In case, s/he is convicted by the court in a criminal offence with
+(e) In case, s/he is convicted by the court in a c riminal offence with
 moral turpitude ,
-(f) In case of s/he is removed from the post pursuant to Section 16.
-May Remove From Office: If the meeting of the Legislature-Parliament
-endorse the recommendation of the information and communication related
-committee of the Legislature-Parliament, with the two third majority of meeting
-presented by at least two third members out of total members, for removing Chief
-Information Commissioner or Information Commissioner on the ground that s/he
-is not fit to hold office for the reason of incompetence or misbehavior or not
-carrying out the duties honestly, such Chief Information Commissioner or
+(f) In case of s/he is removed from the post pursu ant to Section 16.
+16. May Remove From Office : If the meeting of the Legislature-Parliament
+endorse the recommendation of the information and c ommunication related
+committee of the Legislature-Parliament, with the t wo third majority of meeting
+presented by at least two third members out of tota l members, for removing Chief
+Information Commissioner or Information Commissione r on the ground that s/he
+is not fit to hold office for the reason of incompe tence or misbehavior or not
+carrying out the duties honestly, such Chief Inform ation Commissioner or
 Information Commissioner shall be removed from his/her office.
-Provided that, the Chief Information Commissioner or Information Commissioner
-charged with such accusation shall not be denied for reasonable opportunity of
+Provided that, the Chief Information Commissioner o r Information Commissioner
+charged with such accusation shall not be denied fo r reasonable opportunity of
 clarification.
-Provision Regarding the Conditions of Service: The remuneration,
-conditions of service and facilities for Chief Information Commissioner and
+17. Provision Regarding the Conditions of Service : The remuneration,
+conditions of service and facilities for Chief Info rmation Commissioner and
 Information Commissioner shall be as prescribed.
-Oath of Office: Before taking charge of the office, the Chief Information
-Commissioner shall take the oath of office before the Prime Minister and the
-Information Commissioner before the Chief Information Commissioner
+18. Oath of Office : Before taking charge of the office, the Chief Infor mation
+Commissioner shall take the oath of office before t he Prime Minister and the
+Information Commissioner before the Chief Informati on Commissioner
 respectively in the format as laid down in the Schedule.
-Functions, Duties and Powers of the Commission: In addition to the
+19. Functions, Duties and Powers of the Commission : In addition to the
 functions, duties and powers stated elsewhere in this Act, the functions, duties and
 powers of the Commission shall be as follows:
 (a) To observe and study the records and documents of public
 importance held in Public Bodies,
-(b) To issue order to such Body to enlist and manage the records,
+(b) To issue order to such Body to enlist and mana ge the records,
 documents and other materials pertaining the information
 (c) To issue order to the concerned Public Body to make information
 public for citizen's notification,
-(d) To prescribe timeframe and order concerned Public Body to
+(d) To prescribe timeframe and order concerned Pub lic Body to
 provide information demanded by applicant within such timeframe.
-(e) To order concerned party to fulfill the liability as mentioned in this
-(f) To provide necessary suggestions and recommendations to the
-Government of Nepal and other bodies related to information and
-communications regarding the protection and promotion of right to
+(e) To order concerned party to fulfill the liabil ity as mentioned in this
+(f) To provide necessary suggestions and recommenda tions to the
+Government of Nepal and other bodies related to inf ormation and
+communications regarding the protection and promoti on of right to
 information.
 (g) To issue other appropriate orders regarding the protection,
 promotion and exercise of right to information.
-Delegation of Power: The commission may delegate any of the functions, duties
-or powers, except the power to hear and decide an appeal under Section 9, to the
-Chief Information Commissioner, Information Commissioner or any other body or
+20. Delegation of Power : The commission may delegate any of the functions, d uties
+or powers, except the power to hear and decide an a ppeal under Section 9, to the
+Chief Information Commissioner, Information Commiss ioner or any other body or
 official, subject to the terms and conditions prescribed for that purpose.
-Office of the Commission: The central office of the Commission shall be
+21. Office of the Commission : The central office of the Commission shall be
 located in Kathmandu Valley and the Commission may open its offices in various
 places of the country as per necessity.
-Staffs of the Commission: (1) Required number of staffs shall be there at the
+22. Staffs of the Commission : (1) Required number of staffs shall be there at the
 Commission.
 (2) The Government of Nepal shall manage the staffs required for the
 Commission.
-Expenditure of the Commission: (1) The Government of Nepal shall arrange
+23. Expenditure of the Commission : (1) The Government of Nepal shall arrange
 necessary budget for the Commission.
-(2) The Commission shall also receive necessary financial resources from
+(2) The Commission shall also receive necessary fin ancial resources from
 other sectors after getting prior permission of the Government of Nepal.
-Cooperate with the Commission: Public bodies shall provide necessary
+24. Cooperate with the Commission : Public bodies shall provide necessary
 cooperation in the activities of the commission.
-Annual Report: (1) The commission shall submit annual Report of its activities
+25. Annual Report : (1) The commission shall submit annual Report of it s activities
 to the Legislature-Parliament through Prime Minister.
 (2) The Commission shall publish, the Annual Report pursuant Sub-Section
 (1) publicly for the purpose of public notice.
-Contact With the Government of Nepal: The Commission shall contact with
-the Government of Nepal through the Ministry of Information and
+26. Contact With the Government of Nepal : The Commission shall contact with
+the Government of Nepal through the Ministry of Inf ormation and
 Communication.
 
 Chapter4
 Provision Regarding Protection of Information
-Provision Regarding Classification of Information: (1) For the protection
-of the information related to Sub-Section (3) of Section 3, held in public Body,
+27. Provision Regarding Classification of Information : (1) For the protection
+of the information related to Sub-Section (3) of Se ction 3, held in public Body,
 there shall be a committee as following to classify the information in policy level:
-(a) Chief Secretary of the Government of Nepal Chairperson
+(a) Chief Secretary of the Government of Nepal Cha irperson
 (b) Secretary of the concerned Ministry – Member
-(c) Expert of concerned subject assigned by the Chief of Office or
+(c) Expert of concerned subject assigned by the Ch ief of Office or
 Chairperson – Member
-(2) The Committee pursuant to Sub-Section (1), regarding the classification
+(2) The Committee pursuant to Sub-Section (1), rega rding the classification
 of information under Sub-section 3 of Section (3), has to inform the Commission
 by determining the number of years the information should be kept confidential
 and method for the protection of information.
-(3) A person, who is not satisfied with the classification made by the
-committee pursuant to Sub-section (2) may file a review petition before the
+(3) A person, who is not satisfied with the classif ication made by the
+committee pursuant to Sub-section (2) may file a re view petition before the
 commission to make the information public.
-(4) The Commission, shall if it finds that any information need not be kept
-confidential in the course of review of the petition pursuant to Sub-section (3),
+(4) The Commission, shall if it finds that any info rmation need not be kept
+confidential in the course of review of the petitio n pursuant to Sub-section (3),
 issue an order to public such information.
-(5) The information classified pursuant to the Sub-Section (2) may be kept
+(5) The information classified pursuant to the Sub Section (2) may be kept
 confidential for a maximum period of thirty years, according to the nature of the
 information.
-(6) Notwithstanding anything contained in Sub-Section (5), the Committee
-shall review in every ten years that any information classified as confidential is
+(6) Notwithstanding anything contained in Sub-Secti on (5), the Committee
+shall review in every ten years that any informatio n classified as confidential is
 necessary to keep as confidential or not.
 (7) While reviewing pursuant to Sub-Section (6), the Committee, if finds
 necessary to keep such information confidential for additional period, may decide
 the duration and classify as confidential for that period or may classify as nonconfidential if finds not necessary to keep confidential.
-Protection of Information: (1) Public Body shall protect the information of
+28. Protection of Information : (1) Public Body shall protect the information of
 personal nature held in for preventing unauthorized publication and broadcasting.
-(2) Personal information held in public Body, except in following
+(2) Personal information held in public Body, excep t in following
 conditions, shall not be used without written consent of concerned person.
 (a) In case of preventing a serious threat to life and body of a person or
 public health or security.
 (b) If required to be disclosed in accordance with prevailing laws.
-(c) If required to control the offence of corruption.
-Protection of Whistleblower: (1) It shall be a responsibility of an employee of
+(c) If required to control the offence of corrupti on.
+29. Protection of Whistleblower : (1) It shall be a responsibility of an employee of
 a Public Body to provide information on any ongoing or probable corruption or
 irregularities or any deed taken as offence under the prevailing laws.
-It shall be the duty of the information receiver to make the identity of
+(2) It shall be the duty of the information receiv er to make the identity of
 whistleblower in accordance with Sub-Section (1) confidential.
-The whistleblower shall not be terminated from his/her post or punished
+(3) The whistleblower shall not be terminated from his/her post or punished
 with any legal responsibility or caused any loss or harm for giving
 information pursuant to Sub-section (1)
-If any punishment or harm is done to the whistleblower against Sub-Section
-(3), the whistleblower may complaint, along with demand for
+(4) If any punishment or harm is done to the whist leblower against Sub-Section
+(3), the whistleblower may complaint, along with de mand for
 compensation, before the commission for revoking such decision.
-While investigating the complaint pursuant to Sub-Section (4), the
-Commission may order to revoke the decision of removal from the office if
+(5) While investigating the complaint pursuant to Sub-Section (4), the
+Commission may order to revoke the decision of remo val from the office if
 so removed from office and for the compensation if any damages caused to
 the whistleblower.
-Providing Personal Information: (1) Concerned Body shall provide
-information to the concerned person holding a public post, if such concerned
+30. Providing Personal Information : (1) Concerned Body shall provide
+information to the concerned person holding a publi c post, if such concerned
 person demands information of during his service in the public Body.
-if a person demands for information related with him/her held in
+(2) if a person demands for information related wi th him/her held in
 Public Body that Information shall be made available to that person.
-The procedure for demanding and acquiring information pursuant to
+(3) The procedure for demanding and acquiring info rmation pursuant to
 Sub-Section (1) shall be as mentioned in Section 7.
-Fees to received the information pursuant to Sub-section (1) shall be
+(4) Fees to received the information pursuant to S ub-section (1) shall be
 as prescribed in Section 8.
-Information not to be Misused: (1) A person who obtains information from a
+31. Information not to be Misused : (1) A person who obtains information from a
 Public Body shall not misuse the information by not using it for the same purpose
 that was considered.
-The concerned Public Body may complain to the Commission
+(2) The concerned Public Body may complain to the Commission
 against a person who misuses the information against Sub-Section (1).
 
 Chapter5
 Provision Regarding Punishment and Compensation
-Punishment: (1) If the Commission finds that Chief of public Body or
-Information Officer has held back information without valid reason, refused to
+32. Punishment: (1) If the Commission finds that Chief of public Bod y or
+Information Officer has held back information witho ut valid reason, refused to
 information or provided partial or wrong information or destroyed information; the
-Commission may impose a fine to such Chief or Information Officer from Rupees
+Commission may impose a fine to such Chief or Infor mation Officer from Rupees
 One Thousand Rupees to Twenty Five Thousand Rupees and if such Chief or
 Information Officer is in eligible for departmental action, it may write to the
 concerned Body for departmental action.
-If the Chief of a public Body or Information Officer, delay to provide
-information which has to be provided on time without reason, shall be
+(2) If the Chief of a public Body or Information O fficer, delay to provide
+information which has to be provided on time withou t reason, shall be
 punished with a fine of Two Hundred Rupees per day so is delayed to
 provide the information.
-If the Commission writes to the concerned Body for Departmental action
+(3) If the Commission writes to the concerned Body for Departmental action
 pursuant to Sub-Section (1), the Public Body shall take Departmental action
-against that Chief or Information Officer within three months and notify the
+against that Chief or Information Officer within th ree months and notify the
 same to the Commission.
-The Commission may impose a fine between Five Thousand Rupees to
-Twenty Five Thousand Rupees considering that seriousness of misuse of
-information if any person is found misusing the information acquired from
+(4) The Commission may impose a fine between Five Thousand Rupees to
+Twenty Five Thousand Rupees considering that seriou sness of misuse of
+information if any person is found misusing the inf ormation acquired from
 public Body instead of using it for purpose it was obtained for.
-The Commission may impose a fine up to Ten Thousand Rupees to the
-concerned person in case its decision or order pursuant this Act is not
+(5) The Commission may impose a fine up to Ten Tho usand Rupees to the
+concerned person in case its decision or order purs uant this Act is not
 abided by.
-Compensation: (1) If person incur losses and damages due to not providing
-information, denying to provide information, providing partial or wrong
-information or destroying the information by the Chief or Information Officer of
+Compensation: (1) If person incur losses and damages due to not p roviding
+information, denying to provide information, provid ing partial or wrong
+information or destroying the information by the Ch ief or Information Officer of
 Public Body, such person may file a petition before the Commission for
-compensation within three months from the date of not acquiring information,
+compensation within three months from the date of n ot acquiring information,
 acquiring partial or wrong information or restriction of the information.
 (2) If the application pursuant to Sub-Section (1) is found reasonable upon
 the investigation, the Commission may compensate the applicant from the
 concerned Body with reasonable amount upon considering the actual loses.
-Appeal: A person not satisfied with the decision rendered by the Commission
-pursuant to Section 32, may appeal before the Appellate Court within thirty five
+34. Appeal: A person not satisfied with the decision rendered b y the Commission
+pursuant to Section 32, may appeal before the Appel late Court within thirty five
 days of decision received.
 
 Chapter6
 Miscellaneous
-Information may be Corrected: (1) If anyone believes that the information in
+35. Information may be Corrected : (1) If anyone believes that the information in
 a Public Body on a particular matter is wrong, s/he may file an application before
-the concerned Chief along with necessary evidence for the correction of the
+the concerned Chief along with necessary evidence f or the correction of the
 information.
 (2) The Chief shall conduct necessary investigation regarding the application
 pursuant to Sub-Section (1) and if the information held in such Body is found wrong
-in the course of investigation, he/she should inform the applicant upon correcting
-within seven days from the date of application imformation.
-Save to Works done with Good Faith: Notwithstanding anything contained
-elsewhere in this Act, no case shall be filed and no punishment shall be imposed
-against the Chief or Information Officer for his/her works regarding the
+in the course of investigation, he/she should infor m the applicant upon correcting
+within seven days from the date of application imfo rmation.
+36. Save to Works done with Good F aith: Notwithstanding anything contained
+elsewhere in this Act, no case shall be filed and n o punishment shall be imposed
+against the Chief or Information Officer for his/he r works regarding the
 dissemination of in forvevtion good faith.
-To be Pursuant to this Act: All the matters mentioned in this Act shall be
-carried out in accordance with this Act, whereas other matters shall be dealt with
+37. To be Pursuant to this Act : All the matters mentioned in this Act shall be
+carried out in accordance with this Act, whereas ot her matters shall be dealt with
 pursuant to prevalent laws.
-Power to Frame Rules: The Government of Nepal, upon consultation with the
+38. Power to Frame Rules : The Government of Nepal, upon consultation with the
 Commission shall frame necessary Rules to implement the objectives of this Act.
 Schedule
 (Related to Section 18)
 I …………………….. ,hereby, faithful to the state and the people promise with truth and
 trust/take the oath in the name of God that highly respecting the shall expressed by the
-people through the people's movement that Nepal's state authority and sovereignty is to
+people through the people's movement that Nepal's s tate authority and sovereignty is to
 be vested only on the people, professing allegiance to the constitution of Nepal and laws
 of the land, I shall carry out my responsibilities with honesty and without any fear,
-sycophancy, partiality, malice or greed, by honoring citizen's right to information and for
+sycophancy, partiality, malice or greed, by honorin g citizen's right to information and for
 the effective implementation and practice of laws pertaining to right to information.

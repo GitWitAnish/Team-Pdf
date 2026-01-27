@@ -2,24 +2,17 @@
 The Income Tax Act, 2058 (2002)
 Date of Royal Assent and Publication:
 2058.12.19 (1 April 2002)
-Amending Acts:
-Date of Authentication and
+Amending Acts: Date of Authentication and
 Publication
-1.Some Nepal Laws Amendment Act, 2063(2006)
-2063.06.28 (14 October 2006)
+1.Some Nepal Laws Amendment Act, 2063(2006) 2063.06.28 (14 October 2006)
 2.The Republic Strengthening and Some Nepal
 Laws Amendment Act, 2066(2010)1
 2066.10.07 (21 January 2010)
-3.Some Nepal Laws Amendment Act,2072(2016)
-2072.11.13 (25 February 2016)
-4. The Financial Act, 2075(2018)
-2075. 03.32 (16 July 2018)
-5.Some Nepal Laws Amendment Act, 2075(2019)
-2075.11.19 (03 March 2019)
-6.The Financial Act, 2076 (2019)
-2076.03.30 (15 July 2019)
-7.The Financial Act, 2077 (2020)
-2077.03.15 (29 June 2020)
+3.Some Nepal Laws Amendment Act,2072(2016) 2072.11.13 (25 February 2016)
+4. The Financial Act, 2075(2018) 2075. 03.32 (16 July 2018)
+5.Some Nepal Laws Amendment Act, 2075(2019) 2075.11.19 (03 March 2019)
+6.The Financial Act, 2076 (2019) 2076.03.30 (15 July 2019)
+7.The Financial Act, 2077 (2020) 2077.03.15 (29 June 2020)
 Act No. 22 of the year 2058(2002)
 2.....................
 An Act Made to Amend and Consolidate Laws Relating to Income Tax
@@ -411,6 +404,7 @@ and be collected pursuant to this Act:
 sends income of any income year pursuant to sub-sections (3) and (4) of Section
 68, and
 (c) A person who receives payment final tax withholding in any income year.
+3A.................. 31 .
 4. Computation and rate of tax:32(l) The amount of tax required to be paid by any person
 referred to in Section 3 for any income year shall be equal to the total amount of tax
 required to be paid by such person in the capacity of any one person or more than one
@@ -3209,14 +3203,11 @@ Installment and215Advance Tax
 any income year from any business or investment has to pay tax in three installments as
 follows:
 Date on which payment is to be made Amount to be paid
-By the end of Poush (mid-January)
-Amount to be paid from forty percent of the
+By the end of Poush (mid-January) Amount to be paid from forty percent of the
 estimated tax amount
-By the end of Chaitra (mid-April)
-Amount to be paid from seventy percent of
+By the end of Chaitra (mid-April) Amount to be paid from seventy percent of
 the estimated tax amount
-By the end of Ashad (mid-July)
-Amount to be paid from hundred percent of
+By the end of Ashad (mid-July) Amount to be paid from hundred percent of
 the estimated tax amount
 Explanation: For purposes of this sub-section, -
 (a) "Estimated tax" means the estimated tax m installment computed by any person
@@ -3246,11 +3237,9 @@ installments as follows:
 (Unofficial Translation)
 Date on which payment is to be
 Amount of tax to be paid
-By the end of Poush(mid-January)
-Tax at the prescribed rate on the transaction
+By the end of Poush(mid-January) Tax at the prescribed rate on the transaction
 up to 20 poush (4 January)
-By the end of Ashad(mid-July)
-Tax amount to be set by subtracting the tax
+By the end of Ashad(mid-July) Tax amount to be set by subtracting the tax
 paid within the last day of Poush (mid January) from the amount of tax calculated
 as per the prescribed rate upon estimating
 the transaction that would be carried on by
@@ -3552,7 +3541,7 @@ Section 96 for that income year.
 (4) The amount of tax paid as per the assessment of tax for a portion of any
 income year may be adjusted to the tax chargeable as per the assessment of tax for the
 whole year.
-In assessing the tax pursuant to this Section, the Department has to
+(5) In assessing the tax pursuant to this Section, the Department has to
 give a time-limit of seven days for the submission of proof and evidence for defense.
 101. Amended tax assessment: (1) The Department may have amended tax assessment in
 order to adjust the tax liability of a person whose tax has been assessed pursuant to
@@ -4285,7 +4274,7 @@ Section 51 of the Citizen Investment Fund Act, 2047 (1991) is hereby repealed.
 Technology Act, 2048 (1991): Section 30 of the Nepal269.... Academy for
 Science and Technology Act, 2048 (1991) is hereby repealed.
 (g) 270Amendment to Section 15 of the Industrial Enterprises Act, 2049 (1992):
-267Deleted by the Republic Strengthening and Some Nepal Laws Amendment Act, 2066 (2010).
+267Deleted by the Republic Strengthening and Some Nepal Laws Amendment Act , 2066 (2010).
 268Deleted by Republic Strengthening and Some Nepal Laws Amendment Act, 2066 (20 I 0).
 269Deleted by Republic Strengthening and Some Nepal Laws Amendment Act, 2066 (20 I 0).
 (Unofficial Translation)
@@ -4449,36 +4438,22 @@ is lesser, from the taxable income.
 (13)280 Notwithstanding anything contained elsewhere in this Section, the following
 annual tax shall be recovered from the owner of a rented motor vehicle at the time of
 registration and renewal of the vehicle through the Department of Transport Management:
-Type of motor vehicle
-Annual tax payable per vehicle
+Type of motor vehicle Annual tax payable per vehicle
 (1) Car, jeep, van, micro bus
-(a) up to 1300 cc
-Rs.4,000/-
-(b) from 1300 cc to 2000 cc
-Rs.4,500/-
-(c) from 2001 cc to 2900 cc
-Rs.5,000/-
-(d) from 2901cc to 4000 cc
-Rs.6,000/-
-(e) from 4001 cc to all above
-Rs.7,000/-
-(2) Mini truck, minibus, water tanker
-Rs.6,000/-
-(3) Mini tipper
-Rs.7,000/-
-(4) Truck, bus
-Rs.8,000/-
+(a) up to 1300 cc Rs.4,000/-
+(b) from 1300 cc to 2000 cc Rs.4,500/-
+(c) from 2001 cc to 2900 cc Rs.5,000/-
+(d) from 2901cc to 4000 cc Rs.6,000/-
+(e) from 4001 cc to all above Rs.7,000/-
+(2) Mini truck, minibus, water tanker Rs.6,000/-
+(3) Mini tipper Rs.7,000/-
+(4) Truck, bus Rs.8,000/-
 (5) Machinery equipment such as dodger
-excavator, loader, roller, crane
-Rs.12,000/,
-(6) Oil tanker, gas bullet, tipper
-Rs.12, 000/-
-(7) Tractor
-Rs.2,000-
-(8) Power tiller
-Rs.1,500-
-(9) Auto rickshaw, three-wheeler, tempo
-Rs.2,000/
+excavator, loader, roller, crane Rs.12,000/,
+(6) Oil tanker, gas bullet, tipper Rs.12, 000/-
+(7) Tractor Rs.2,000-
+(8) Power tiller Rs.1,500-
+(9) Auto rickshaw, three-wheeler, tempo Rs.2,000/
 (14) 281………
 (15) 282………
 (16) 283Notwithstanding anything contained elsewhere in this Section, where any
@@ -4549,13 +4524,13 @@ Assessment of Depreciation Deduction
 1. Categorization and classification of depreciable property: (1) The depreciable
 property shall be categorized as follows:
 Category Description of property
-Building, structure and similar other structures of permanent nature.
-Computer, data processing equipment, furniture, fixture and office
+"A" Building, structure and similar other structures of permanent nature.
+"B" Computer, data processing equipment, furniture, fixture and office
 equipment.
-Automobiles, buses and mini-buses.
-Construction and excavation equipment, and the depreciable properties
+"C" Automobiles, buses and mini-buses.
+"D" Construction and excavation equipment, and the depreciable properties
 not included elsewhere including in sub-section (3) of Section 17, subsection (3) of Section 18, and sub-section (3) of this Schedule.
-Intangible properties except the depreciable properties mentioned in
+"E" Intangible properties except the depreciable properties mentioned in
 category "D".
 (2) Any depreciable property owned and used by any person in any income
 year in making income from a business or investment shall be placed in the category
@@ -4631,12 +4606,12 @@ rupees all the remaining amounts has to be computed for additional depreciation 
 3. Rate of depreciation: (1) The rate of depreciation applicable in the case of each class
 mentioned in sub-section (2) of Section 2 of this Schedule shall, subject to sub-section (2),
 be as follows:
-Category
-5 percent
-25 percent
-20 percent
-15 percent
-The rate, in percentage, to be set by adjusting in the nearest half
+Category Rate
+"A" 5 percent
+"B" 25 percent
+"C" 20 percent
+"D" 15 percent
+"E" The rate, in percentage, to be set by adjusting in the nearest half
 year after dividing the cost of that property at the time of its
 purchase by the period of use of that property.
 (2) The projects mentioned in sub-section (2) of Section 19 of this Act and
