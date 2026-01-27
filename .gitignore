@@ -19,3 +19,5 @@ notebooks/*.ipynb_checkpoints/
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+frontend/node_modules/
