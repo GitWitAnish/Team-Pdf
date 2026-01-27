@@ -5,9 +5,6 @@ __pycache__/
 .venv/
 venv/
 
-# Data
-dataset/raw/*.pdf
-dataset/processed/*.txt
 
 # Vector DB
 database/vector_db/*
