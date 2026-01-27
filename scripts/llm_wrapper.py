@@ -34,16 +34,26 @@ def generate_answer(
     model = model or DEFAULT_LLM_MODEL
     client = InferenceClient(token=api_key)
 
-    context = "\n\n".join(context_chunks)
+    context = "\n\n---\n\n".join(context_chunks)
     system_prompt = """You are a legal assistant specializing in Nepali law.
-      Answer the question using ONLY the provided context. If the answer is not in the context,
-        say "I don't have enough information to answer this question." 
-        Be concise and cite the relevant law when possible."""
+Your task is to answer questions based on the provided legal document excerpts.
 
-    user_message = f"""Context:
+Guidelines:
+1. Answer the question using the information from the provided context.
+2. If the context contains relevant information, provide a clear and helpful answer.
+3. Cite the specific law, section, or article when possible (e.g., "According to Section 5 of the Citizenship Act...").
+4. If the context is partially relevant, explain what you found and what might be missing.
+5. Only say "I don't have enough information" if the context truly contains nothing relevant to the question.
+6. Be thorough but concise."""
+
+    user_message = f"""Legal Document Excerpts:
 {context}
 
-Question: {question}"""
+---
+
+Question: {question}
+
+Please provide a helpful answer based on the above legal excerpts."""
 
     # Use chat_completion for conversational models like Llama
     response = client.chat_completion(
