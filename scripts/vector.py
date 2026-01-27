@@ -71,6 +71,7 @@ class FaissVectorStore:
         query: str,
         embedding_model: EmbeddingModel | None = None,
         top_k: int = 5,
+        min_score: float = 0.3,
     ) -> List[Dict]:
         if self.index is None:
             self.load()
@@ -82,10 +83,14 @@ class FaissVectorStore:
         if not embedding_model.normalize:
             faiss.normalize_L2(query_emb)
 
-        scores, idxs = self.index.search(query_emb, top_k)
+        # Fetch more candidates to filter by score
+        scores, idxs = self.index.search(query_emb, top_k * 2)
         results: List[Dict] = []
         for score, idx in zip(scores[0], idxs[0]):
             if idx < 0 or idx >= len(self.metadata):
+                continue
+            # Filter out low similarity scores
+            if float(score) < min_score:
                 continue
             meta_entry = self.metadata[idx]
             results.append(
@@ -96,6 +101,9 @@ class FaissVectorStore:
                     "id": meta_entry["id"],
                 }
             )
+            # Stop once we have enough good results
+            if len(results) >= top_k:
+                break
         return results
 
 

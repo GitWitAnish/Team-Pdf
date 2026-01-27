@@ -275,16 +275,33 @@ def preserve_legal_structure(text: str) -> str:
     return "\n".join(structured_lines).strip()
 
 
-def prepare_for_rag(text: str, chunk_size: int = 1000, overlap: int = 200) -> List[str]:
+def prepare_for_rag(text: str, chunk_size: int = 2000, overlap: int = 400, min_chunk_size: int = 100) -> List[str]:
     # Split text into overlapping chunks suitable for RAG embedding.
+    # Larger chunks preserve more context for better retrieval.
 
     # Split by major sections first to keep context together
     major_sections = re.split(r"\n(?=(?:Part|Chapter|Section|Article)\s*[-:]?\s*\d+)", text)
     
     chunks = []
+    current_accumulated = ""
+    
     for section in major_sections:
+        section = section.strip()
+        if not section:
+            continue
+            
+        # If section is very small, accumulate with next section
+        if len(section) < min_chunk_size:
+            current_accumulated += "\n" + section if current_accumulated else section
+            continue
+        
+        # Add any accumulated small sections to this section
+        if current_accumulated:
+            section = current_accumulated + "\n" + section
+            current_accumulated = ""
+        
         if len(section) <= chunk_size:
-            chunks.append(section.strip())
+            chunks.append(section)
         else:
             # Split large sections into smaller chunks with overlap
             words = section.split()
@@ -304,9 +321,58 @@ def prepare_for_rag(text: str, chunk_size: int = 1000, overlap: int = 200) -> Li
                     current_length = sum(len(w) + 1 for w in current_chunk)
             
             if current_chunk:
-                chunks.append(" ".join(current_chunk))
+                remaining = " ".join(current_chunk)
+                # Only add if it's substantial enough
+                if len(remaining) >= min_chunk_size:
+                    chunks.append(remaining)
+                elif chunks:
+                    # Append to previous chunk if too small
+                    chunks[-1] = chunks[-1] + " " + remaining
     
-    return [c for c in chunks if c.strip()]
+    # Handle any remaining accumulated content
+    if current_accumulated and len(current_accumulated) >= min_chunk_size:
+        if chunks:
+            chunks[-1] = chunks[-1] + "\n" + current_accumulated
+        else:
+            chunks.append(current_accumulated)
+    
+    # Filter out any chunks that are still too small or are just headers/TOC
+    filtered_chunks = []
+    for c in chunks:
+        c = c.strip()
+        if len(c) >= min_chunk_size and not _is_toc_or_header_only(c):
+            filtered_chunks.append(c)
+    
+    return filtered_chunks
+
+
+def _is_toc_or_header_only(text: str) -> bool:
+    # Check if text is just table of contents or headers without substantive content.
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    if not lines:
+        return True
+    
+    # If most lines are short (likely headers), it's probably TOC
+    short_lines = sum(1 for l in lines if len(l) < 50)
+    if len(lines) > 3 and short_lines / len(lines) > 0.8:
+        return True
+    
+    # Check for common TOC patterns
+    toc_patterns = [
+        r"^(Part|Chapter|Section|Article|Schedule)\s*[-:]?\s*\d*\s*$",
+        r"^Table of Contents$",
+    ]
+    toc_line_count = 0
+    for line in lines:
+        for pattern in toc_patterns:
+            if re.match(pattern, line, re.IGNORECASE):
+                toc_line_count += 1
+                break
+    
+    if len(lines) > 0 and toc_line_count / len(lines) > 0.5:
+        return True
+    
+    return False
 
 
 def save_text(output_path: Path, text: str) -> None:
@@ -451,8 +517,8 @@ def main() -> None:
     parser.add_argument(
         "--chunk-size",
         type=int,
-        default=1000,
-        help="Character size for RAG chunks (default: 1000)",
+        default=2000,
+        help="Character size for RAG chunks (default: 2000)",
     )
 
     args = parser.parse_args()

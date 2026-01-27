@@ -21,3 +21,40 @@ notebooks/*.ipynb_checkpoints/
 *.sublime-workspace
 
 frontend/node_modules/
+
+# ===== Backend 
+
+# FAISS index files (generated/large binary files)
+backend/data/*.index
+backend/data/*.pkl
+backend/data/faiss_index/
+*.faiss
+
+# Uploaded documents (user data)
+backend/data/uploads/
+backend/data/documents/
+
+# HuggingFace model cache (very large)
+.cache/
+*.bin
+*.safetensors
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+tmp/
+
+# Python build artifacts
+*.egg-info/
+dist/
+build/
+*.egg
+
+# OS files
+.DS_Store
+Thumbs.db
