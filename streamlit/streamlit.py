@@ -48,10 +48,10 @@ LOGO_PATH = ROOT / "assets" / "images" / "logo.jpeg"
 SUGGESTIONS = [
     ("What are fundamental rights in Nepal's constitution?", 
      "What are the fundamental rights guaranteed by the Constitution of Nepal?"),
-    ("How is citizenship acquired in Nepal?", 
-     "How can someone acquire Nepali citizenship?"),
-    ("What are employee rights in civil service?", 
-     "What are the rights and benefits of civil service employees in Nepal?"),
+    ("How do I get a citizenship certificate?", 
+     "How do I apply for a citizenship certificate in Pokhara? What documents do I need?"),
+    ("How to apply for a driving license?", 
+     "What is the process to apply for a new driving license in Nepal?"),
     ("What are privacy laws in Nepal?", 
      "What does Nepal's Individual Privacy Act protect?"),
 ]
@@ -102,10 +102,20 @@ def search_and_answer(question: str, model, store) -> tuple[str, str]:
     sources_lines = []
     for i, hit in enumerate(hits, 1):
         meta = hit.get("metadata", {})
-        source = meta.get("filename", meta.get("title", "Unknown"))
-        year = meta.get("year", "")
-        preview = hit["text"][:400] + "..." if len(hit["text"]) > 400 else hit["text"]
-        sources_lines.append(f"**{i}. {source}** ({year})\n> {preview}")
+        data_type = meta.get("type", "legal")
+        
+        if data_type == "navigation":
+            # Navigation service source
+            service_name = meta.get("service_name", meta.get("title", "Unknown Service"))
+            category = meta.get("category", "")
+            preview = hit["text"][:400] + "..." if len(hit["text"]) > 400 else hit["text"]
+            sources_lines.append(f"**{i}. 🧭 {service_name}** ({category})\n> {preview}")
+        else:
+            # Legal document source
+            source = meta.get("filename", meta.get("title", "Unknown"))
+            year = meta.get("year", "")
+            preview = hit["text"][:400] + "..." if len(hit["text"]) > 400 else hit["text"]
+            sources_lines.append(f"**{i}. 📚 {source}** ({year})\n> {preview}")
     
     sources_text = "\n\n".join(sources_lines)
     
@@ -254,7 +264,7 @@ with st.sidebar:
     
     st.divider()
     st.caption("Powered by RAG technology")
-    st.caption("Built for Nepal Legal Documents")
+    st.caption("📚 Legal Documents + 🧭 Navigation Services")
 
 
 
@@ -265,7 +275,7 @@ if not st.session_state.messages:
         <div class="welcome-container">
             {logo_html}
             <div class="welcome-title">Nyaya.exe</div>
-            <div class="welcome-subtitle">Ask questions about Nepali laws and legal documents</div>
+            <div class="welcome-subtitle">Ask about Nepali laws or get step-by-step guidance for government services</div>
         </div>
     """, unsafe_allow_html=True)
     
@@ -305,5 +315,5 @@ if st.session_state.stt_text:
     process_query(prompt, is_voice=True)
 
 # Handle text input
-if prompt := st.chat_input("Ask about Nepali laws..."):
+if prompt := st.chat_input("Ask about Nepali laws or government services..."):
     process_query(prompt)
