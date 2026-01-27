@@ -18,6 +18,11 @@ huggingface-hub>=0.20.0
 # Web interface
 streamlit>=1.30.0
 
+# Voice integration 
+edge-tts>=6.1.0                    # Text-to-Speech
+audio-recorder-streamlit>=0.0.8    # Voice input in Streamlit
+SpeechRecognition>=3.10.0          # Speech-to-Text (Google API)
+
 # Jupyter notebook support
 jupyter>=1.0.0
 ipykernel>=6.0.0
