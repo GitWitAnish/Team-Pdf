@@ -1,0 +1,19 @@
+# Core dependencies
+python-dotenv>=1.0.0
+numpy>=1.24.0
+
+# Embedding model
+sentence-transformers>=2.2.0
+
+# Vector store
+faiss-cpu>=1.7.4
+
+# LLM API
+huggingface-hub>=0.20.0
+
+# Web interface
+streamlit>=1.30.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
