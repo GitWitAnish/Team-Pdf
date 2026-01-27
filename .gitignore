@@ -1,0 +1,24 @@
+# Environment
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data
+dataset/raw/*.pdf
+dataset/processed/*.txt
+
+# Vector DB
+database/vector_db/*
+!database/vector_db/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
+notebooks/*.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
