@@ -1,0 +1,1210 @@
+{
+  "schema_version": "1.0",
+  "country": "Nepal",
+  "services": [
+
+    {
+  "service_name": "Citizenship Certificate",
+  "category": "Identity & Citizenship",
+  "keywords": ["citizenship", "nagrikta", "identity"],
+  "department": "District Administration Office",
+  "online_link": "NIL",
+  "office_address": "Sahid Chowk, Pokhara",
+  "phone_number": "061-451764",
+  "steps": [
+    "If your current residence is registered in the same locality, go to your local DAO",
+    "If your residence is not registered locally, go to the DAO of your original birthplace"
+  ],
+  "cost": "500 Rupees",
+  "time_required": "Instant",
+  "documents_required": [
+    "Birth Certificate",
+    "Parents' Citizenship Certificates",
+    "Marriage Partner's Citizenship Certificate (if available)",
+    "Marriage Certificate (if available)",
+    "Residence Change document (if available)"
+  ],
+  "notes": "Be careful for long lines",
+  "description": "Issuance of Nepali citizenship certificate",
+  "department_contact": "NIL"
+}
+,
+
+    {
+  "service_name": "National ID (NID)",
+  "category": "Identity & Citizenship",
+  "keywords": ["nid", "national id", "biometric", "identity card"],
+  "department": "Department of National ID",
+  "online_link": "https://enrollment.donidcr.gov.np/PreEnrollment/",
+  "office_address": "Sahid Chowk, Pokhara",
+  "phone_number": "061-451764",
+  "steps": [
+    "Visit the online pre-enrollment portal at https://enrollment.donidcr.gov.np/PreEnrollment/ and fill out your personal details",
+    "Schedule an appointment through the portal",
+    "Visit your local DAO or designated NID center for biometric data collection (fingerprints, photo, iris scan)",
+    "Submit your original Nepali Citizenship Certificate",
+    "Submit printed token slip from online pre-enrollment",
+    "Submit additional documents if applicable: Birth Certificate, Marriage Certificate, Migration Certificate",
+    "Provide a passport-size photo for the application",
+    "Complete biometric capture at the center"
+  ],
+  "cost": "500 Rupees",
+  "time_required": "6-12 months (NID number received instantly after enrollment)",
+  "documents_required": [
+    "Original Nepali Citizenship Certificate",
+    "Printed token slip from online pre-enrollment",
+    "Birth Certificate (if applicable)",
+    "Marriage Certificate / Migration Certificate (if applicable)",
+    "Passport-size photo"
+  ],
+  "notes": "Biometric data is mandatory; NID number is given instantly, but physical card may take 6-12 months",
+  "description": "Application and issuance of National ID card in Nepal",
+  "department_contact": "NIL"
+},
+{
+  "service_name": "Birth Certificate",
+  "category": "Family & Personal Status",
+  "keywords": ["birth certificate", "janma darta", "child registration", "birth registration"],
+  "department": "Ward Office / Municipality",
+  "online_link": "NIL",
+  "office_address": "Your local ward office(woda karyala)",
+  "phone_number": "NIL",
+  "steps": [
+    "Gather parental IDs, proof of birth (hospital record or vaccination card), and marriage certificate",
+    "Submit documents at the local ward office, municipality, or online portal within the specified timeframe (21-35 days)",
+    "Fill out the birth notification form",
+    "Verification of submitted documents by the office",
+    "Pay applicable fees",
+    "Receive the official birth certificate"
+  ],
+  "cost": "NIL",
+  "time_required": "21-35 days",
+  "documents_required": [
+    "Parental IDs",
+    "Proof of birth (hospital record / vaccination card)",
+    "Marriage Certificate (if applicable)"
+  ],
+  "notes": "Submit within the prescribed timeframe to avoid penalties",
+  "description": "Official registration of birth and issuance of a birth certificate in Nepal",
+  "department_contact": "NIL"
+},
+ {
+  "service_name": "Land Ownership Registration Certificate",
+  "category": "Property & Land",
+  "keywords": ["land ownership", "lalpurja", "kitta number", "property registration", "land certificate"],
+  "department": "Land Revenue Office",
+  "online_link": "NIL",
+  "office_address": "Department of Land Management and Archive, Babarmahal, Kathmandu",
+  "phone_number": "977-01-4223049, 42200284",
+  "steps": [
+    "Gather your original citizenship certificate and previous Lalpurja (if applicable)",
+    "Collect any land maps or survey documents relevant to the property",
+    "Visit the Department of Land Management and Archive, Babarmahal, Kathmandu",
+    "Submit the application for Land Ownership Registration along with all required documents",
+    "Provide details of the current plot (Kitta number), previous plot (if applicable), and land location",
+    "Indicate ownership type (sole or joint) and provide the names of all owners",
+    "Submit information about land class/type (residential, agricultural, commercial, etc.) and area",
+    "Pay applicable registration and processing fees",
+    "Officials will verify submitted documents and may conduct a field survey if necessary",
+    "Receive the Land Ownership Registration Certificate (Lalpurja)"
+  ],
+  "cost": "NIL",
+  "time_required": "NIL",
+  "documents_required": [
+    "Original citizenship certificate",
+    "Previous Lalpurja (if applicable)",
+    "Land maps or survey documents",
+    "Other supporting ownership documents"
+  ],
+  "notes": "Tip: Land tax in Nepal includes annual Property Tax (Malpot) and transaction-based taxes like Capital Gains Tax (CGT) and registration fees. Check local tax obligations before transfer.",
+  "description": "Official registration and record of land ownership in Nepal"
+},
+ {
+  "service_name": "Death Registration",
+  "category": "Family & Personal Status",
+  "keywords": ["death certificate", "mrityu darta", "deceased registration", "death registration"],
+  "department": "Ward Office / Municipality",
+  "online_link": "NIL",
+  "office_address": "Local Ward Office",
+  "phone_number": "NIL",
+  "steps": [
+    "Complete the application form (Schedule 3)",
+    "Gather the deceased's Citizenship Certificate (original or copy)",
+    "Gather the informant's Citizenship Certificate (usually a family member)",
+    "Obtain the death report from a hospital or health institution (if applicable)",
+    "Submit the application and documents to the Ward Secretary or designated registrar",
+    "Official verifies the information and may conduct a field visit",
+    "The death is recorded in the official register",
+    "Obtain the death certificate"
+  ],
+  "cost": "NIL",
+  "time_required": "Within 35 days of death",
+  "documents_required": [
+    "Completed application form (Schedule 3)",
+    "Deceased's Citizenship Certificate",
+    "Informant's Citizenship Certificate",
+    "Medical death report (if applicable)"
+  ],
+  "notes": "Physical presence at the ward office is generally required; online portal may be used only for initial submission in some areas",
+  "description": "Official registration of death and issuance of a death certificate in Nepal",
+  "department_contact": "NIL"
+},
+{
+  "service_name": "Marriage Registration",
+  "category": "Family & Personal Status",
+  "keywords": ["marriage registration", "bihe", "wedding certificate", "Avibahit Pramanpatra"],
+  "department": "Ward Office / District Court",
+  "online_link": "NIL",
+  "office_address": "Ward Office / District Court, local to applicant's residence",
+  "phone_number": "NIL",
+  "steps": [
+    "Gather original citizenship certificates for both bride and groom, along with copies",
+    "Obtain Single Status Letter (Unmarried Certificate / recommendation letter) from Ward Office (not older than 30 days)",
+    "Prepare 4-10 passport-sized photographs for both parties",
+    "Arrange two witnesses (one from each side) with their original citizenship certificates and copies",
+    "Complete and sign the Marriage Registration Application Form",
+    "If applying outside home district, obtain a 15-day temporary residence letter confirming residency",
+    "Submit divorce or death certificate if either party was previously married",
+    "If either party is a foreign national, prepare valid passport, visa, No Objection Certificate (NOC) from embassy, and proof of residence in Nepal",
+    "Submit all documents at the Ward Office (for local marriage) or District Court (for court marriage)",
+    "Ensure witnesses are present to sign the deed of declaration",
+    "Wait for the review process (up to 7 days) and receive the official Marriage Registration Certificate"
+  ],
+  "cost": "NIL",
+  "time_required": "Up to 7 days",
+  "documents_required": [
+    "Original and copies of Citizenship Certificates for both parties",
+    "Single Status Letter (Avibahit Pramanpatra) or Ward Office recommendation",
+    "4-10 passport-sized photos per party",
+    "Two witnesses with citizenship certificates",
+    "Completed Marriage Registration Application Form",
+    "Temporary Residence Letter (if outside home district)",
+    "Divorce or Death Certificate (if applicable)",
+    "Foreign National documents (passport, visa, NOC, proof of residence) if applicable"
+  ],
+  "notes": "Witnesses must be physically present. Ensure all documents are current and valid.",
+  "description": "Registration of marriage in Nepal, resulting in the official Marriage Certificate."
+},
+{
+  "service_name": "Divorce Registration",
+  "category": "Family & Personal Status",
+  "keywords": ["divorce registration", "bichheda", "mutual consent divorce", "contested divorce", "Kaski District Court"],
+  "department": "Kaski District Court",
+  "online_link": "NIL",
+  "office_address": "Kaski District Court, Pokhara, Gandaki Province, Nepal",
+  "phone_number": "NIL",
+  "steps": [
+    "Gather original citizenship certificates for both spouses along with copies",
+    "Collect Marriage Registration Certificate or alternative proof of marriage",
+    "Prepare passport-sized photographs for both spouses",
+    "If applicable, gather child birth certificates and property details",
+    "For Mutual Consent Divorce:",
+    "  1. File a petition citing mutual agreement at Kaski District Court",
+    "  2. The other party confirms consent, typically the next day",
+    "  3. Court reviews documents and issues Divorce Certificate within 2-3 days",
+    "For Contested Divorce:",
+    "  1. One party files a petition at Kaski District Court",
+    "  2. Court serves notice to the defendant, who submits a defense",
+    "  3. Mediation period (usually one year) is designated for reconciliation",
+    "  4. If mediation fails, the court reviews evidence, divides property, and finalizes divorce after one year",
+    "Consult a local legal expert in Pokhara for assistance throughout the process"
+  ],
+  "cost": "500-3,000 NPR court fees, plus lawyer fees 10,000-50,000+ NPR and documentation costs",
+  "time_required": "2-3 days for mutual consent, ~1 year for contested divorce",
+  "documents_required": [
+    "Citizenship certificates of both spouses (originals and copies)",
+    "Marriage registration certificate or alternative proof",
+    "Passport-sized photographs",
+    "Child birth certificate (if applicable)",
+    "Property documents (if applicable)"
+  ],
+  "notes": "Divorce laws and procedures can change. Expert legal counsel in Pokhara is strongly recommended.",
+  "description": "Legal registration of divorce in Pokhara through Kaski District Court for both mutual consent and contested cases."
+},
+{
+  "service_name": "Driving License Application",
+  "category": "Transport & Vehicles",
+  "keywords": ["driving license", "DL", "DOTM", "license renewal", "Pokhara driving license"],
+  "department": "Department of Transport Management (DoTM)",
+  "online_link": "https://applydlnew.dotm.gov.np/login",
+  "office_address": "Prithivi Chowk,Pokhara",
+  "phone_number": "985-6038335",
+  "steps": [
+    "Register online at https://applydlnew.dotm.gov.np/login and fill in your personal details",
+    "Select the Transport Management Office in Kaski for your application",
+    "Book an appointment for biometrics and pay the application fee online",
+    "Visit the selected office for biometric capture (photo, fingerprints)",
+    "Take the written exam",
+    "Complete the practical trial exam for the vehicle class applied for",
+    "Receive your driving license after passing all tests"
+  ],
+  "cost": "NIL",
+  "time_required": "Depends on appointment and exams",
+  "documents_required": [
+    "Original citizenship certificate",
+    "Photocopy of citizenship certificate"
+  ],
+  "notes": "New application slots are often available every 16th day from 7 AM. Applicants must be 18+ for motorcycles/light vehicles and 21+ for medium/heavy vehicles. Trial schedules for Kaski can be checked at tmolkaski.gandaki.gov.np.",
+  "description": "Application for a new driving license in Pokhara, including online registration, biometric capture, written and practical exams."
+},
+{
+  "service_name": "Driving License Renewal",
+  "category": "Transport & Vehicles",
+  "keywords": ["driving license renewal", "DL renewal", "expired license", "Pokhara transport", "DoTM renewal"],
+  "department": "Department of Transport Management (DoTM)",
+  "online_link": "https://applydlnew.dotm.gov.np/login",
+  "office_address": "Prithivi Chowk,Pokhara",
+  "phone_number": "985-6038335",
+  "steps": [
+    "Log into the DoTM Online System and fill out the Driving License Renewal form",
+    "Select the Transport Management Office in Kaski for your renewal",
+    "Bring your original driving license, citizenship certificate, and medical certificate (if required) to the office",
+    "Pay the renewal fees (e.g., NPR 1,500 for two-wheelers, NPR 2,000 for light vehicles)",
+    "Complete biometric capture (photo, signature, fingerprints) at the office",
+    "Receive a receipt for the renewal, which serves as a temporary license until the new card is issued"
+  ],
+  "cost": "Approx. NPR 1,500–3,000 depending on vehicle type",
+  "time_required": "Renewal should ideally occur within 90 days of expiration",
+  "documents_required": [
+    "Original driving license",
+    "Citizenship certificate",
+    "Medical certificate (if applicable)"
+  ],
+  "notes": "Penalties apply if renewal is delayed: 0-90 days: no penalty; up to 1 year: 100% penalty; 1-2 years: 150-200% penalty; 2-3 years: 200-300% penalty; 3-4 years: 250-400% penalty; 4-5 years: 300-500% penalty. After 5 years, license is automatically cancelled, requiring a fresh application. Ensure your mobile number is registered for updates.",
+  "description": "Process for renewing an expired or expiring driving license in Pokhara, including online form submission, document verification, biometric capture, and fee payment."
+},
+{
+  "service_name": "Original Vehicle Registration / Bluebook",
+  "category": "Transport & Vehicles",
+  "keywords": ["bluebook", "vehicle registration", "new vehicle registration", "TMO Pokhara", "Yatayat Karyalaya"],
+  "department": "Transport Management Office (TMO) / Yatayat Byabastha Karyalaya",
+  "online_link": "NIL",
+  "office_address": "Prithivi Chowk, Pokhara, Kaski, Gandaki Province, Nepal",
+  "phone_number": "985-6038335",
+  "steps": [
+    "Gather all required documents: original citizenship certificate, proof of vehicle ownership (purchase invoice), valid third-party insurance, and vehicle tax payment receipt",
+    "Visit Transport Management Office (TMO) / Yatayat Byabastha Karyalaya in Pokhara for in-person registration",
+    "Submit all documents at the counter for verification",
+    "Pay the required registration fees and taxes at the office",
+    "Vehicle inspection may be conducted if required by the office",
+    "Officials verify all details and process the registration",
+    "Receive the Original Bluebook / Vehicle Registration Certificate"
+  ],
+  "cost": {
+    "Motorcycles_Scooters": {
+      "<125cc": "Registration: NPR 1,500–8,000, Number Plate: NPR 2,000",
+      "126-250cc": "Registration: NPR 8,000–15,000",
+      "250cc+": "Registration: NPR 20,000+"
+    },
+    "Private_Cars_Jeep_Van": {
+      "<1000cc": "NPR 30,000–50,000",
+      "1000-1600cc": "NPR 50,000–80,000",
+      "1600-2000cc": "NPR 80,000–150,000",
+      "2000cc+": "NPR 150,000+"
+    },
+    "Embossed_Plates": {
+      "Two_Wheelers": "NPR 2,500",
+      "Four_Wheelers": "NPR 3,200",
+      "Large_Vehicles": "NPR 3,600"
+    },
+    "Third_Party_Insurance": "NPR 1,700–10,000+ depending on vehicle type",
+    "VAT_Local_Fee": "13% VAT + 1.5% local development fee (may apply)",
+    "Electric_Vehicles": "50% reduction in road fees"
+  },
+  "time_required": "Depends on verification and office queue; usually same day if documents are complete",
+  "documents_required": [
+    "Original citizenship certificate",
+    "Vehicle ownership proof (purchase invoice)",
+    "Valid third-party insurance",
+    "Vehicle tax payment receipt"
+  ],
+  "notes": "Ensure all documents are valid and complete. Alternative services like Smart Service Inn, Khalti, or Third Wheel may offer pickup/delivery options in Pokhara. Costs may change; check DoTM website for updates.",
+  "description": "Process for registering a new vehicle and obtaining the original Bluebook in Pokhara, including document verification, tax payment, and certificate issuance."
+},
+{
+  "service_name": "Bluebook Recovery / Traffic Violation",
+  "category": "Transport & Vehicles",
+  "keywords": ["bluebook recovery", "traffic violation", "lost license", "vehicle document", "traffic office Pokhara"],
+  "department": "Nepal Police / Local Traffic Office",
+  "online_link": "https://nepalpolice.gov.np/",
+  "office_address": "Distrcit Traffic Police Office,Kaski",
+  "phone_number": "061-520412",
+  "steps": [
+    "Identify the violation for which the Bluebook was confiscated",
+    "Pay the applicable fine (NPR 500, 1,000, or 2,000 depending on the violation)",
+    "Attend a 1-hour class at the local Traffic Office",
+    "Submit any required documents (original citizenship certificate and Bluebook if available)",
+    "Receive the recovered Bluebook after completing the fine payment and class"
+  ],
+  "cost": "500–2,000 NPR depending on violation",
+  "time_required": "Approximately 1 hour class + processing time at the office",
+  "documents_required": [
+    "Original citizenship certificate",
+    "Confiscated Bluebook (if available)"
+  ],
+  "notes": "Fine amount depends on the type of traffic violation. Ensure you attend the full class to recover the Bluebook.",
+  "description": "Process for recovering a confiscated Bluebook from traffic violations in Pokhara, including fine payment and attending a mandatory traffic awareness class."
+},
+
+  {
+    "service_name": "Land Ownership Transfer",
+    "category": "Property & Land",
+    "keywords": ["land transfer", "Lalpurja", "Malpot", "land deed", "Rajinama", "ownership change", "Pokhara", "land registration"],
+    "department": "Department of Land Management and Archives / Land Revenue Office (Malpot Karyalaya)",
+    "online_link": "NIL",
+    "office_address": "Land Revenue Office (Malpot Karyalaya), Lakeside, Pokhara, Kaski, Nepal",
+    "phone_number": "061-454551",
+    "steps": [
+      "Buyer and seller agree on terms of the land transfer, including price and conditions",
+      "Gather necessary documents: citizenship certificates, original land ownership certificate (Lalpurja), tax clearance papers, passport photos",
+      "Get property valuation certificate from local government office",
+      "Hire a licensed deed writer (Lekhandas) to prepare the transfer deed (Rajinama)",
+      "Submit transfer deed and supporting documents to the Land Revenue Office (Malpot Karyalaya) for verification",
+      "Land Revenue Office verifies documents and checks for legal encumbrances",
+      "Buyer pays required transfer fees, taxes, and any other applicable charges",
+      "Land Revenue Office registers the transfer deed and updates land ownership records",
+      "Receive updated land ownership certificate (Lalpurja) reflecting the new owner",
+      "Land Revenue Office updates digital and physical records accordingly"
+    ],
+    "cost": "Approx. 6-10% of property value (Registration fee: 4-6%, Capital Gains Tax: 2.5% for individuals, 10% for companies, Local development fee: 1.5%, Deed writing & administrative fees: NIL)",
+    "time_required": "2–4 weeks for straightforward transfers; complex cases may take 2–3 months",
+    "documents_required": [
+      "Citizenship certificates of buyer and seller",
+      "Original land ownership certificate (Lalpurja)",
+      "Recent tax clearance certificates for the property",
+      "Passport-sized photographs of both parties",
+      "Transfer deed (Rajinama) prepared by licensed deed writer",
+      "Property valuation certificate",
+      "No Objection Certificate (if property is mortgaged)",
+      "Power of attorney (if applicable)",
+      "Death certificate (for inheritance transfers)",
+      "Court order (if transfer is due to legal proceedings)",
+      "Company registration documents (for corporate transactions)"
+    ],
+    "notes": "Post-transfer responsibilities include updating personal records, paying property taxes, maintaining boundaries, complying with land use regulations, registering utilities, insuring the property, and securely storing documents. Ensure all documents are correctly prepared to avoid delays.",
+    "description": "Process to legally transfer ownership of land (plots) in Nepal, including document preparation, verification, fee payment, deed registration, and issuance of updated land ownership certificate (Lalpurja)."
+  },
+  {
+    "service_name": "Property Transfer (Land + Building)",
+    "category": "Property & Land",
+    "keywords": ["property transfer", "house sale", "inheritance property", "joint property", "gift deed", "Malpot", "property registration", "Nepal"],
+    "department": "Department of Land Management and Archives / Land Revenue Office (Malpot Karyalaya)",
+    "online_link": "NIL",
+    "office_address": "Land Revenue Office (Malpot Karyalaya), Lakeside, Pokhara, Kaski, Nepal",
+    "phone_number": "061-454551",
+    "steps": [
+      "Preliminary agreement between buyer and seller, including price and conditions",
+      "Conduct due diligence: check original Land Ownership Certificate (Lalpurja), land/building maps (Naksha), and encumbrances (mortgages, court cases)",
+      "Hire a legal practitioner to draft the sale deed (Anubandha) with property details, parties' identities, and consideration amount",
+      "Obtain tax clearance from local municipality/ward office",
+      "Submit application along with required documents to the Land Revenue Office (Malpot Karyalaya)",
+      "Land Revenue Office verifies documents and may conduct a site survey to match Naksha",
+      "Buyer pays registration fee (approx. 4% inside Kathmandu Valley, 2% outside), and any other applicable fees",
+      "Old ownership certificate is cancelled and new ownership certificate (Lalpurja) is issued in the name of the buyer",
+      "Land Revenue Office updates digital and physical records to reflect the change"
+    ],
+    "cost": "Registration fee 2-4% of property value (depends on location), Capital Gains Tax approx. 5-10% on profit (seller), Legal/Notary fees negotiable, Municipality service fees nominal, other fees (property valuation, agent, professional services) NIL",
+    "time_required": "3–5 working days if all documents prepared; rural or busy offices may take longer",
+    "documents_required": [
+      "Original Land Ownership Certificate (Lalpurja)",
+      "Certified copy of citizenship certificates of buyer and seller",
+      "Recent passport-sized photographs",
+      "Tax clearance certificate",
+      "Land Map (Naksha) for boundary verification",
+      "Sale deed (Anubandha) prepared by lawyer or notary",
+      "Power of attorney (if seller is not present)",
+      "Inheritance documents or court orders if applicable",
+      "Gift deed if transferring property to family"
+    ],
+    "notes": "Capital Gains Tax not applicable for inherited property or gifts to direct blood relatives. Joint property transfers require all owners’ presence. Foreign nationals generally cannot buy property in Nepal unless special permission granted. Legal consultation recommended for smooth transfer.",
+    "description": "Process to legally transfer ownership of immovable property (land, house, building) in Nepal."
+  },
+  {
+  "service_name": "PAN Registration",
+  "category": "Tax & Revenue",
+  "keywords": [
+    "PAN registration",
+    "Permanent Account Number",
+    "IRD Nepal",
+    "tax registration",
+    "Nagarik App",
+    "business PAN",
+    "personal PAN",
+    "Pokhara"
+  ],
+  "department": "Inland Revenue Department (IRD)",
+  "online_link": "http://ereturns.ird.gov.np:8289/registrationNew",
+  "office_address": "Inland Revenue Office, Rastrabank Road, Pokhara, Kaski, Nepal",
+  "phone_number": "061-463577, 061-454308",
+  "cost": "Free of charge",
+  "time_required": "2–5 working days",
+  "steps": [
+    "Visit the Inland Revenue Department (IRD) website and open the Taxpayer Portal",
+    "Select Registration (PAN, VAT, EXCISE)",
+    "Choose Personal PAN (individual) or Business PAN",
+    "Fill out the ITAS 01 e-form (preferably using Nepali Unicode)",
+    "Upload passport-sized photograph and citizenship certificate (or passport for foreigners)",
+    "Select the desired tax office and submit the form",
+    "Note down the submission/reference number",
+    "Print the submitted form",
+    "Visit the selected tax office with the printed form and original documents for verification",
+    "PAN is issued after successful verification"
+  ],
+  "alternative_method": {
+    "method": "Nagarik App",
+    "steps": [
+      "Download and register on the Nagarik App (Android or iOS)",
+      "Verify identity using citizenship details",
+      "Select PAN Registration service",
+      "Choose nearest Inland Revenue Office",
+      "Upload photo and submit required details"
+    ]
+  },
+  "documents_required": {
+    "individual": [
+      "Citizenship Certificate",
+      "Passport-sized photograph",
+      "Address details"
+    ],
+    "foreigner": [
+      "Valid passport",
+      "Valid visa or NRN ID"
+    ],
+    "business": [
+      "Business Registration Certificate",
+      "Partnership deed (if applicable)",
+      "Company registration documents (for companies)"
+    ]
+  },
+  "notes": [
+    "PAN registration is completely free",
+    "Authorized agents can represent applicants for verification and collection",
+    "PAN is mandatory for tax filing, banking, and business-related transactions"
+  ],
+  "description": "Service for issuing a Permanent Account Number (PAN) in Nepal for individuals and businesses through the Inland Revenue Department, available online via IRD portal or Nagarik App."
+},
+{
+  "service_name": "Work Permit for Abroad Employment",
+  "category": "Employment & Foreign Work",
+  "keywords": ["work permit", "foreign employment", "labor approval", "Department of Labor", "DoL", "work abroad"],
+  "department": "Department of Labor and Occupational Safety (DoL)",
+  "online_link": "http://dol.gov.np",
+  "office_address": "Department of Labor and Occupational Safety, Kathmandu, Nepal",
+  "phone_number": "01-4215468",
+  "steps": [
+    "Secure a signed job contract or formal job offer from your foreign employer (with job title, salary, work location, and duration clearly stated)",
+    "Publish the job vacancy in a national daily newspaper and on the Ministry of Labor job portal, showing efforts to hire Nepali workers (required by law)",
+    "Collect all required documents (passport copy, CV, qualifications, employer company documents, advertisements, tax clearance)",
+    "Prepare the formal application for a work permit using DoL’s prescribed form",
+    "Submit the full application packet to the Department of Labor and Occupational Safety (DoL) reception counter, including passport, job contract, CV, photos, and advertisement proof",
+    "If the DoL requests, obtain a No Objection Letter (NOC) from the Ministry of Home Affairs (MoHA) by submitting DoL’s request letter and any additional MoHA forms",
+    "Pay the official work permit application fees at the designated bank or payment counter (NPR 15,000 up to 6 months or NPR 20,000 for longer permits)",
+    "Wait for document review at DoL (the office may call you or your employer if any documents need clarification)",
+    "Receive official work permit approval from DoL once verification is complete",
+    "Collect the signed work permit certificate from the DoL office or its designated counter"
+  ],
+  "documents_required": [
+    "Original passport (valid for at least 6 months) and notarized copy",
+    "Printed job contract from foreign employer",
+    "Passport-sized photographs",
+    "Curriculum vitae (CV)",
+    "Academic and professional certificates",
+    "Experience letters (if applicable)",
+    "Job vacancy advertisements (newspaper + Ministry job portal)",
+    "Employer company registration and tax clearance certificates",
+    "Action plan showing how Nepali worker vacancies were advertised and efforts to hire locals",
+    "No Objection Letter (NOC) from Ministry of Home Affairs (if requested by DoL)"
+  ],
+  "cost": "NPR 15,000 (up to 6 months) or NPR 20,000 (over 6 months)",
+  "time_required": "Approximately 30–45 days from complete submission",
+  "notes": [
+    "Complete all documentation before submission to reduce processing delays",
+    "DoL may request additional documents or clarifications during review",
+    "Always keep copies of all submitted forms and receipts"
+  ],
+  "description": "The process to obtain a legal work permit for Nepali citizens or foreign workers seeking permission to work abroad, as governed by the Department of Labor and Occupational Safety (DoL)."
+},
+    {
+      "service_name": "Work Visa (Non-Tourist Visa)",
+      "category": "Employment & Foreign Work",
+      "keywords": ["work visa", "non-tourist visa", "foreign employment", "Department of Immigration", "DoIM", "Nepal"],
+      "department": "Department of Immigration (DoIM)",
+      "online_link": "http://www.nepalimmigration.gov.np/",
+      "office_address": "Department of Immigration, Kathmandu, Nepal",
+      "phone_number": "01-4241410",
+      "steps": [
+        "Obtain approved work permit from DoL",
+        "Prepare required documents for visa application",
+        "Submit work visa application at DoIM or designated consulate/embassy",
+        "Pay applicable visa fees",
+        "Receive Non-Tourist (Work) Visa after approval"
+      ],
+      "documents_required": [
+        "Issued work permit",
+        "Valid passport",
+        "Passport-sized photographs",
+        "Employment contract",
+        "Recommendation or clearance letters",
+        "Medical fitness certificate (if required by destination country)",
+        "Police clearance certificate (if required)"
+      ],
+      "cost": "Approx. USD 75 for visa; re-entry fees may apply",
+      "time_required": "Depends on processing at DoIM / embassy; generally 1–2 weeks",
+      "notes": [
+        "Visa validity depends on work permit duration",
+        "Some countries require additional medical or police clearance",
+        "Always check destination country requirements before travel"
+      ],
+      "description": "Non-tourist visa for Nepali citizens to work legally abroad, issued by Department of Immigration or destination country's embassy."
+    },
+    {
+      "service_name": "Medical & Police Clearance (if required)",
+      "category": "Employment & Foreign Work",
+      "keywords": ["medical certificate", "fitness certificate", "police clearance", "foreign employment"],
+      "department": "Authorized Medical Center / District Police Office",
+      "online_link": "NIL",
+      "office_address": "Local District Police Office / Authorized Medical Center",
+      "phone_number": "NIL",
+      "steps": [
+        "Visit authorized medical center for medical check-up (if required by destination country)",
+        "Obtain fitness certificate",
+        "Visit District Police Office to apply for Police Clearance Certificate (if required)",
+        "Submit identification documents and pay applicable fees",
+        "Receive Police Clearance Certificate"
+      ],
+      "documents_required": [
+        "Original passport or citizenship certificate",
+        "Application form for medical or police clearance",
+        "Photographs as required",
+        "Medical records (if required)"
+      ],
+      "cost": "Varies depending on service center; approx. NPR 500–1,500 per certificate",
+      "time_required": "Medical: same day or 1–2 days; Police Clearance: 7–14 days",
+      "notes": [
+        "Requirements vary by destination country",
+        "Certificates may have limited validity (e.g., 3 months)"
+      ],
+      "description": "Medical fitness and police clearance certificates required by some foreign countries before issuing work visa."
+    },
+    {
+  "service_name": "Health Insurance Board (HIB) Enrollment - Pokhara",
+  "category": "Health & Social Security",
+  "keywords": ["health insurance", "HIB", "Pokhara", "family coverage", "cashless health services"],
+  "department": "Health Insurance Board (HIB), Nepal",
+  "online_link": "https://www.hib.gov.np",
+  "office_address": "Local Ward Office, Pokhara Metropolitan City, Gandaki Province, Nepal",
+  "phone_number": "NIL",
+  "steps": [
+    "Prepare necessary documents for all family members: NID card, Citizenship or Birth Certificate, passport-sized photos, and proof of relationship (marriage certificate, birth certificates).",
+    "Choose enrollment method: either visit your local ward office in Pokhara to meet the Enrollment Assistant (Darata Sahayogi) or register online via the HIB portal.",
+    "Provide personal and family details either to the ward office assistant or through the online portal.",
+    "Select your primary health facility (e.g., Pokhara Academy of Health Sciences or Western Regional Hospital) as the first point of contact for services.",
+    "Pay the annual premium: Rs 3,500 for a family of up to 5 members. Add Rs 700 per extra member beyond 5. Payment can be made online or at the ward office.",
+    "Receive the insurance card and wait for activation, which occurs shortly after payment.",
+    "Renew the policy annually following the same process."
+  ],
+  "documents_required": [
+    "National Identity Card (NID) for all family members",
+    "Citizenship Certificate or Birth Certificate for all family members",
+    "Passport-sized photos for all family members",
+    "Proof of relationship: Marriage certificate, birth certificates, or other relevant documents"
+  ],
+  "cost": "Rs 3,500 per year for a family of 5; additional Rs 700 per extra member beyond 5",
+  "time_required": "Policy activation generally within a few days after payment; annual renewal required",
+  "notes": [
+    "Coverage is up to NRs 100,000 per year for a family of 5, plus NRs 20,000 per additional member.",
+    "The government subsidizes premiums for senior citizens (over 70 years) up to the standard coverage.",
+    "Cashless system available: present your insurance card at listed facilities for services without upfront payment.",
+    "For first-time registrations, visiting the ward office is recommended for guidance.",
+    "Always check with the local ward office for the latest updates or changes in enrollment procedures."
+  ],
+  "description": "Family-based health insurance enrollment in Pokhara through the Health Insurance Board (HIB), providing cashless coverage up to NRs 100,000 per year for a family of five, with options to add additional members. Enrollment can be done at local ward offices or online."
+},
+{
+  "service_name": "FIR / Police Complaint Registration",
+  "category": "Law & Public Safety",
+  "keywords": ["FIR", "police complaint", "crime report", "Nepal Police", "Pokhara", "Cybercrime"],
+  "department": "Nepal Police",
+  "online_link": "https://www.nepalpolice.gov.np",
+  "office_address": "District Police Office, Kaski, Pokhara, Gandaki Province, Nepal",
+  "phone_number": "061-520412 (District Police Office, Pokhara)",
+  "steps": [
+    "Identify the nearest police station to your location in Pokhara (e.g., District Police Office Kaski).",
+    "Prepare necessary documents: Citizenship Certificate or Passport, evidence (photos, videos), and witness details if available.",
+    "Visit the police station in person, usually between 10 AM and 5 PM, and meet the duty officer.",
+    "Provide a detailed account of the incident, including date, time, location, involved parties, and circumstances. This can be written or oral.",
+    "Sign the FIR after review and ensure you receive a registered copy or reference number for tracking purposes."
+  ],
+  "alternative_methods": [
+    {
+      "method": "Nepal Police Portal",
+      "steps": [
+        "Visit the official Nepal Police website for general complaints.",
+        "Follow the online procedure for complaint submission."
+      ]
+    },
+    {
+      "method": "Cybercrime Complaints",
+      "steps": [
+        "For cyber-related offenses, visit the Cyber Bureau website at cyberbureau.nepalpolice.gov.np.",
+        "Alternatively, send an email to cyberbureau@nepalpolice.gov.np with complaint details."
+      ]
+    },
+    {
+      "method": "Tourist Police Assistance",
+      "steps": [
+        "If you are a foreign tourist reporting lost items or crimes, visit the Tourist Police Unit in Pokhara."
+      ]
+    }
+  ],
+  "documents_required": [
+    "Citizenship Certificate or Passport",
+    "Evidence related to the incident (photos, videos, documents)",
+    "Witness information (if available)"
+  ],
+  "cost": "Free of charge",
+  "time_required": "Typically same day, depending on case complexity",
+  "notes": [
+    "If the police refuse to register a complaint, you can approach the District Government Attorney's Office or the Chief District Officer (CDO).",
+    "Maintain copies of all submitted documents and FIR for follow-up.",
+    "Emergency contact number: 100 for immediate police assistance in Nepal."
+  ],
+  "description": "Process to file a First Information Report (FIR) or police complaint in Pokhara, including in-person registration, online options, and cybercrime reporting. Ensures official documentation of criminal offenses for legal follow-up."
+},
+{
+  "service_name": "Basai Sarai / Migration Certificate",
+  "category": "Identity & Residency",
+  "keywords": ["basai sarai", "migration certificate", "residence change", "DAO", "ward office", "Pokhara"],
+  "department": "District Administration Office (DAO) / Local Ward Office",
+  "online_link": "NIL",
+  "office_address": "Local Ward Office or District Administration Office, Pokhara, Gandaki Province, Nepal",
+  "phone_number": "NIL",
+  "steps": [
+    "Visit your current Ward Office in Pokhara and request a Recommendation Letter (सिफारिस) stating your intent to move to a new residence within Nepal.",
+    "Provide your Nepali Citizenship Certificate (नागरिकता) and details of family members if applicable.",
+    "Receive the Recommendation Letter from your current ward office.",
+    "Take the Recommendation Letter, Citizenship Certificate, and any additional documents to the District Administration Office (DAO) to apply for a Migration Certificate (बसाइँसराइ प्रमाणपत्र).",
+    "Fill out the official Migration Certificate application form at the DAO and submit all required documents.",
+    "For foreigners: contact the Immigration Office in Pokhara for visa-related permits or changes if you are changing your residence within Nepal."
+  ],
+  "documents_required": [
+    "Original Nepali Citizenship Certificate (नागरिकता)",
+    "Recommendation Letter (सिफारिस) from current ward",
+    "Proof of family relationship (if moving with family, e.g., birth certificates, marriage certificate)",
+    "Passport-sized photos (if required by DAO)"
+  ],
+  "cost": "NIL or nominal fee depending on ward/DAO regulations",
+  "time_required": "Typically 3–7 days if all documents are correct",
+  "notes": [
+    "Ensure all documents are original and copies are kept for your records.",
+    "Foreigner residence changes must go through the Immigration Office.",
+    "Check with your local ward office for exact process and forms."
+  ],
+  "description": "Official process for changing residence within Nepal, including issuance of a Recommendation Letter (सिफारिस) from your current ward and a Migration Certificate (बसाइँसराइ प्रमाणपत्र) from the DAO. Required for legal recognition of your new address."
+},
+{
+  "service_name": "Basai Sarai / Migration Certificate",
+  "category": "Identity & Residency",
+  "keywords": ["basai sarai", "migration certificate", "residence change", "DAO", "ward office", "Pokhara"],
+  "department": "District Administration Office (DAO) / Local Ward Office",
+  "online_link": "NIL",
+  "office_address": "Local Ward Office or District Administration Office, Pokhara, Gandaki Province, Nepal",
+  "phone_number": "NIL",
+  "steps": [
+    "Visit your current Ward Office in Pokhara and request a Recommendation Letter (सिफारिस) stating your intent to move to a new residence within Nepal.",
+    "Provide your Nepali Citizenship Certificate (नागरिकता) and details of family members if applicable.",
+    "Receive the Recommendation Letter from your current ward office.",
+    "Take the Recommendation Letter, Citizenship Certificate, and any additional documents to the District Administration Office (DAO) to apply for a Migration Certificate (बसाइँसराइ प्रमाणपत्र).",
+    "Fill out the official Migration Certificate application form at the DAO and submit all required documents.",
+    "For foreigners: contact the Immigration Office in Pokhara for visa-related permits or changes if you are changing your residence within Nepal."
+  ],
+  "documents_required": [
+    "Original Nepali Citizenship Certificate (नागरिकता)",
+    "Recommendation Letter (सिफारिस) from current ward",
+    "Proof of family relationship (if moving with family, e.g., birth certificates, marriage certificate)",
+    "Passport-sized photos (if required by DAO)"
+  ],
+  "cost": "NIL or nominal fee depending on ward/DAO regulations",
+  "time_required": "Typically 3–7 days if all documents are correct",
+  "notes": [
+    "Ensure all documents are original and copies are kept for your records.",
+    "Foreigner residence changes must go through the Immigration Office.",
+    "Check with your local ward office for exact process and forms."
+  ],
+  "description": "Official process for changing residence within Nepal, including issuance of a Recommendation Letter (सिफारिस) from your current ward and a Migration Certificate (बसाइँसराइ प्रमाणपत्र) from the DAO. Required for legal recognition of your new address."
+},
+{
+  "service_name": "Property Tax Payment (Online)",
+  "category": "Property & Land",
+  "keywords": ["property tax", "malpot", "online tax payment", "municipality tax", "Pokhara", "digital payment"],
+  "department": "Local Municipality / Revenue Department",
+  "online_link": "https://revenue.fcgo.gov.np",
+  "office_address": "Local Ward Office / Municipality Office",
+  "phone_number": "NIL",
+  "steps": [
+    "Visit your local municipality's official website or government revenue portal (e.g., revenue.fcgo.gov.np).",
+    "Log in using your registered mobile number and OTP. First-time users may need to register with personal details.",
+    "Navigate to the 'Services' or 'Bill Payment' section and select 'Property Tax' or 'Municipal Tax'.",
+    "Enter your property account number, assessment number, or owner details to fetch your tax information.",
+    "Verify the tax amount and choose a payment method (net banking, eSewa, credit/debit card, or mobile wallet).",
+    "Complete the payment online.",
+    "Download or save the digital receipt for future reference."
+  ],
+  "documents_required": [
+    "Property Account Number / Assessment Number",
+    "Owner Details (Name, Citizenship Certificate if required)",
+    "Registered Mobile Number (for OTP verification)"
+  ],
+  "cost": "Depends on property valuation; calculated by municipality",
+  "time_required": "Instant to a few minutes, depending on payment method and portal response",
+  "notes": [
+    "Keep a digital copy of the payment receipt for legal and record purposes.",
+    "Payment can also be made via authorized apps like eSewa under 'Government Services > Tax Payment'.",
+    "Ensure your property details are up-to-date in the municipal records to avoid errors."
+  ],
+  "description": "Process to pay property tax in Pokhara and other regions of Nepal via online portals or authorized apps, including logging into the municipality portal, verifying property details, making digital payment, and obtaining an official receipt."
+},
+{
+  "service_name": "Traffic Fine Payment / E-Challan",
+  "category": "Transport & Vehicles",
+  "keywords": ["traffic fine", "e-challan", "pending fines", "license renewal", "Nepal Traffic Police", "Pokhara"],
+  "department": "Nepal Traffic Police",
+  "online_link": "https://traffic.nepalpolice.gov.np",
+  "office_address": "District Traffic Police Office, Kaski, Pokhara, Gandaki Province, Nepal",
+  "phone_number": "061-520412",
+  "steps": [
+    "Download and register on the Nagarik App (Android/iOS) or log in to the Nepal Traffic Police website at traffic.nepalpolice.gov.np.",
+    "Navigate to the 'Traffic Fine' or 'E-Challan' section.",
+    "Enter your vehicle registration number or license details to check pending violations and fines.",
+    "Verify the fine details displayed on the platform.",
+    "Select a payment method: online banking, mobile wallet (IME Pay, fonepay), or other authorized channels.",
+    "Complete the payment.",
+    "Save or download the digital receipt for records and future reference."
+  ],
+  "documents_required": [
+    "Vehicle registration number or driving license details",
+    "Registered mobile number (for OTP verification if required)"
+  ],
+  "cost": "Depends on the type and number of traffic violations; fine amounts as per Nepal Traffic Police regulations",
+  "time_required": "Instant to a few minutes, depending on the payment platform",
+  "notes": [
+    "Digital receipt is proof of payment; keep it safe for license renewal and legal purposes.",
+    "Unpaid fines may block driving license renewal or vehicle registration.",
+    "A demerit point system is being implemented in Nepal where repeated violations accumulate points against the driver."
+  ],
+  "description": "Service to check and pay pending traffic fines in Nepal via the Nagarik App, official Traffic Police website, or authorized digital wallets, using the E-Challan system for secure and instant payment."
+},
+{
+  "service_name": "Photo Resizer / Compress to 300KB",
+  "category": "Digital Tools & Services",
+  "keywords": ["photo resize", "compress image", "300kb photo", "passport photo", "Nepal government forms"],
+  "department": "NIL",
+  "online_link": "https://www.iloveimg.com/compress-image",
+  "office_address": "NIL",
+  "phone_number": "NIL",
+  "steps": [
+    "Visit the online image compressor website: https://www.iloveimg.com/compress-image",
+    "Upload your photo that needs resizing or compression",
+    "Adjust compression settings if needed to target around 300KB",
+    "Download the compressed photo once processing is complete",
+    "Use the compressed photo for government forms or applications"
+  ],
+  "documents_required": [
+    "Digital photo/image file in JPG, PNG, or similar format"
+  ],
+  "cost": "Free",
+  "time_required": "Less than 5 minutes",
+  "notes": [
+    "Always check the final file size before submission.",
+    "Ensure the photo quality is clear and meets the requirements for government forms."
+  ],
+  "description": "An online tool to compress or resize any photo to approximately 300KB for use in Nepalese government forms, applications, or ID submissions."
+},
+{
+  "service_name": "Pokhara Electricity / Power House Contact",
+  "category": "Utilities & Public Services",
+  "keywords": ["electricity", "loadshedding", "power outage", "water supply", "Pokhara power house", "emergency electricity contact"],
+  "department": "Pokhara Power House",
+  "online_link": "NIL",
+  "office_address": "Pokhara Power House, Pokhara, Gandaki Province, Nepal",
+  "phone_number": ["061-450771", "061-450832", "061-450833"],
+  "steps": [
+    "Identify the nature of your issue: water supply problem, sudden electricity cutoff, or planned loadshedding.",
+    "Call one of the provided Pokhara Power House numbers.",
+    "Provide your location, account number (if available), and describe the issue clearly.",
+    "Follow any instructions given by the officials to report or track the problem.",
+    "Keep a note of the complaint/reference number for follow-up."
+  ],
+  "documents_required": [
+    "Electricity account number or previous electricity bill (if available)",
+    "Proof of residence may be requested in some cases"
+  ],
+  "cost": "Free of charge",
+  "time_required": "Response depends on issue severity; emergencies prioritized",
+  "notes": [
+    "For emergencies, mention it clearly to get faster response.",
+    "Loadshedding schedules can change; always check with the local office."
+  ],
+  "description": "Contact information and procedure for reporting electricity outages, loadshedding, or water-related issues in Pokhara through the local power house."
+},
+{
+  "service_name": "Consumer Complaints in Pokhara",
+  "category": "Law & Public Safety",
+  "keywords": ["consumer complaints", "fraud", "overpricing", "substandard goods", "Pokhara", "consumer rights"],
+  "department": "Pokhara Chamber of Commerce & Industry / Local Authorities / Consumer Rights Nepal",
+  "online_link": "NIL",
+  "office_address": "Pokhara Chamber of Commerce & Industry (PCCI), Pokhara, Gandaki Province, Nepal",
+  "phone_number": ["061-570264", "9856070264", "061-572701", "061-455167", "9856074666", "1915", "8800001915"],
+  "steps": [
+    "Attempt to resolve the issue directly with the seller or service provider.",
+    "Collect supporting documents like receipts, photos, or invoices.",
+    "Submit a written complaint to the relevant authority: PCCI, Office of Chief Minister, or Department of Commerce.",
+    "Include all evidence and details of the issue in your complaint.",
+    "Request confidentiality if desired.",
+    "For banking or financial complaints, use the NRB Grievance Management System online portal.",
+    "For urgent national-level consumer protection, contact via WhatsApp at 8800001915 or call the national hotline 1915."
+  ],
+  "documents_required": [
+    "Receipts, invoices, or proof of purchase",
+    "Photographs of substandard or faulty goods",
+    "Any communication with the seller or service provider",
+    "Identity proof (optional if requesting confidentiality)"
+  ],
+  "cost": "Free of charge",
+  "time_required": "Varies depending on authority and nature of complaint",
+  "notes": [
+    "Keep copies of all submitted documents and communications.",
+    "Confidentiality can be requested to protect the identity of the complainant.",
+    "Complaints can be related to expired goods, unsafe products, fraudulent pricing, invoice issues, or misleading advertisements."
+  ],
+  "description": "Process for reporting and resolving consumer complaints in Pokhara related to unfair trade practices, substandard goods, overpricing, or fraudulent services. Complaints can be lodged with local authorities, PCCI, NRB, or national helplines."
+},
+{
+  "service_name": "NID / Citizenship Update",
+  "category": "Identity & Documents",
+  "keywords": ["NID", "National ID", "Citizenship", "Update", "Pokhara", "DAO Kaski"],
+  "department": "District Administration Office (DAO), Kaski / Department of National ID & Civil Registration (DoNIDCR)",
+  "online_link": "https://preenrollment.donidcr.gov.np",
+  "office_address": "District Administration Office, Kaski, Pokhara, Gandaki Province, Nepal",
+  "phone_number": "061-463076",
+  "steps": [
+    "Visit the DoNIDCR Pre-Enrollment portal and select 'Login for Individual' to initiate corrections.",
+    "Fill in corrections for personal, family, or address details.",
+    "Book an appointment for biometric verification (photo and fingerprints) in Pokhara.",
+    "Prepare required documents such as your original citizenship certificate, migration certificate, or marriage certificate if needed.",
+    "Visit the DAO, Kaski with the printed application form (token slip) and all supporting documents for verification.",
+    "After verification, check the updated NID/citizenship information status via the Nagarik App."
+  ],
+  "documents_required": [
+    "Original Citizenship Certificate",
+    "Supporting documents for corrections (e.g., marriage certificate, migration certificate)",
+    "Printed application form / token slip"
+  ],
+  "cost": "Typically free of charge unless issuing new certificates",
+  "time_required": "Varies; usually 1–3 business days for verification, longer if certificate re-issuance is needed",
+  "notes": [
+    "Biometric verification in person is mandatory for updates.",
+    "For surname or family changes, supporting documents must match the requested change.",
+    "Check status online using the Nagarik App after DAO verification."
+  ],
+  "description": "Process to update or correct personal, family, or address information on National ID (NID) or citizenship certificate in Pokhara through DAO Kaski or the NID Pre-Enrollment portal."
+},
+{
+  "service_name": "Voter Registration / Voter ID Card",
+  "category": "Elections & Democracy",
+  "keywords": ["voter id", "voter registration", "election", "मतदाता परिचयपत्र"],
+  "department": "Election Commission of Nepal",
+  "online_link": "https://voterlist.election.gov.np",
+  "office_address": "District Election Office, Pokhara",
+  "phone_number": "NIL",
+  "steps": [
+    "Visit the Election Commission voter registration portal",
+    "Fill in personal details and select registration center",
+    "Visit registration center for biometric verification",
+    "Submit citizenship certificate",
+    "Receive voter ID card later"
+  ],
+  "cost": "Free",
+  "time_required": "Same day for registration; card issuance later",
+  "documents_required": ["Citizenship Certificate"],
+  "notes": "Registration required to vote in elections",
+  "description": "Registration of eligible citizens as voters and issuance of voter ID card"
+},
+{
+  "service_name": "Social Security Allowance Registration",
+  "category": "Social Security & Welfare",
+  "keywords": ["social security", "old age allowance", "single woman", "disability allowance"],
+  "department": "Local Ward Office",
+  "online_link": "NIL",
+  "office_address": "Local Ward Office",
+  "phone_number": "NIL",
+  "steps": [
+    "Visit ward office with required documents",
+    "Submit application form",
+    "Verification by ward office",
+    "Enrollment into allowance system"
+  ],
+  "cost": "Free",
+  "time_required": "7–15 days",
+  "documents_required": [
+    "Citizenship Certificate",
+    "NID",
+    "Bank account details",
+    "Disability card (if applicable)"
+  ],
+  "notes": "Paid quarterly via bank account",
+  "description": "Government cash allowance for senior citizens and vulnerable groups"
+},
+{
+  "service_name": "Disability Identity Card",
+  "category": "Health & Social Security",
+  "keywords": ["disability card", "PWD card", "apanga parichaya patra"],
+  "department": "Local Municipality / Ward Office",
+  "online_link": "NIL",
+  "office_address": "Municipality Office",
+  "phone_number": "NIL",
+  "steps": [
+    "Medical assessment at government hospital",
+    "Submit medical report to ward office",
+    "Classification of disability",
+    "Issuance of disability card"
+  ],
+  "cost": "Free",
+  "time_required": "7–14 days",
+  "documents_required": [
+    "Citizenship or Birth Certificate",
+    "Medical assessment report"
+  ],
+  "notes": "Required for disability allowance and benefits",
+  "description": "Official identity card for persons with disabilities"
+},
+{
+  "service_name": "Basic Bank Account Opening",
+  "category": "Banking & Finance",
+  "keywords": ["bank account", "KYC", "saving account", "Nepal banks"],
+  "department": "Commercial / Development Banks",
+  "online_link": "NIL",
+  "office_address": "Any Bank Branch",
+  "phone_number": "NIL",
+  "steps": [
+    "Visit bank branch",
+    "Fill account opening form",
+    "Submit KYC documents",
+    "Deposit minimum balance",
+    "Receive account details"
+  ],
+  "cost": "Free or minimal",
+  "time_required": "Same day",
+  "documents_required": [
+    "Citizenship Certificate",
+    "PAN (optional)",
+    "Passport-size photo"
+  ],
+  "notes": "Required for salary, allowance, and digital payments",
+  "description": "Opening a personal savings bank account in Nepal"
+},
+{
+  "service_name": "SIM Card Registration",
+  "category": "Telecom & Communication",
+  "keywords": ["SIM registration", "NTC", "Ncell", "mobile number"],
+  "department": "Telecom Operators",
+  "online_link": "NIL",
+  "office_address": "NTC office,mahendrapul,pokhara",
+  "phone_number": "NIL",
+  "steps": [
+    "Visit telecom service center",
+    "Submit citizenship or passport",
+    "Fill SIM registration form",
+    "Biometric verification (if required)",
+    "Receive SIM card"
+  ],
+  "cost": "NPR 50–100",
+  "time_required": "Instant",
+  "documents_required": ["Citizenship Certificate"],
+  "notes": "One person can register limited SIMs",
+  "description": "Issuance and registration of mobile SIM cards"
+},
+{
+  "service_name": "Police Clearance Certificate",
+  "category": "Law & Public Safety",
+  "keywords": ["police clearance", "PCC", "good conduct certificate"],
+  "department": "Nepal Police",
+  "online_link": "https://policeclearance.nepalpolice.gov.np",
+  "office_address": "District Police Office, Kaski",
+  "phone_number": "NIL",
+  "cost": "NPR 500",
+  "time_required": "3–7 days",
+  "documents_required": [
+    "Citizenship Certificate",
+    "Passport (if abroad use)"
+  ],
+  "description": "Certificate proving no criminal record"
+},
+{
+  "service_name": "Court Case Status Lookup",
+  "category": "Law & Judiciary",
+  "keywords": ["case status", "court case", "district court"],
+  "department": "Supreme Court of Nepal",
+  "online_link": "https://supremecourt.gov.np",
+  "office_address": "District Court, Kaski",
+  "phone_number": "NIL",
+  "cost": "Free",
+  "time_required": "Instant",
+  "documents_required": ["Case number"],
+  "description": "Online tracking of court case progress"
+},
+{
+  "service_name": "Business Registration (Sole Proprietorship)",
+  "category": "Business & Trade",
+  "keywords": ["business registration", "firm registration", "PAN business"],
+  "department": "Ward Office / DAO",
+  "online_link": "NIL",
+  "office_address": "Ward Office",
+  "phone_number": "NIL",
+  "cost": "NPR 1,000–3,000",
+  "time_required": "1–3 days",
+  "documents_required": [
+    "Citizenship Certificate",
+    "PAN",
+    "Business address proof"
+  ],
+  "description": "Registration of small businesses and shops"
+},
+{
+  "service_name": "Company Registration (Private Limited)",
+  "category": "Business & Trade",
+  "keywords": ["company registration", "private limited", "OCR Nepal"],
+  "department": "Office of Company Registrar",
+  "online_link": "https://ocr.gov.np",
+  "office_address": "Kathmandu",
+  "phone_number": "NIL",
+  "cost": "NPR 9,500+",
+  "time_required": "3–7 days",
+  "documents_required": [
+    "Citizenship of promoters",
+    "MOA / AOA"
+  ],
+  "description": "Legal registration of companies in Nepal"
+},
+{
+  "service_name": "Drinking Water Connection",
+  "category": "Utilities & Public Services",
+  "keywords": ["water connection", "drinking water", "Pokhara water"],
+  "department": "Nepal Water Supply Corporation",
+  "office_address": "Pokhara Branch",
+  "cost": "NPR 3,000–10,000",
+  "time_required": "7–30 days",
+  "documents_required": [
+    "Citizenship",
+    "Land ownership document"
+  ],
+  "description": "Application for household water supply connection"
+},
+{
+  "service_name": "New Electricity Connection",
+  "category": "Utilities & Public Services",
+  "keywords": ["electricity connection", "NEA", "meter installation"],
+  "department": "Nepal Electricity Authority",
+  "office_address": "NEA Pokhara Office",
+  "cost": "NPR 2,000–10,000",
+  "time_required": "7–15 days",
+  "documents_required": [
+    "Citizenship",
+    "Land ownership or rent agreement"
+  ],
+  "description": "Application for new electricity meter and supply"
+},
+{
+  "service_name": "LPG Gas Connection",
+  "category": "Utilities & Public Services",
+  "keywords": ["LPG", "gas connection", "cooking gas"],
+  "department": "Authorized Gas Dealers",
+  "cost": "NPR 3,000–5,000 (deposit)",
+  "time_required": "Same day",
+  "documents_required": ["Citizenship"],
+  "description": "Registration and issuance of LPG gas cylinder"
+},
+{
+  "service_name": "LPG Gas Connection",
+  "category": "Utilities & Public Services",
+  "keywords": ["LPG", "gas connection", "cooking gas"],
+  "department": "Authorized Gas Dealers",
+  "cost": "NPR 3,000–5,000 (deposit)",
+  "time_required": "Same day",
+  "documents_required": ["Citizenship"],
+  "description": "Registration and issuance of LPG gas cylinder"
+},
+{
+  "service_name": "SEE / NEB Certificate Duplicate",
+  "category": "Education",
+  "keywords": ["SEE certificate", "duplicate marksheet"],
+  "department": "National Examination Board",
+  "online_link": "https://neb.gov.np",
+  "cost": "NPR 500–1,000",
+  "time_required": "7–15 days",
+  "documents_required": ["Citizenship"],
+  "description": "Re-issuance of lost academic certificates"
+},
+{
+  "service_name": "Disaster Relief Registration",
+  "category": "Disaster & Emergency",
+  "keywords": ["disaster relief", "earthquake", "flood support"],
+  "department": "Local Government",
+  "cost": "Free",
+  "time_required": "Case-based",
+  "documents_required": ["Citizenship"],
+  "description": "Relief registration for disaster-affected citizens"
+},
+{
+  "service_name": "Vehicle Ownership Transfer",
+  "category": "Transport & Vehicles",
+  "keywords": ["vehicle transfer", "bluebook transfer"],
+  "department": "Transport Management Office",
+  "cost": "NPR 1,500–5,000",
+  "time_required": "1–3 days",
+  "documents_required": [
+    "Bluebook",
+    "Citizenship",
+    "Tax clearance"
+  ],
+  "description": "Transfer of vehicle ownership after sale"
+},
+{
+  "service_name": "Vehicle Tax Renewal",
+  "category": "Transport & Vehicles",
+  "keywords": ["vehicle tax", "bluebook renewal"],
+  "department": "Transport Management Office",
+  "cost": "Depends on vehicle",
+  "time_required": "Same day",
+  "documents_required": ["Bluebook"],
+  "description": "Annual renewal of vehicle tax"
+},
+{
+  "service_name": "Individual Labor Approval",
+  "category": "Employment & Foreign Work",
+  "keywords": ["labor approval", "foreign employment"],
+  "department": "Department of Foreign Employment",
+  "cost": "NPR 700–3,000",
+  "time_required": "1–2 days",
+  "documents_required": [
+    "Passport",
+    "Visa",
+    "Contract"
+  ],
+  "description": "Labor approval for individuals going abroad independently"
+},
+{
+  "service_name": "Lost Document Duplicate Request",
+  "category": "Identity & Documents",
+  "keywords": ["lost citizenship", "duplicate document"],
+  "department": "Issuing Authority",
+  "cost": "Varies",
+  "time_required": "7–30 days",
+  "documents_required": [
+    "Police report",
+    "Citizenship copy (if available)"
+  ],
+  "description": "Re-issuance of lost government documents"
+}
+  ]
+}
