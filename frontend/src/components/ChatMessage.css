@@ -39,14 +39,16 @@
 }
 
 .inline-link {
-  color: #3b82f6;
-  text-decoration: underline;
+  color: #3b82f6 !important;
+  text-decoration: underline !important;
   word-break: break-all;
   transition: color 0.2s ease;
+  cursor: pointer !important;
 }
 
 .inline-link:hover {
-  color: #2563eb;
+  color: #2563eb !important;
+  text-decoration: underline !important;
 }
 
 @keyframes speakPulse {
