@@ -38,6 +38,17 @@
   animation: speakPulse 1s infinite;
 }
 
+.inline-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  word-break: break-all;
+  transition: color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: #2563eb;
+}
+
 @keyframes speakPulse {
   0%,
   100% {

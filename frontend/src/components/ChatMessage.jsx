@@ -32,6 +32,29 @@ function ChatMessage({ message }) {
     }
   };
 
+  // Function to convert plain text URLs to clickable links
+  const renderTextWithLinks = (text) => {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const parts = text.split(urlRegex);
+
+    return parts.map((part, index) => {
+      if (part.match(urlRegex)) {
+        return (
+          <a
+            key={index}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-link"
+          >
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
+  };
+
   return (
     <div className={`message ${isUser ? "user" : "assistant"}`}>
       <div className="message-avatar">
@@ -46,6 +69,9 @@ function ChatMessage({ message }) {
         <ReactMarkdown
           components={{
             p: ({ children }) => <p>{children}</p>,
+            text: ({ children }) => (
+              <>{renderTextWithLinks(String(children))}</>
+            ),
             code: ({ inline, children, ...props }) => {
               if (inline) {
                 return <code {...props}>{children}</code>;
