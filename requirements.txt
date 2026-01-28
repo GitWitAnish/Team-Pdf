@@ -1,28 +1,28 @@
 # Core dependencies
-python-dotenv>=1.0.0
-numpy>=1.24.0
+python-dotenv>=1.0.1
+numpy>=2.0.0
 
 # PDF text extraction
-pypdf>=4.0.0
-pymupdf>=1.23.0  
+pypdf>=5.1.0
+pymupdf>=1.25.0
 
 # Embedding model
-sentence-transformers>=2.2.0
+sentence-transformers>=3.3.0
 
 # Vector store
-faiss-cpu>=1.7.4
+faiss-cpu>=1.9.0
 
 # LLM API
-huggingface-hub>=0.20.0
+huggingface-hub>=0.27.0
 
 # Web interface
-streamlit>=1.30.0
+streamlit>=1.41.0
 
-# Voice integration 
-edge-tts>=6.1.0                    # Text-to-Speech
-audio-recorder-streamlit>=0.0.8    # Voice input in Streamlit
-SpeechRecognition>=3.10.0          # Speech-to-Text (Google API)
+# Voice integration
+edge-tts>=6.1.18                   # Text-to-Speech
+audio-recorder-streamlit>=0.0.10   # Voice input in Streamlit
+SpeechRecognition>=3.12.0          # Speech-to-Text (Google API)
 
 # Jupyter notebook support
-jupyter>=1.0.0
-ipykernel>=6.0.0
+jupyter>=1.1.0
+ipykernel>=6.29.0
