@@ -52,8 +52,7 @@ function ChatInput({ onSend, disabled }) {
         </div>
       </form>
       <p className="input-disclaimer">
-        Nepal Legal AI can make mistakes. Consider verifying important legal
-        information.
+        This AI can make mistakes. This is information not advice, try cousulting real lawyer if needed.
       </p>
     </div>
   );

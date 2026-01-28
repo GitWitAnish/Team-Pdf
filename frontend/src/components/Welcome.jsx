@@ -331,14 +331,14 @@ function Welcome({ onSuggestionClick }) {
   return (
     <div className="welcome-container">
       <div className="welcome-content">
-        {/* <div className="welcome-logo-wrapper">
+        <div className="welcome-logo-wrapper">
           <img src={logo} alt="Nyaya.exe" className="welcome-logo" />
-        </div> */}
+        </div> 
 
-        {/* <h1 className="welcome-title">Nyaya.exe</h1>
+        <h1 className="welcome-title">Nyaya.exe</h1>
         <p className="welcome-subtitle">
           Your Legal Assistant for Nepalese Laws and Government Services
-        </p> */}
+        </p> 
 
         {!selectedCategory ? (
           <div className="categories-grid">
