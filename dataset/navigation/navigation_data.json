@@ -1205,6 +1205,66 @@
     "Citizenship copy (if available)"
   ],
   "description": "Re-issuance of lost government documents"
+},
+{
+  "emergency_services": [
+    {
+      "name": "Nepal Police",
+      "short_number": "100",
+      "charge": "Free"
+    },
+    {
+      "name": "Fire Support",
+      "short_number": "101",
+      "charge": "Free"
+    },
+    {
+      "name": "Ambulance Support",
+      "short_number": "102",
+      "charge": "Free"
+    },
+    {
+      "name": "Traffic Support",
+      "short_number": "103",
+      "charge": "Free"
+    },
+    {
+      "name": "Missing Child Response",
+      "short_number": "104",
+      "charge": "Free"
+    },
+    {
+      "name": "CIAA (Commission for the Investigation of Abuse of Authority)",
+      "short_number": "107",
+      "charge": "Free"
+    },
+    {
+      "name": "Child Helpline",
+      "short_number": "1098",
+      "charge": "Free"
+    },
+    {
+      "name": "Armed Police Force Support",
+      "short_number": "1114",
+      "charge": "Free"
+    },
+    {
+      "name": "Women Helpline",
+      "short_number": "1145",
+      "charge": "Free"
+    },
+    {
+      "name": "NEA Helpline",
+      "short_number": "1149",
+      "charge": "Free"
+    },
+    {
+      "name": "Patan Mental Hospital",
+      "short_number": "1166",
+      "charge": "Free"
+    }
+  ]
 }
+
   ]
 }
