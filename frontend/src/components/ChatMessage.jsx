@@ -37,16 +37,6 @@ function ChatMessage({ message }) {
       <div className="message-avatar">{isUser ? "A" : <Scale size={18} />}</div>
 
       <div className="message-content">
-        {!isUser && (
-          <button
-            className={`speak-button ${isSpeaking ? "speaking" : ""}`}
-            onClick={handleSpeak}
-            title={isSpeaking ? "Stop speaking" : "Read aloud"}
-          >
-            {isSpeaking ? <VolumeX size={18} /> : <Volume2 size={18} />}
-          </button>
-        )}
-
         <ReactMarkdown
           components={{
             p: ({ children }) => <p>{children}</p>,
@@ -65,6 +55,16 @@ function ChatMessage({ message }) {
         >
           {message.content || ""}
         </ReactMarkdown>
+
+        {!isUser && (
+          <button
+            className={`speak-button ${isSpeaking ? "speaking" : ""}`}
+            onClick={handleSpeak}
+            title={isSpeaking ? "Stop speaking" : "Read aloud"}
+          >
+            {isSpeaking ? <VolumeX size={18} /> : <Volume2 size={18} />}
+          </button>
+        )}
 
         {!isUser && message.sources && (
           <div className="sources-section">

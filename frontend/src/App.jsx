@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Sidebar from "./components/Sidebar.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Welcome from "./components/Welcome.jsx";
@@ -106,11 +107,26 @@ function App() {
             <Welcome onSuggestionClick={handleSuggestionClick} />
           ) : (
             <div className="messages-container">
-              {messages.map((message, index) => (
-                <ChatMessage key={index} message={message} />
-              ))}
+              <AnimatePresence>
+                {messages.map((message, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <ChatMessage message={message} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
               {isLoading && (
-                <div className="message assistant">
+                <motion.div
+                  className="message assistant"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
                   <div className="message-avatar">⚖️</div>
                   <div className="message-content">
                     <div className="typing-indicator">
@@ -119,7 +135,7 @@ function App() {
                       <span></span>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               )}
               <div ref={messagesEndRef} />
             </div>

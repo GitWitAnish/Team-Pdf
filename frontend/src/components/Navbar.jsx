@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { PanelLeft, Share, MoreHorizontal, Layers, List } from "lucide-react";
 import logo from "/logo.jpeg";
 import "./Navbar.css";
@@ -12,36 +13,59 @@ function Navbar({
   onToggleCategoriesMode,
 }) {
   return (
-    <nav className="navbar">
+    <motion.nav
+      className="navbar"
+      initial={{ y: -56, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.4 }}
+    >
       <div className="navbar-left">
         {!sidebarOpen && (
-          <button
+          <motion.button
             className="navbar-btn"
             onClick={onToggleSidebar}
             aria-label="Open sidebar"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <PanelLeft size={20} />
-          </button>
+          </motion.button>
         )}
-        <img src={logo} alt="VIDHI.AI" className="navbar-logo" />
+        <motion.img
+          src={logo}
+          alt="VIDHI.AI"
+          className="navbar-logo"
+          whileHover={{ rotate: 360 }}
+          transition={{ duration: 0.5 }}
+        />
         <span className="navbar-title">VIDHI.AI</span>
       </div>
       <div className="navbar-right">
-        <button
+        <motion.button
           className={`navbar-btn categories-btn ${showingCategories ? "active" : ""}`}
           onClick={onToggleCategories}
           aria-label="Toggle categories view"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.2 }}
         >
           <Layers size={18} />
           <span className="btn-text">
             {showingCategories ? "Hide Categories" : "Show Categories"}
           </span>
-        </button>
+        </motion.button>
         {showingCategories && (
-          <button
+          <motion.button
             className="navbar-btn toggle-mode-btn"
             onClick={onToggleCategoriesMode}
             aria-label="Toggle view mode"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.2 }}
           >
             {/* {categoriesViewMode === "categories" ? (
               <>
@@ -54,13 +78,13 @@ function Navbar({
                 <span className="btn-text">Show Categories</span>
               </>
             )} */}
-          </button>
+          </motion.button>
         )}
         <button className="navbar-btn" aria-label="Share">
           <Share size={18} />
         </button>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
 
