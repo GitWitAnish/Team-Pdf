@@ -34,7 +34,13 @@ function ChatMessage({ message }) {
 
   return (
     <div className={`message ${isUser ? "user" : "assistant"}`}>
-      <div className="message-avatar">{isUser ? "A" : <Scale size={18} />}</div>
+      <div className="message-avatar">
+        {isUser ? (
+          "A"
+        ) : (
+          <img src="/logo.jpeg" alt="VIDHI.AI" className="avatar-logo" />
+        )}
+      </div>
 
       <div className="message-content">
         <ReactMarkdown

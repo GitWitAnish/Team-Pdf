@@ -82,9 +82,18 @@
 }
 
 .message.assistant .message-avatar {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: transparent;
   color: white;
-  border-radius: 4px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.avatar-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .message-content {

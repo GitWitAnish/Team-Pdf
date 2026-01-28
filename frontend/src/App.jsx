@@ -127,7 +127,13 @@ function App() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="message-avatar">⚖️</div>
+                  <div className="message-avatar">
+                    <img
+                      src="/logo.jpeg"
+                      alt="VIDHI.AI"
+                      className="avatar-logo"
+                    />
+                  </div>
                   <div className="message-content">
                     <div className="typing-indicator">
                       <span></span>
