@@ -57,33 +57,35 @@ function ChatMessage({ message }) {
         </ReactMarkdown>
 
         {!isUser && (
-          <button
-            className={`speak-button ${isSpeaking ? "speaking" : ""}`}
-            onClick={handleSpeak}
-            title={isSpeaking ? "Stop speaking" : "Read aloud"}
-          >
-            {isSpeaking ? <VolumeX size={18} /> : <Volume2 size={18} />}
-          </button>
-        )}
-
-        {!isUser && message.sources && (
-          <div className="sources-section">
+          <div className="message-actions">
             <button
-              className="sources-toggle"
-              onClick={() => setSourcesExpanded(!sourcesExpanded)}
+              className={`speak-button ${isSpeaking ? "speaking" : ""}`}
+              onClick={handleSpeak}
+              title={isSpeaking ? "Stop speaking" : "Read aloud"}
             >
-              <FileText size={16} />
-              <span>Sources</span>
-              {sourcesExpanded ? (
-                <ChevronUp size={16} />
-              ) : (
-                <ChevronDown size={16} />
-              )}
+              {isSpeaking ? <VolumeX size={18} /> : <Volume2 size={18} />}
             </button>
 
-            {sourcesExpanded && (
-              <div className="sources-content">
-                <ReactMarkdown>{message.sources || ""}</ReactMarkdown>
+            {message.sources && (
+              <div className="sources-section">
+                <button
+                  className="sources-toggle"
+                  onClick={() => setSourcesExpanded(!sourcesExpanded)}
+                >
+                  <FileText size={16} />
+                  <span>Sources</span>
+                  {sourcesExpanded ? (
+                    <ChevronUp size={16} />
+                  ) : (
+                    <ChevronDown size={16} />
+                  )}
+                </button>
+
+                {sourcesExpanded && (
+                  <div className="sources-content">
+                    <ReactMarkdown>{message.sources || ""}</ReactMarkdown>
+                  </div>
+                )}
               </div>
             )}
           </div>
