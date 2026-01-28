@@ -1,7 +1,7 @@
 /* ChatGPT-style Navbar */
 .navbar {
   height: 56px;
-  background-color: #212121;
+  background-color: #141b2d;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 40;
+  border-bottom: 1px solid #1e2a45;
 }
 
 .navbar-left {
@@ -36,7 +37,7 @@
   background-color: transparent;
   border: none;
   border-radius: 0.5rem;
-  color: #b4b4b4;
+  color: #9ca3af;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -52,12 +53,12 @@
 }
 
 .navbar-btn.categories-btn.active {
-  background-color: #3b82f6;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
   color: white;
 }
 
 .navbar-btn.categories-btn.active:hover {
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   color: white;
 }
 
@@ -68,14 +69,14 @@
 }
 
 .navbar-btn:hover {
-  background-color: #2f2f2f;
-  color: #ececec;
+  background-color: #1e2a45;
+  color: #e8eaf0;
 }
 
 .navbar-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #ececec;
+  color: #e8eaf0;
 }
 
 /* Mobile styles */
@@ -83,7 +84,7 @@
   .navbar {
     padding: 0 0.75rem;
   }
-  
+
   .navbar-title {
     font-size: 0.9375rem;
   }
@@ -99,5 +100,3 @@
     padding: 0;
   }
 }
-  
-

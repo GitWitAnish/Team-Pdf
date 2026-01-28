@@ -332,10 +332,10 @@ function Welcome({ onSuggestionClick }) {
     <div className="welcome-container">
       <div className="welcome-content">
         <div className="welcome-logo-wrapper">
-          <img src={logo} alt="Nyaya.exe" className="welcome-logo" />
+          <img src={logo} alt="VIDHI.AI" className="welcome-logo" />
         </div>
 
-        <h1 className="welcome-title">Nyaya.exe</h1>
+        <h1 className="welcome-title">VIDHI.AI</h1>
         <p className="welcome-subtitle">
           Your Legal Assistant for Nepalese Laws and Government Services
         </p>
@@ -361,7 +361,6 @@ function Welcome({ onSuggestionClick }) {
         ) : (
           <div className="subcategories-view">
             <div className="subcategory-header-wrapper">
-              
               <button className="back-button" onClick={handleBack}>
                 <ArrowLeft size={20} />
               </button>

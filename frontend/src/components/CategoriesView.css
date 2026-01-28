@@ -24,12 +24,12 @@
 .categories-header-section h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #e8eaf0;
   margin-bottom: 0.5rem;
 }
 
 .categories-subtitle {
-  color: #6b7280;
+  color: #9ca3af;
   font-size: 1rem;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .category-card {
-  background: white;
-  border: 1px solid #e5e7eb;
+  background: linear-gradient(135deg, #1e2a45 0%, #141b2d 100%);
+  border: 1px solid #2c3e5f;
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.2s;
@@ -51,8 +51,9 @@
 
 .category-card:hover {
   border-color: #3b82f6;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
   transform: translateY(-2px);
+  background: linear-gradient(135deg, #2c3e5f 0%, #1e2a45 100%);
 }
 
 .category-card-header {
@@ -61,19 +62,19 @@
   align-items: flex-start;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #f3f4f6;
+  border-bottom: 2px solid #1e2a45;
 }
 
 .category-card-header h3 {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #e8eaf0;
   margin: 0;
   flex: 1;
 }
 
 .service-count {
-  background: #eff6ff;
+  background: rgba(59, 130, 246, 0.15);
   color: #3b82f6;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
@@ -95,7 +96,7 @@
   padding: 0.5rem;
   border-radius: 6px;
   font-size: 0.875rem;
-  color: #4b5563;
+  color: #9ca3af;
   transition: all 0.15s;
 }
 

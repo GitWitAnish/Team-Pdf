@@ -23,8 +23,8 @@ function Navbar({
             <PanelLeft size={20} />
           </button>
         )}
-        <img src={logo} alt="Nyaya.exe" className="navbar-logo" />
-        <span className="navbar-title">Nyaya.exe</span>
+        <img src={logo} alt="VIDHI.AI" className="navbar-logo" />
+        <span className="navbar-title">VIDHI.AI</span>
       </div>
       <div className="navbar-right">
         <button

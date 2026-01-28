@@ -25,7 +25,7 @@
   justify-content: center;
   margin-bottom: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .welcome-logo {
@@ -38,13 +38,13 @@
 .welcome-title {
   font-size: 1.75rem;
   font-weight: 600;
-  color: #ececec;
+  color: #e8eaf0;
   margin-bottom: 0.5rem;
 }
 
 .welcome-subtitle {
   font-size: 1rem;
-  color: #8e8e8e;
+  color: #9ca3af;
   margin-bottom: 2rem;
 }
 
@@ -64,25 +64,31 @@
   justify-content: center;
   gap: 0.75rem;
   padding: 1.5rem 1rem;
-  background-color: transparent;
-  border: 1px solid #424242;
+  background: linear-gradient(135deg, #1e2a45 0%, #141b2d 100%);
+  border: 1px solid #2c3e5f;
   border-radius: 1rem;
-  color: #ececec;
+  color: #e8eaf0;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.3s ease;
   min-height: 120px;
 }
 
 .category-card:hover {
-  background-color: #2f2f2f;
-  border-color: #565656;
+  background: linear-gradient(135deg, #2c3e5f 0%, #1e2a45 100%);
+  border-color: #ef4444;
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.2);
 }
 
 .category-icon {
-  color: #6ea8fe;
+  color: #ef4444;
   flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.1);
 }
 
 .category-content {
@@ -94,13 +100,13 @@
 .category-title {
   font-size: 0.9375rem;
   font-weight: 500;
-  color: #ececec;
+  color: #e8eaf0;
   line-height: 1.3;
 }
 
 .category-title-nepali {
   font-size: 0.8125rem;
-  color: #8e8e8e;
+  color: #9ca3af;
 }
 
 /* Subcategories View */
@@ -122,17 +128,18 @@
   justify-content: center;
   padding: 0.5rem;
   margin-top: 0.5rem;
-  background-color: transparent;
-  border: 1px solid #424242;
+  background-color: #1e2a45;
+  border: 1px solid #2c3e5f;
   border-radius: 0.5rem;
-  color: #ececec;
+  color: #e8eaf0;
   cursor: pointer;
   transition: all 0.15s ease;
   flex-shrink: 0;
 }
 
 .back-button:hover {
-  background-color: #2f2f2f;
+  background-color: #2c3e5f;
+  border-color: #3b82f6;
 }
 
 .subcategory-header {
@@ -141,13 +148,17 @@
   gap: 1rem;
   padding: 1rem;
   flex: 1;
-  background-color: rgba(110, 168, 254, 0.1);
-  border: 1px solid #424242;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(30, 42, 69, 0.5) 100%
+  );
+  border: 1px solid #2c3e5f;
   border-radius: 1rem;
 }
 
 .subcategory-header-icon {
-  color: #6ea8fe;
+  color: #3b82f6;
   flex-shrink: 0;
 }
 
@@ -158,13 +169,13 @@
 .subcategory-header-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #ececec;
+  color: #e8eaf0;
   margin: 0;
 }
 
 .subcategory-header-nepali {
   font-size: 0.9375rem;
-  color: #8e8e8e;
+  color: #9ca3af;
   margin: 0.25rem 0 0 0;
 }
 
@@ -182,10 +193,10 @@
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
-  background-color: transparent;
-  border: 1px solid #424242;
+  background: linear-gradient(135deg, #1e2a45 0%, #141b2d 100%);
+  border: 1px solid #2c3e5f;
   border-radius: 1rem;
-  color: #ececec;
+  color: #e8eaf0;
   text-align: left;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -193,8 +204,9 @@
 }
 
 .suggestion-card:hover {
-  background-color: #2f2f2f;
-  border-color: #565656;
+  background: linear-gradient(135deg, #2c3e5f 0%, #1e2a45 100%);
+  border-color: #10b981;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
 }
 
 .suggestion-content {
@@ -206,17 +218,17 @@
 .suggestion-title {
   font-size: 0.9375rem;
   font-weight: 500;
-  color: #ececec;
+  color: #e8eaf0;
 }
 
 .suggestion-text {
   font-size: 0.8125rem;
-  color: #8e8e8e;
+  color: #9ca3af;
   line-height: 1.4;
 }
 
 .suggestion-icon {
-  color: #8e8e8e;
+  color: #10b981;
   flex-shrink: 0;
   margin-top: 0.125rem;
 }
@@ -232,20 +244,20 @@
   .categories-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .suggestions-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .welcome-title {
     font-size: 1.5rem;
   }
-  
+
   .welcome-logo-wrapper {
     width: 56px;
     height: 56px;
   }
-  
+
   .suggestion-card {
     padding: 0.875rem;
   }
@@ -255,4 +267,3 @@
     min-height: 100px;
   }
 }
-

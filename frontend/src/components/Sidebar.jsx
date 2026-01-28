@@ -12,8 +12,8 @@ function Sidebar({ isOpen, onToggle, onNewChat }) {
       <aside className={`sidebar ${isOpen ? "open" : "closed"}`}>
         <div className="sidebar-top">
           <div className="sidebar-logo-section">
-            <img src={logo} alt="Nyaya.exe" className="sidebar-logo" />
-            {/* <span className="sidebar-logo-text">Nyaya.exe</span> */}
+            <img src={logo} alt="VIDHI.AI" className="sidebar-logo" />
+            {/* <span className="sidebar-logo-text">VIDHI.AI</span> */}
           </div>
           <button
             className="sidebar-close-btn"

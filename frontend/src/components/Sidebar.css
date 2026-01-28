@@ -2,7 +2,7 @@
 .sidebar {
   width: 260px;
   height: 100vh;
-  background-color: #171717;
+  background-color: #141b2d;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -12,6 +12,7 @@
   transition:
     transform 0.3s ease,
     width 0.3s ease;
+  border-right: 1px solid #1e2a45;
 }
 
 .sidebar.closed {
@@ -43,7 +44,7 @@
 .sidebar-logo-text {
   font-size: 1rem;
   font-weight: 600;
-  color: #ececec;
+  color: #e8eaf0;
   letter-spacing: -0.01em;
 }
 
@@ -57,10 +58,10 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1rem;
-  background-color: transparent;
-  border: 1px solid #424242;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border: none;
   border-radius: 0.5rem;
-  color: #ececec;
+  color: white;
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
@@ -68,7 +69,8 @@
 }
 
 .new-chat-btn:hover {
-  background-color: #2f2f2f;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  transform: translateY(-1px);
 }
 
 .sidebar-close-btn {
@@ -77,7 +79,7 @@
   background-color: transparent;
   border: none;
   border-radius: 0.5rem;
-  color: #b4b4b4;
+  color: #9ca3af;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -87,8 +89,8 @@
 }
 
 .sidebar-close-btn:hover {
-  background-color: #2f2f2f;
-  color: #ececec;
+  background-color: #1e2a45;
+  color: #e8eaf0;
 }
 
 .sidebar-content {
@@ -105,7 +107,7 @@
   display: block;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #8e8e8e;
+  color: #6b7280;
   padding: 0.5rem 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -117,7 +119,7 @@
 
 .sidebar-divider {
   height: 1px;
-  background-color: #2f2f2f;
+  background-color: #1e2a45;
   margin-bottom: 0.75rem;
 }
 
@@ -131,14 +133,14 @@
 }
 
 .user-section:hover {
-  background-color: #2f2f2f;
+  background-color: #1e2a45;
 }
 
 .user-avatar {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #10a37f 0%, #1a7f64 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   display: flex;
   align-items: center;
   justify-content: center;

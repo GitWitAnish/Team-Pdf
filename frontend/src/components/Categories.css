@@ -25,14 +25,14 @@
 .categories-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #ececec;
+  color: #e8eaf0;
   margin: 0 0 0.5rem 0;
   letter-spacing: -0.02em;
 }
 
 .categories-subtitle {
   font-size: 1rem;
-  color: #8e8e8e;
+  color: #9ca3af;
   margin: 0;
 }
 
@@ -56,7 +56,7 @@
   gap: 1rem;
   padding: 1rem 0.5rem;
   margin-bottom: 0.75rem;
-  border-bottom: 2px solid #2f2f2f;
+  border-bottom: 2px solid #1e2a45;
 }
 
 .category-header-icon {
@@ -65,7 +65,7 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, #10a37f 0%, #1a7f64 100%);
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   border-radius: 0.75rem;
   color: #fff;
   flex-shrink: 0;
@@ -78,14 +78,14 @@
 .category-header-title {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #ececec;
+  color: #e8eaf0;
   margin: 0;
   line-height: 1.3;
 }
 
 .category-header-nepali {
   font-size: 0.875rem;
-  color: #8e8e8e;
+  color: #9ca3af;
   margin: 0.25rem 0 0 0;
 }
 
@@ -103,12 +103,8 @@
   align-items: center;
   gap: 0.875rem;
   padding: 1rem;
-  background: linear-gradient(
-    135deg,
-    rgba(47, 47, 47, 0.4) 0%,
-    rgba(33, 33, 33, 0.4) 100%
-  );
-  border: 1px solid #424242;
+  background: linear-gradient(135deg, #1e2a45 0%, #141b2d 100%);
+  border: 1px solid #2c3e5f;
   border-radius: 0.75rem;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -116,14 +112,10 @@
 }
 
 .subcategory-card:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(16, 163, 127, 0.15) 0%,
-    rgba(47, 47, 47, 0.6) 100%
-  );
-  border-color: #10a37f;
+  background: linear-gradient(135deg, #2c3e5f 0%, #1e2a45 100%);
+  border-color: #3b82f6;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(16, 163, 127, 0.2);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
 .subcategory-icon {
@@ -132,7 +124,7 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, #10a37f 0%, #1a7f64 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   border-radius: 0.5rem;
   color: #fff;
   flex-shrink: 0;
@@ -149,13 +141,13 @@
 .subcategory-title {
   font-size: 0.9375rem;
   font-weight: 600;
-  color: #ececec;
+  color: #e8eaf0;
   line-height: 1.3;
 }
 
 .subcategory-text {
   font-size: 0.8125rem;
-  color: #8e8e8e;
+  color: #9ca3af;
   line-height: 1.3;
 }
 
@@ -169,7 +161,7 @@
 }
 
 .categories-container::-webkit-scrollbar-thumb {
-  background-color: #424242;
+  background-color: #1e2a45;
   border-radius: 4px;
 }
 
