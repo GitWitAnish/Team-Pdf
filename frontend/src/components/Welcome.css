@@ -267,3 +267,63 @@
     min-height: 100px;
   }
 }
+
+/* Subcategories List */
+.category-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.subcategories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.subcategory-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #0a0e1a 0%, #141b2d 100%);
+  border: 1px solid #1e2a45;
+  border-radius: 0.75rem;
+  color: #e8eaf0;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.subcategory-item:hover {
+  background: linear-gradient(135deg, #1e2a45 0%, #0a0e1a 100%);
+  border-color: #3b82f6;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.subcategory-icon {
+  color: #3b82f6;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.subcategory-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  flex: 1;
+}
+
+.subcategory-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e8eaf0;
+}
+
+.subcategory-nepali {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
