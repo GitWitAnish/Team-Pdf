@@ -13,8 +13,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  const [showCategories, setShowCategories] = useState(false);
-  const [categoriesViewMode, setCategoriesViewMode] = useState("categories");
+  const [showSubcategories, setShowSubcategories] = useState(false);
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -91,20 +90,16 @@ function App() {
         <Navbar
           sidebarOpen={sidebarOpen}
           onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
-          onToggleCategories={handleToggleCategories}
-          showingCategories={showCategories}
-          categoriesViewMode={categoriesViewMode}
-          onToggleCategoriesMode={handleToggleCategoriesMode}
+          showSubcategories={showSubcategories}
+          onToggleSubcategories={() => setShowSubcategories(!showSubcategories)}
         />
 
         <div className="chat-container">
-          {showCategories ? (
-            <CategoriesView
-              onServiceClick={handleServiceClick}
-              viewMode={categoriesViewMode}
+          {messages.length === 0 ? (
+            <Welcome
+              onSuggestionClick={handleSuggestionClick}
+              showSubcategories={showSubcategories}
             />
-          ) : messages.length === 0 ? (
-            <Welcome onSuggestionClick={handleSuggestionClick} />
           ) : (
             <div className="messages-container">
               <AnimatePresence>

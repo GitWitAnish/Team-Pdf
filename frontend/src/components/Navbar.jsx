@@ -7,10 +7,8 @@ import "./Navbar.css";
 function Navbar({
   sidebarOpen,
   onToggleSidebar,
-  onToggleCategories,
-  showingCategories,
-  categoriesViewMode,
-  onToggleCategoriesMode,
+  showSubcategories,
+  onToggleSubcategories,
 }) {
   return (
     <motion.nav
@@ -44,42 +42,25 @@ function Navbar({
       </div>
       <div className="navbar-right">
         <motion.button
-          className={`navbar-btn categories-btn ${showingCategories ? "active" : ""}`}
-          onClick={onToggleCategories}
-          aria-label="Toggle categories view"
+          className="navbar-btn toggle-mode-btn"
+          onClick={onToggleSubcategories}
+          aria-label="Toggle subcategories view"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.2 }}
         >
-          <Layers size={18} />
-          <span className="btn-text">
-            {showingCategories ? "Hide Categories" : "Show Categories"}
-          </span>
+          {showSubcategories ? (
+            <>
+              <Layers size={18} />
+              <span className="btn-text">Show Categories</span>
+            </>
+          ) : (
+            <>
+              <List size={18} />
+              <span className="btn-text">Show Subcategories</span>
+            </>
+          )}
         </motion.button>
-        {showingCategories && (
-          <motion.button
-            className="navbar-btn toggle-mode-btn"
-            onClick={onToggleCategoriesMode}
-            aria-label="Toggle view mode"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-          >
-            {/* {categoriesViewMode === "categories" ? (
-              <>
-                <List size={18} />
-                <span className="btn-text">Show All Services</span>
-              </>
-            ) : (
-              <>
-                <Layers size={18} />
-                <span className="btn-text">Show Categories</span>
-              </>
-            )} */}
-          </motion.button>
-        )}
         <button className="navbar-btn" aria-label="Share">
           <Share size={18} />
         </button>
