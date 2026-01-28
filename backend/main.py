@@ -119,7 +119,8 @@ async def search_and_answer(request: SearchRequest):
         if request.use_llm:
             try:
                 context = [h["text"] for h in hits]
-                answer = generate_answer(request.question, context, model=request.llm_model)
+                metadata = [h.get("metadata", {}) for h in hits]
+                answer = generate_answer(request.question, context, chunk_metadata=metadata, model=request.llm_model)
                 return SearchResponse(answer=answer, sources=sources_text)
             except Exception as e:
                 return SearchResponse(

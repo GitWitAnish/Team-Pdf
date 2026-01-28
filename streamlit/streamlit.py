@@ -121,7 +121,8 @@ def search_and_answer(question: str, model, store) -> tuple[str, str]:
     
     try:
         context = [h["text"] for h in hits]
-        answer = generate_answer(question, context, model=DEFAULT_LLM_MODEL)
+        metadata = [h.get("metadata", {}) for h in hits]
+        answer = generate_answer(question, context, chunk_metadata=metadata, model=DEFAULT_LLM_MODEL)
         return answer, sources_text
     except Exception as e:
         return f" Error generating response: {e}", sources_text
