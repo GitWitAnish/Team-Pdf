@@ -1,5 +1,6 @@
 import React from "react";
 import { PanelLeft, Share, MoreHorizontal } from "lucide-react";
+import logo from "/logo.jpeg";
 import "./Navbar.css";
 
 function Navbar({ sidebarOpen, onToggleSidebar }) {
@@ -15,6 +16,7 @@ function Navbar({ sidebarOpen, onToggleSidebar }) {
             <PanelLeft size={20} />
           </button>
         )}
+        <img src={logo} alt="Nyaya.exe" className="navbar-logo" />
         <span className="navbar-title">Nyaya.exe</span>
       </div>
       <div className="navbar-right">

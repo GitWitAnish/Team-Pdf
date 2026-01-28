@@ -17,6 +17,13 @@
   gap: 0.5rem;
 }
 
+.navbar-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .navbar-right {
   display: flex;
   align-items: center;

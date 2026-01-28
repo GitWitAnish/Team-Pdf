@@ -69,12 +69,18 @@ async def startup_event():
     model = EmbeddingModel()
     
     print("Loading FAISS vector store...")
-    store = FaissVectorStore()
+    # Use absolute paths from project root
     index_path = ROOT / "database" / "legal_faiss.index"
+    metadata_path = ROOT / "database" / "legal_faiss_meta.json"
     
-    if index_path.exists():
+    store = FaissVectorStore(
+        index_path=index_path,
+        metadata_path=metadata_path
+    )
+    
+    if index_path.exists() and metadata_path.exists():
         store.load()
-        print("FAISS index loaded successfully!")
+        print(f"FAISS index loaded successfully! ({len(store.metadata)} chunks)")
     else:
         print("Building FAISS index from processed documents...")
         store.build(processed_dir=ROOT / "dataset" / "processed", embedding_model=model)
