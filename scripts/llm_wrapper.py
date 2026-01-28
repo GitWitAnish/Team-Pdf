@@ -75,48 +75,44 @@ def generate_answer(
     # Detect query type for better prompting
     query_type = detect_query_type(question, context_chunks)
     
-    context = "\n\n---\n\n".join(context_chunks)
+    # Build context with source attribution
+    if chunk_metadata:
+        context_parts = []
+        for i, (chunk, meta) in enumerate(zip(context_chunks, chunk_metadata)):
+            source = meta.get("title") or meta.get("filename") or "Unknown Source"
+            context_parts.append(f"[Source: {source}]\n{chunk}")
+        context = "\n\n---\n\n".join(context_parts)
+    else:
+        context = "\n\n---\n\n".join(context_chunks)
     
     # Dynamic system prompt based on query type
     if query_type == "navigation":
         system_prompt = """You are a helpful government services assistant for Nepal.
 Your task is to guide users through government procedures, services, and processes.
 
-**CRITICAL: You must ONLY use information from the provided context. Do NOT use your general knowledge or training data to answer questions. If the answer is not in the provided context, clearly state that you don't have that information in your available documents.**
-
-**IMPORTANT - ALWAYS EXTRACT AND INCLUDE THESE DETAILS FROM THE CONTEXT (when present):**
-- **Phone Number(s)**: Extract and display ALL phone numbers exactly as they appear
-- **Office Address**: Include the full address/location
-- **Online Links/Portals**: Include any URLs or website links
-- **Cost/Fees**: Include exact amounts
-- **Time Required**: Include processing time
-- **Department/Office Name**: Include the responsible office/department
-- **Contact Information**: Any email, fax, or other contact details
+**CRITICAL: You must ONLY use information from the provided context. Do NOT use your general knowledge or training data. If the answer is not in the provided context, clearly state that you don't have that information in your available documents.**
 
 Guidelines:
-1. Provide clear, step-by-step instructions when explaining procedures ONLY if they appear in the context.
-2. Include all required documents, costs, and time estimates ONLY when explicitly mentioned in the context.
-3. **ALWAYS include a "Contact Information" section at the end with phone numbers, addresses, and online links found in the context.**
-4. Include online portals or links ONLY if available in the context.
-5. Be practical and actionable - help people navigate bureaucracy.
-6. If the context does not contain relevant information, respond with: "I don't have information about this in my available documents. Please consult the relevant government office for accurate guidance."
-7. Use numbered lists for steps and bullet points for documents.
-8. Always end with a brief "**TL;DR:**" summary with the key action items."""
+1. Provide clear, step-by-step instructions when explaining procedures.
+2. Include all relevant details from the context (documents needed, costs, fees, time, locations, phone numbers, links, etc.) naturally in your answer.
+3. Be practical and actionable - help people navigate bureaucracy.
+4. If the context does not contain relevant information, say: "I don't have information about this in my available documents."
+5. Use numbered lists for steps and bullet points for documents.
+6. End with a brief "**TL;DR:**" summary."""
 
     elif query_type == "legal":
         system_prompt = """You are a legal assistant specializing in Nepali law.
 Your task is to answer questions based STRICTLY on the provided legal document excerpts.
 
-**CRITICAL: You must ONLY use information from the provided context. Do NOT use your general knowledge, training data, or assumptions to answer questions. If the specific legal information is not in the provided context, clearly state that you don't have that information in your available documents.**
+**CRITICAL: You must ONLY use information from the provided context. Do NOT use your general knowledge or training data. If the specific legal information is not in the provided context, clearly state that you don't have that information.**
 
 Guidelines:
 1. Answer the question using ONLY the information from the provided context.
-2. If the context contains relevant information, provide a clear and helpful answer with exact citations.
-3. Cite the specific law, section, or article exactly as it appears in the context (e.g., "According to Section 5 of the Citizenship Act...").
-4. If the context does not contain relevant information, respond with: "I don't have information about this specific legal question in my available documents. Please consult the relevant legal text or a qualified legal professional."
-5. NEVER make up or infer legal provisions that are not explicitly stated in the context.
-6. Be thorough but concise.
-7. Always end your response with a brief "**TL;DR:**" paragraph that summarizes the key point in 1-2 sentences."""
+2. Always cite the source document name along with section/article (e.g., "According to Section 38 of the Constitution of Nepal...").
+3. If the context does not contain relevant information, say: "I don't have information about this specific legal question in my available documents."
+4. NEVER make up or infer legal provisions not explicitly stated in the context.
+5. Be thorough but concise.
+6. End with a brief "**TL;DR:**" paragraph."""
 
     else:  # mixed
         system_prompt = """You are a helpful assistant specializing in Nepali law and government services.
@@ -124,38 +120,24 @@ You can answer both:
 - Legal questions about laws, acts, and constitutional provisions
 - Procedural questions about how to apply for services, required documents, etc.
 
-**CRITICAL: You must ONLY use information from the provided context. Do NOT use your general knowledge, training data, or assumptions to answer questions. If the answer is not in the provided context, clearly state that you don't have that information in your available documents.**
-
-**IMPORTANT - ALWAYS EXTRACT AND INCLUDE THESE DETAILS FROM THE CONTEXT (when present):**
-- **Phone Number(s)**: Extract and display ALL phone numbers exactly as they appear
-- **Office Address**: Include the full address/location
-- **Online Links/Portals**: Include any URLs or website links
-- **Cost/Fees**: Include exact amounts
-- **Time Required**: Include processing time
-- **Department/Office Name**: Include the responsible office/department
+**CRITICAL: You must ONLY use information from the provided context. Do NOT use your general knowledge or training data. If the answer is not in the provided context, clearly state that you don't have that information.**
 
 Guidelines:
-1. For legal questions: Cite specific laws, sections, or articles ONLY as they appear in the context.
-2. For procedural questions: Provide step-by-step guidance ONLY if the steps are mentioned in the context.
-3. If both legal and procedural information is relevant in the context, include both.
-4. **ALWAYS include a "Contact Information" section with phone numbers, addresses, and online links found in the context.**
-5. If the context does not contain relevant information, respond with: "I don't have information about this in my available documents. Please consult the relevant authority for accurate information."
-6. NEVER make up information that is not in the provided context.
-7. Always end with a brief "**TL;DR:**" summary."""
+1. For legal questions: Always cite the source document name along with section/article (e.g., "According to Section 38 of the Constitution of Nepal...").
+2. For procedural questions: Provide step-by-step guidance when available in the context.
+3. Include all relevant details from the context naturally in your answer.
+4. If the context does not contain relevant information, say: "I don't have information about this in my available documents."
+5. NEVER make up information not in the provided context.
+6. End with a brief "**TL;DR:**" summary."""
 
-    user_message = f"""Reference Information (THIS IS YOUR ONLY SOURCE OF TRUTH):
+    user_message = f"""Reference Information:
 {context}
 
 ---
 
 Question: {question}
 
-**IMPORTANT INSTRUCTIONS:**
-1. Answer ONLY using the information provided above. If the answer is not in the reference information, say you don't have that information in your available documents. Do NOT use your general knowledge.
-2. **EXTRACT AND INCLUDE all practical details from the context such as: phone numbers, office addresses, locations, costs, time required, online links, and contact information.**
-3. If phone numbers or addresses are in the context, you MUST include them in your response.
-
-Please provide a helpful answer based STRICTLY on the above information. Include all contact details (phone, address, links) found in the context. End with a "**TL;DR:**" summary."""
+Answer the question using ONLY the information provided above. Include all relevant details from the context. End with a "**TL;DR:**" summary."""
 
     # Use chat_completion for conversational models like Llama
     response = client.chat_completion(
