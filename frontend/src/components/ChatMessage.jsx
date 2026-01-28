@@ -57,6 +57,11 @@ function ChatMessage({ message }) {
               );
             },
             blockquote: ({ children }) => <blockquote>{children}</blockquote>,
+            a: ({ href, children }) => (
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                {children}
+              </a>
+            ),
           }}
         >
           {message.content || ""}
