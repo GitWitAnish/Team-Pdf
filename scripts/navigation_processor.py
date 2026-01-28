@@ -135,6 +135,44 @@ def service_to_metadata(service: Dict) -> Dict:
     }
 
 
+def emergency_service_to_text(emergency: Dict) -> str:
+    parts = []
+    
+    name = emergency.get("name", "Unknown Emergency Service")
+    short_number = emergency.get("short_number", "")
+    charge = emergency.get("charge", "")
+    
+    parts.append(f"EMERGENCY SERVICE: {name}")
+    parts.append(f"Category: Emergency & Helpline")
+    parts.append(f"\nDescription: {name} emergency helpline number in Nepal.")
+    parts.append(f"Keywords: emergency, helpline, {name.lower()}, {short_number}, emergency number, nepal emergency")
+    parts.append(f"\nEmergency Number: {short_number}")
+    parts.append(f"Call Charge: {charge}")
+    parts.append(f"\nHow to Use:")
+    parts.append(f"  1. Dial {short_number} from any phone in Nepal")
+    parts.append(f"  2. The call is {charge.lower()} of charge")
+    parts.append(f"  3. Explain your emergency situation clearly")
+    parts.append(f"\nImportant Notes:")
+    parts.append(f"  • This is a {charge.lower()} emergency helpline")
+    parts.append(f"  • Available 24/7 across Nepal")
+    
+    return "\n".join(parts)
+
+
+def emergency_service_to_metadata(emergency: Dict) -> Dict:
+    return {
+        "type": "navigation",
+        "service_name": emergency.get("name", "Unknown Emergency Service"),
+        "category": "Emergency & Helpline",
+        "department": emergency.get("name", ""),
+        "keywords": ["emergency", "helpline", emergency.get("short_number", ""), emergency.get("name", "").lower()],
+        "phone_number": emergency.get("short_number", ""),
+        "charge": emergency.get("charge", ""),
+        "filename": "navigation_data.json",
+        "title": f"{emergency.get('name', 'Emergency')} - {emergency.get('short_number', '')}",
+    }
+
+
 def process_navigation_data() -> Tuple[List[str], List[Dict]]:
 
     data = load_navigation_data()
@@ -144,10 +182,20 @@ def process_navigation_data() -> Tuple[List[str], List[Dict]]:
     metadatas = []
     
     for service in services:
-        text = service_to_text(service)
-        metadata = service_to_metadata(service)
-        texts.append(text)
-        metadatas.append(metadata)
+        # Check if this is an emergency services block
+        if "emergency_services" in service:
+            # Process each emergency service
+            for emergency in service["emergency_services"]:
+                text = emergency_service_to_text(emergency)
+                metadata = emergency_service_to_metadata(emergency)
+                texts.append(text)
+                metadatas.append(metadata)
+        elif "service_name" in service:
+            # Regular service entry
+            text = service_to_text(service)
+            metadata = service_to_metadata(service)
+            texts.append(text)
+            metadatas.append(metadata)
     
     return texts, metadatas
 
