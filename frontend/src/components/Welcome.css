@@ -1,0 +1,257 @@
+/* ChatGPT-style Welcome */
+.welcome-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 56rem;
+  width: 100%;
+}
+
+.welcome-logo-wrapper {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
+}
+
+.welcome-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #ececec;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-subtitle {
+  font-size: 1rem;
+  color: #8e8e8e;
+  margin-bottom: 2rem;
+}
+
+/* Categories Grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 54rem;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #424242;
+  border-radius: 1rem;
+  color: #ececec;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-height: 120px;
+}
+
+.category-card:hover {
+  background-color: #2f2f2f;
+  border-color: #565656;
+  transform: translateY(-2px);
+}
+
+.category-icon {
+  color: #6ea8fe;
+  flex-shrink: 0;
+}
+
+.category-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.category-title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #ececec;
+  line-height: 1.3;
+}
+
+.category-title-nepali {
+  font-size: 0.8125rem;
+  color: #8e8e8e;
+}
+
+/* Subcategories View */
+.subcategories-view {
+  width: 100%;
+  max-width: 54rem;
+}
+
+.subcategory-header-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: transparent;
+  border: 1px solid #424242;
+  border-radius: 0.5rem;
+  color: #ececec;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.back-button:hover {
+  background-color: #2f2f2f;
+}
+
+.subcategory-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex: 1;
+  background-color: rgba(110, 168, 254, 0.1);
+  border: 1px solid #424242;
+  border-radius: 1rem;
+}
+
+.subcategory-header-icon {
+  color: #6ea8fe;
+  flex-shrink: 0;
+}
+
+.subcategory-header-text {
+  flex: 1;
+}
+
+.subcategory-header-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ececec;
+  margin: 0;
+}
+
+.subcategory-header-nepali {
+  font-size: 0.9375rem;
+  color: #8e8e8e;
+  margin: 0.25rem 0 0 0;
+}
+
+/* Suggestions Grid (for subcategories) */
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.suggestion-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid #424242;
+  border-radius: 1rem;
+  color: #ececec;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-height: 80px;
+}
+
+.suggestion-card:hover {
+  background-color: #2f2f2f;
+  border-color: #565656;
+}
+
+.suggestion-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.suggestion-title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #ececec;
+}
+
+.suggestion-text {
+  font-size: 0.8125rem;
+  color: #8e8e8e;
+  line-height: 1.4;
+}
+
+.suggestion-icon {
+  color: #8e8e8e;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .suggestions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+  
+  .welcome-logo-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .suggestion-card {
+    padding: 0.875rem;
+  }
+
+  .category-card {
+    padding: 1.25rem 1rem;
+    min-height: 100px;
+  }
+}
+
