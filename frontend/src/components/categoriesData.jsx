@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   CreditCard,
   UserCheck,
@@ -22,12 +22,9 @@ import {
   Search,
   Image,
   Phone,
-  ArrowLeft,
 } from "lucide-react";
-import logo from "/logo.jpeg";
-import "./Welcome.css";
 
-const categories = [
+export const categories = [
   // 1. PRIORITY: Emergency Contact - Most Important
   {
     id: "consumer-grievances",
@@ -311,96 +308,3 @@ const categories = [
     ],
   },
 ];
-
-function Welcome({ onSuggestionClick }) {
-  const [selectedCategory, setSelectedCategory] = useState(null);
-
-  const handleCategoryClick = (category) => {
-    // If category has only one subcategory, trigger it directly
-    if (category.subcategories.length === 1) {
-      onSuggestionClick(category.subcategories[0].query);
-    } else {
-      setSelectedCategory(category);
-    }
-  };
-
-  const handleBack = () => {
-    setSelectedCategory(null);
-  };
-
-  return (
-    <div className="welcome-container">
-      <div className="welcome-content">
-        <div className="welcome-logo-wrapper">
-          <img src={logo} alt="Nyaya.exe" className="welcome-logo" />
-        </div>
-
-        <h1 className="welcome-title">Nyaya.exe</h1>
-        <p className="welcome-subtitle">
-          Your Legal Assistant for Nepalese Laws and Government Services
-        </p>
-
-        {!selectedCategory ? (
-          <div className="categories-grid">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                className="category-card"
-                onClick={() => handleCategoryClick(category)}
-              >
-                <div className="category-icon">{category.icon}</div>
-                <div className="category-content">
-                  <span className="category-title">{category.title}</span>
-                  <span className="category-title-nepali">
-                    {category.titleNepali}
-                  </span>
-                </div>
-              </button>
-            ))}
-          </div>
-        ) : (
-          <div className="subcategories-view">
-            <div className="subcategory-header-wrapper">
-              
-              <button className="back-button" onClick={handleBack}>
-                <ArrowLeft size={20} />
-              </button>
-              <div className="subcategory-header">
-                <div className="subcategory-header-icon">
-                  {selectedCategory.icon}
-                </div>
-                <div>
-                  <h2 className="subcategory-header-title">
-                    {selectedCategory.title}
-                  </h2>
-                  <p className="subcategory-header-nepali">
-                    {selectedCategory.titleNepali}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="suggestions-grid">
-              {selectedCategory.subcategories.map((subcategory, index) => (
-                <button
-                  key={index}
-                  className="suggestion-card"
-                  onClick={() => onSuggestionClick(subcategory.query)}
-                >
-                  <div className="suggestion-content">
-                    <span className="suggestion-title">
-                      {subcategory.title}
-                    </span>
-                    <span className="suggestion-text">{subcategory.text}</span>
-                  </div>
-                  <span className="suggestion-icon">{subcategory.icon}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-export default Welcome;

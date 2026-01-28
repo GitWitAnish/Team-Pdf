@@ -9,7 +9,9 @@
   left: 0;
   top: 0;
   z-index: 100;
-  transition: transform 0.3s ease, width 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    width 0.3s ease;
 }
 
 .sidebar.closed {
@@ -34,7 +36,7 @@
 .sidebar-logo {
   width: 28px;
   height: 28px;
-  border-radius: 6px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -125,7 +127,6 @@
   gap: 0.75rem;
   padding: 0.625rem 0.75rem;
   border-radius: 0.5rem;
-  cursor: pointer;
   transition: background-color 0.15s ease;
 }
 
@@ -144,11 +145,39 @@
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 .user-name {
+  flex: 1;
   font-size: 0.875rem;
   color: #ececec;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logout-btn {
+  background: transparent;
+  border: none;
+  color: #8e8e8e;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.logout-btn:hover {
+  background-color: #2f2f2f;
+  color: #ef4444;
+}
+
+.logout-btn:active {
+  transform: scale(0.95);
 }
 
 .sidebar-overlay {
@@ -178,15 +207,15 @@
   .sidebar {
     width: 280px;
   }
-  
+
   .sidebar.closed {
     transform: translateX(-100%);
   }
-  
+
   .sidebar.open {
     transform: translateX(0);
   }
-  
+
   .sidebar-overlay {
     display: block;
   }

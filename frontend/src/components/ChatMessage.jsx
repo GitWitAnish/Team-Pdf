@@ -1,17 +1,52 @@
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { ChevronDown, ChevronUp, FileText, Scale } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronUp,
+  FileText,
+  Scale,
+  Volume2,
+  VolumeX,
+} from "lucide-react";
+import { useTextToSpeech } from "../hooks/useTextToSpeech";
 import "./ChatMessage.css";
 
 function ChatMessage({ message }) {
   const [sourcesExpanded, setSourcesExpanded] = useState(false);
+  const { speak, stop, isSpeaking } = useTextToSpeech();
   const isUser = message.role === "user";
+
+  const handleSpeak = () => {
+    if (isSpeaking) {
+      stop();
+    } else {
+      // Remove markdown formatting for cleaner speech
+      const plainText = message.content
+        .replace(/\*\*/g, "")
+        .replace(/\*/g, "")
+        .replace(/#{1,6}\s/g, "")
+        .replace(/\[([^\]]+)\]\([^\)]+\)/g, "$1")
+        .replace(/`/g, "");
+
+      speak(plainText);
+    }
+  };
 
   return (
     <div className={`message ${isUser ? "user" : "assistant"}`}>
-      <div className="message-avatar">{isUser ? "Y" : <Scale size={18} />}</div>
+      <div className="message-avatar">{isUser ? "A" : <Scale size={18} />}</div>
 
       <div className="message-content">
+        {!isUser && (
+          <button
+            className={`speak-button ${isSpeaking ? "speaking" : ""}`}
+            onClick={handleSpeak}
+            title={isSpeaking ? "Stop speaking" : "Read aloud"}
+          >
+            {isSpeaking ? <VolumeX size={18} /> : <Volume2 size={18} />}
+          </button>
+        )}
+
         <ReactMarkdown
           components={{
             p: ({ children }) => <p>{children}</p>,
@@ -28,7 +63,7 @@ function ChatMessage({ message }) {
             blockquote: ({ children }) => <blockquote>{children}</blockquote>,
           }}
         >
-          {message.content}
+          {message.content || ""}
         </ReactMarkdown>
 
         {!isUser && message.sources && (
@@ -48,7 +83,7 @@ function ChatMessage({ message }) {
 
             {sourcesExpanded && (
               <div className="sources-content">
-                <ReactMarkdown>{message.sources}</ReactMarkdown>
+                <ReactMarkdown>{message.sources || ""}</ReactMarkdown>
               </div>
             )}
           </div>

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Welcome from "./components/Welcome.jsx";
 import ChatMessage from "./components/ChatMessage.jsx";
 import ChatInput from "./components/ChatInput.jsx";
+import CategoriesView from "./components/CategoriesView.jsx";
 import { searchAndAnswer } from "./services/api.js";
 import "./App.css";
 
@@ -11,6 +12,8 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [showCategories, setShowCategories] = useState(false);
+  const [categoriesViewMode, setCategoriesViewMode] = useState("categories");
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -55,6 +58,26 @@ function App() {
     handleSendMessage(suggestion);
   };
 
+  const handleServiceClick = (service) => {
+    // When a service is clicked, send a message asking about it
+    const query = `Tell me about ${service.service_name}`;
+    handleSendMessage(query);
+    setShowCategories(false);
+  };
+
+  const handleToggleCategories = () => {
+    setShowCategories(!showCategories);
+    if (!showCategories) {
+      setMessages([]);
+    }
+  };
+
+  const handleToggleCategoriesMode = () => {
+    setCategoriesViewMode((prev) =>
+      prev === "categories" ? "subcategories" : "categories",
+    );
+  };
+
   return (
     <div className="app">
       <Sidebar
@@ -67,10 +90,19 @@ function App() {
         <Navbar
           sidebarOpen={sidebarOpen}
           onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
+          onToggleCategories={handleToggleCategories}
+          showingCategories={showCategories}
+          categoriesViewMode={categoriesViewMode}
+          onToggleCategoriesMode={handleToggleCategoriesMode}
         />
 
         <div className="chat-container">
-          {messages.length === 0 ? (
+          {showCategories ? (
+            <CategoriesView
+              onServiceClick={handleServiceClick}
+              viewMode={categoriesViewMode}
+            />
+          ) : messages.length === 0 ? (
             <Welcome onSuggestionClick={handleSuggestionClick} />
           ) : (
             <div className="messages-container">

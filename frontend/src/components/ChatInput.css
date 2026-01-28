@@ -24,12 +24,20 @@
   border-color: #565656;
 }
 
+.chat-input-wrapper:has(.chat-textarea.listening) {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
 .chat-textarea {
   flex: 1;
   background: transparent;
   border: none;
   color: #ececec;
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   resize: none;
@@ -44,6 +52,51 @@
 
 .chat-textarea:disabled {
   opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chat-textarea.listening {
+  color: #ef4444;
+}
+
+.voice-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: #ececec;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.voice-button:hover:not(:disabled) {
+  background-color: #424242;
+  color: #ffffff;
+}
+
+.voice-button.recording {
+  background-color: #ef4444;
+  color: white;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.voice-button:disabled {
+  opacity: 0.3;
   cursor: not-allowed;
 }
 
@@ -84,16 +137,16 @@
   .chat-input-container {
     padding: 0.5rem 0.75rem 1rem;
   }
-  
+
   .chat-input-wrapper {
     padding: 0.5rem 0.75rem;
     border-radius: 1.25rem;
   }
-  
+
   .chat-textarea {
     font-size: 1rem;
   }
-  
+
   .input-disclaimer {
     font-size: 0.6875rem;
   }

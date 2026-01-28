@@ -1,0 +1,267 @@
+.categories-view {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.categories-header-section {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.categories-header-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.categories-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Categories Grid View */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.category-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.category-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.category-card-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  flex: 1;
+}
+
+.service-count {
+  background: #eff6ff;
+  color: #3b82f6;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.category-services-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-preview-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #4b5563;
+  transition: all 0.15s;
+}
+
+.service-preview-item:hover {
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+.service-preview-item svg {
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+.more-services {
+  font-size: 0.75rem;
+  color: #6b7280;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+/* Subcategories List View */
+.services-list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.category-section-list {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.category-title-list {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.service-card:hover {
+  background: #f0f9ff;
+  border-color: #3b82f6;
+  transform: translateX(4px);
+}
+
+.service-card-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.service-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.service-name {
+  font-size: 0.9375rem;
+  color: #374151;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.service-arrow {
+  color: #9ca3af;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.service-card:hover .service-arrow {
+  transform: translateX(4px);
+  color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .categories-view {
+    padding: 1rem;
+  }
+
+  .categories-header-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .categories-header-section h2 {
+    color: #f9fafb;
+  }
+
+  .categories-subtitle {
+    color: #9ca3af;
+  }
+
+  .category-card,
+  .category-section-list {
+    background: #1f2937;
+    border-color: #374151;
+  }
+
+  .category-card-header h3,
+  .category-title-list {
+    color: #f9fafb;
+    border-bottom-color: #374151;
+  }
+
+  .service-preview-item {
+    color: #d1d5db;
+  }
+
+  .service-preview-item:hover {
+    background: #374151;
+    color: #f9fafb;
+  }
+
+  .service-card {
+    background: #111827;
+    border-color: #374151;
+  }
+
+  .service-card:hover {
+    background: #1e3a5f;
+  }
+
+  .service-name {
+    color: #d1d5db;
+  }
+}

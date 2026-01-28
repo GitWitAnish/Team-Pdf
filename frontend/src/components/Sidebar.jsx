@@ -1,5 +1,5 @@
 import React from "react";
-import { Plus, PanelLeftClose, PanelLeft } from "lucide-react";
+import { Plus, PanelLeftClose, PanelLeft, LogOut } from "lucide-react";
 import logo from "/logo.jpeg";
 import "./Sidebar.css";
 
@@ -41,8 +41,11 @@ function Sidebar({ isOpen, onToggle, onNewChat }) {
         <div className="sidebar-bottom">
           <div className="sidebar-divider" />
           <div className="user-section">
-            <div className="user-avatar">N</div>
-            <span className="user-name">User</span>
+            <div className="user-avatar">A</div>
+            <span className="user-name">Anish</span>
+            <button className="logout-btn" aria-label="Logout">
+              <LogOut size={18} />
+            </button>
           </div>
         </div>
       </aside>

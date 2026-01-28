@@ -1,10 +1,27 @@
 import React, { useState, useRef, useEffect } from "react";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Mic, Square } from "lucide-react";
+import { useSpeechToText } from "../hooks/useSpeechToText";
 import "./ChatInput.css";
 
 function ChatInput({ onSend, disabled }) {
   const [input, setInput] = useState("");
   const textareaRef = useRef(null);
+
+  const {
+    isListening,
+    transcript,
+    interimTranscript,
+    startListening,
+    stopListening,
+    resetTranscript,
+    isSupported,
+  } = useSpeechToText();
+
+  useEffect(() => {
+    if (transcript) {
+      setInput(transcript + (interimTranscript ? " " + interimTranscript : ""));
+    }
+  }, [transcript, interimTranscript]);
 
   useEffect(() => {
     if (textareaRef.current) {
@@ -18,6 +35,7 @@ function ChatInput({ onSend, disabled }) {
     if (input.trim() && !disabled) {
       onSend(input.trim());
       setInput("");
+      resetTranscript();
     }
   };
 
@@ -25,6 +43,14 @@ function ChatInput({ onSend, disabled }) {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSubmit(e);
+    }
+  };
+
+  const handleVoiceClick = () => {
+    if (isListening) {
+      stopListening();
+    } else {
+      startListening();
     }
   };
 
@@ -37,11 +63,26 @@ function ChatInput({ onSend, disabled }) {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Message Nepal Legal AI..."
+            placeholder={
+              isListening ? "Listening..." : "Message Nepal Legal AI..."
+            }
             disabled={disabled}
             rows={1}
-            className="chat-textarea"
+            className={`chat-textarea ${isListening ? "listening" : ""}`}
           />
+          {isSupported && (
+            <button
+              type="button"
+              className={`voice-button ${isListening ? "recording" : ""}`}
+              onClick={handleVoiceClick}
+              disabled={disabled}
+              aria-label={
+                isListening ? "Stop recording" : "Start voice recording"
+              }
+            >
+              {isListening ? <Square size={18} /> : <Mic size={18} />}
+            </button>
+          )}
           <button
             type="submit"
             className="send-button"
