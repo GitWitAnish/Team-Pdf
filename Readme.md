@@ -36,11 +36,6 @@
   - [Web Interface](#web-interface)
   - [Voice Input](#voice-input)
   - [API Usage](#api-usage)
-- [API Reference](#api-reference)
-  - [Base URL](#base-url)
-  - [Endpoints](#endpoints)
-    - [Query Legal Documents](#query-legal-documents)
-    - [List Available Documents](#list-available-documents)
 - [Demo Video](#demo-video)
 - [Legal Documents Covered](#legal-documents-covered)
 - [ Architecture](#️-architecture)
@@ -58,7 +53,7 @@
 
 ---
 
-## Problem Statement
+##  Problem Statement
 
 > Laws are easily accessible **but not easily understandable.**
 
@@ -66,7 +61,7 @@ For many Nepalis, one small paperwork mistake can cost a full day’s wage becau
 
 ---
 
-## Our Solution
+##  Our Solution
 
 **VIDHI.AI** is a conversational AI that lets anyone ask legal questions in plain language and get accurate, cited answers from **35+ Nepali laws and acts** and custom navigation data for Pokhara valley.
 
@@ -140,7 +135,7 @@ Open **http://localhost:3000** for React UI
 
 ---
 
-##  Usage
+## Usage
 
 ### Web Interface
 
@@ -173,78 +168,11 @@ response = requests.post(
 print(response.json())
 ```
 
----
-
-##  API Reference
-
-### Base URL
-
-```
-http://localhost:8000/api/v1
-```
-
-### Endpoints
-
-#### Query Legal Documents
-
-```http
-POST /query
-```
-
-| Parameter     | Type    | Required | Description                            |
-| ------------- | ------- | -------- | -------------------------------------- |
-| `question`    | string  | Yes      | The legal question to ask              |
-| `language`    | string  | No       | Response language (`en` or `ne`)       |
-| `max_sources` | integer | No       | Maximum sources to return (default: 8) |
-
-**Response:**
-
-```json
-{
-  "answer": "According to the Constitution of Nepal...",
-  "sources": [
-    {
-      "document": "Constitution-of-Nepal(2072)",
-      "section": "Part 3, Article 16",
-      "relevance_score": 0.95
-    }
-  ],
-  "processing_time": 1.23
-}
-```
-
-#### List Available Documents
-
-```http
-GET /documents
-```
-
-**Response:**
-
-```json
-{
-  "count": 35,
-  "documents": [
-    {
-      "name": "Constitution of Nepal",
-      "year": 2072,
-      "category": "Constitutional"
-    }
-  ]
-}
-```
-
-For complete API documentation, visit `/docs` when the server is running.
+## Demo Video
 
 ---
 
-##  Demo Video
-
-
-
----
-
-##  Legal Documents Covered
+## Legal Documents Covered
 
 <details>
 <summary><strong>Click to expand full list (35+ documents)</strong></summary>
@@ -334,12 +262,12 @@ For complete API documentation, visit `/docs` when the server is running.
 
 ---
 
-##  Architecture
+## Architecture
 
 ```
 nyaya-exe/
 ├── streamlit/          #   Alternative UI
-├── frontend/           #   React frontend 
+├── frontend/           #   React frontend
 ├── backend/            #   FastAPI server
 ├── scripts/            #   Core RAG logic
 │   ├── embedding.py    #   Text embeddings
@@ -352,7 +280,7 @@ nyaya-exe/
 
 ---
 
-##  Project Structure
+## Project Structure
 
 <details>
 <summary><strong>Click to expand detailed structure</strong></summary>
@@ -361,7 +289,7 @@ nyaya-exe/
 vidhi-ai/
 ├── 📁 assets/
 │   └── images/              # Logo, screenshots, diagrams
-│   └── videos/ 
+│   └── videos/
 |
 ├── 📁 backend/
 │   ├── app/
@@ -418,7 +346,7 @@ vidhi-ai/
 
 ---
 
-##  FAQ
+## FAQ
 
 <details>
 <summary><strong>Q: Is this legal advice?</strong></summary>
@@ -462,7 +390,8 @@ python scripts/vector.py --rebuild
 
 ---
 
-##  Future Roadmap
+## Future Roadmap
+
 - Full Nepali language support
 - Analytics dashboard
 - User authentication
@@ -475,17 +404,16 @@ python scripts/vector.py --rebuild
 
 ---
 
-##  Contributing
+## Contributing
 
 We welcome contributions from the community! Here's how you can help:
 
 ### Ways to Contribute
 
--  **Report Bugs** - Open an issue describing the bug
--  **Suggest Features** - Share your ideas via issues
--  **Improve Documentation** - Help us write better docs
--  **Submit Code** - Fix bugs or implement features
-
+- **Report Bugs** - Open an issue describing the bug
+- **Suggest Features** - Share your ideas via issues
+- **Improve Documentation** - Help us write better docs
+- **Submit Code** - Fix bugs or implement features
 
 ### Commit Convention
 
@@ -501,10 +429,9 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 | `test`     | Adding tests          |
 | `chore`    | Maintenance tasks     |
 
-
 ---
 
-##  Team
+## Team
 
 <table>
   <tr>
@@ -528,9 +455,10 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ---
 
-##  Acknowledgments
+## Acknowledgments
 
 We would like to thank:
+
 - **Nepal Law Commission** - For making legal documents publicly available
 - **Meta AI** - For the open-source LLaMA 3.1 model
 - **HuggingFace** - For model hosting and inference API
@@ -547,18 +475,18 @@ We would like to thank:
 
 ---
 
-##  License
+## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-##  Why VIDHI.AI?
+## Why VIDHI.AI?
 
-1. **Solves a real problem** - Legal information gap in Nepal  
-2. **Technically sound** - RAG architecture with state-of-the-art LLM  
-3. **Scalable** - Easy to add more documents and languages  
-4. **Accessible** - Voice support for low-literacy users  
+1. **Solves a real problem** - Legal information gap in Nepal
+2. **Technically sound** - RAG architecture with state-of-the-art LLM
+3. **Scalable** - Easy to add more documents and languages
+4. **Accessible** - Voice support for low-literacy users
 5. **Open source** - Built for the community
 
 ---
