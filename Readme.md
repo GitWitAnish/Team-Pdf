@@ -170,7 +170,18 @@ print(response.json())
 
 ## Demo Video
 
----
+<details>
+  <summary><strong>Click to watch the demo video</strong></summary>
+
+  <p align="center">
+    <video src="assets/videos/demo.mov" controls width="800" style="max-width:100%;">
+      Your browser does not support the video tag.
+    </video>
+  </p>
+
+
+</details>
+
 
 ## Legal Documents Covered
 
