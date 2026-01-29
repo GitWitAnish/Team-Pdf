@@ -43,8 +43,8 @@
     - [List Available Documents](#list-available-documents)
 - [Demo Video](#demo-video)
 - [Legal Documents Covered](#legal-documents-covered)
-- [🏗️ Architecture](#️-architecture)
-- [📂 Project Structure](#-project-structure)
+- [ Architecture](#️-architecture)
+- [ Project Structure](#-project-structure)
 - [FAQ](#faq)
 - [Future Roadmap](#future-roadmap)
 - [Contributing](#contributing)
@@ -254,41 +254,87 @@ For complete API documentation, visit `/docs` when the server is running.
 - Constitution of Nepal (2072)
 - National Civil Code (2074)
 - National Penal Code (2074)
+- National Criminal Procedure Code (2074)
+- Sentencing Act (2074)
+- Nepal Citizenship Act (2063)
+- Nepal Citizenship (First Amendment) Act (2064)
+- Nepal Citizenship (Second Amendment) Act (2079)
 
 **Criminal Justice**
 
 - Criminal Procedure Code (2074)
 - Sentencing Code (2074)
 - Prevention of Corruption Act (2059)
+- Human Trafficking and Transportation (Control) Act (2064)
+- Narcotic Drugs (Control) Act (2033)
+- Arms and Ammunition Act (2019)
+- Crime Victim Protection Act (2075)
+- Evidence Act (2031)
+- Prison Act (2019)
 
 **Civil Rights**
 
 - Citizenship Act (2063)
 - Individual Privacy Act (2075)
-- Right to Information (2064)
+- Right to Information Act (2064)
 - Consumer Protection Act (2075)
+- National Identity Card and Registration Act (2076)
+- Birth, Death and Other Personal Events (Registration) Act (2033)
+- Gender Equality Act (2063)
+- Caste-based Discrimination and Untouchability (Offense and Punishment) Act (2068)
 
 **Business**
 
 - Company Act (2063)
 - E-Commerce Act (2081)
 - Income Tax Act (2058)
-- VAT Act (2052)
+- Value Added Tax Act (VAT) (2052)
+- Banking Offense and Punishment Act (2064)
+- Foreign Investment and Technology Transfer Act (2075)
+- Industrial Enterprises Act (2076)
+- Securities Act (2063)
+- Cooperative Act (2074)
 
 **Social**
 
 - Labour Act (2074)
 - Education Act (2028)
-- Domestic Violence Act (2008)
+- Domestic Violence (Crime and Punishment) Act (2066)
 - Environment Protection Act (2076)
+- Social Security Act (2075)
+- Child Rights Act (2075)
+- Senior Citizens Act (2063)
+- Public Health Service Act (2075)
+- Disability Rights Act (2074)
+- Public Service Broadcasting Act (2049)
 
-_...and 15+ more_
+**Family & Personal Law**
+
+- Marriage Registration Act (2028)
+- Birth, Death and Other Personal Events (Registration) Act (2033)
+- National Civil Code (2074) (Family Law Sections)
+- Adoption Act (2018)
+
+**Property & Land**
+
+- Land Act (2021)
+- Land Revenue Act (2034)
+- Land Acquisition Act (2034)
+- Guthi Act (2033)
+
+**Other**
+
+- Immigration Act (2049)
+- Passport Act (2063)
+- Motor Vehicle and Transport Management Act (2049)
+- Public Procurement Act (2063)
+- Press and Publication Act (2048)
 
 </details>
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 nyaya-exe/
@@ -306,7 +352,7 @@ nyaya-exe/
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 <details>
 <summary><strong>Click to expand detailed structure</strong></summary>
@@ -359,7 +405,7 @@ vidhi-ai/
 │   └── voice.py             # TTS/STT functionality
 │
 ├── 📁 streamlit/
-│   ├── streamlit.py         # Main Streamlit app
+│   ├── streamlit.py         # Streamlit app
 │   └── style.css            # Custom styling
 │
 ├── .env                     # Environment variables
@@ -485,12 +531,11 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 ##  Acknowledgments
 
 We would like to thank:
-
+- **Nepal Law Commission** - For making legal documents publicly available
 - **Meta AI** - For the open-source LLaMA 3.1 model
 - **HuggingFace** - For model hosting and inference API
 - **FAISS Team** - For the efficient vector similarity search library
 - **Sentence Transformers** - For pre-trained embedding models
-- **Nepal Law Commission** - For making legal documents publicly available
 - **Streamlit** - For the amazing data app framework
 - **Open Source Community** - For all the libraries that made this possible
 
@@ -523,5 +568,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 </p>
 
 <p align="center">
-  Made with Passion at [Hackathon Nova](https://hackathon-nova.com/)
+  Made with ❤️ and Passion at <a href="https://hackathon-nova.com/">Hackathon Nova</a>  
 </p>
