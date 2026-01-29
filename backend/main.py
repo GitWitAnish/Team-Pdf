@@ -37,7 +37,16 @@ app = FastAPI(
 # CORS middleware for React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3001", "http://127.0.0.1:3001"],
+    allow_origins=[
+        "http://localhost:3000", 
+        "http://127.0.0.1:3000", 
+        "http://localhost:5173", 
+        "http://127.0.0.1:5173", 
+        "http://localhost:3001", 
+        "http://127.0.0.1:3001",
+        "https://*.vercel.app",  # Vercel deployments
+        "*"  # Allow all origins in production (or specify your domain)
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -138,5 +147,7 @@ async def search_and_answer(request: SearchRequest):
 
 
 if __name__ == "__main__":
+    import os
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
