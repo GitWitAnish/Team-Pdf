@@ -174,12 +174,16 @@ print(response.json())
   <summary><strong>Click to watch the demo video</strong></summary>
 
   <p align="center">
-    <video src="assets/videos/demo.mov" controls width="800" style="max-width:100%;">
-      Your browser does not support the video tag.
-    </video>
+    <a href="https://github.com/GitWitAnish/Team-Pdf/assets/videos/demo.mov" target="_blank">
+      
+   <br>
+      <strong>▶ Watch Demo Video</strong>
+    </a>
   </p>
 
-
+  <p align="center">
+    <em>Note: GitHub markdown does not support direct video playback. Click link above to view the demo video.</em>
+  </p>
 </details>
 
 
