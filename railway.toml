@@ -7,7 +7,7 @@ PIP_NO_CACHE_DIR = "1"
 PYTHONDONTWRITEBYTECODE = "1"
 
 [deploy]
-startCommand = "cd backend && python main.py"
+startCommand = "python main.py"
 healthcheckPath = "/health"
 healthcheckTimeout = 100
 restartPolicyType = "on_failure"
