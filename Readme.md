@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>AI-Powered Legal Assistant for Nepal</strong><br>
-  <em>Making legal knowledge and government navigation accessible to every Nepali citizen</em>
+  <em>Making legal knowledge and government navigation accessible to every Nepali citizen.</em>
 </p>
 
 <p align="center">
@@ -18,41 +18,43 @@
  
 </p>
 
-<p align="center">
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-documentation">Documentation</a> •
-  <a href="#-contributing">Contributing</a> 
-  
-</p>
-
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
-- [Problem Statement](#-problem-statement)
-- [Our Solution](#-our-solution)
-- [How It Works](#-How-It-Works)
-- [Key Features](#-key-features)
-- [Tech Stack](#️-tech-stack)
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [Configuration](#️-configuration)
-- [Usage](#-usage)
-- [API Reference](#-api-reference)
-- [Demo](#-demo)
-- [Legal Documents Covered](#-legal-documents-covered)
-- [Architecture](#️-architecture)
-- [Project Structure](#-project-structure)
-- [Testing](#-testing)
-- [Deployment](#-deployment)
-- [Troubleshooting](#-troubleshooting)
-- [FAQ](#-faq)
-- [Future Roadmap](#-future-roadmap)
-- [Contributing](#-contributing)
-- [Team](#-team)
-- [Acknowledgments](#-acknowledgments)
-- [Support](#-support)
+- [Table of Contents](#table-of-contents)
+- [Problem Statement](#problem-statement)
+- [Our Solution](#our-solution)
+- [How It Works](#how-it-works)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+  - [1. Clone \& Install](#1-clone--install)
+  - [2. Set API Key](#2-set-api-key)
+  - [3. Run the App](#3-run-the-app)
+- [Usage](#usage)
+  - [Web Interface](#web-interface)
+  - [Voice Input](#voice-input)
+  - [API Usage](#api-usage)
+- [API Reference](#api-reference)
+  - [Base URL](#base-url)
+  - [Endpoints](#endpoints)
+    - [Query Legal Documents](#query-legal-documents)
+    - [List Available Documents](#list-available-documents)
+- [Demo Video](#demo-video)
+- [Legal Documents Covered](#legal-documents-covered)
+- [🏗️ Architecture](#️-architecture)
+- [📂 Project Structure](#-project-structure)
+- [FAQ](#faq)
+- [Future Roadmap](#future-roadmap)
+- [Contributing](#contributing)
+  - [Ways to Contribute](#ways-to-contribute)
+  - [Commit Convention](#commit-convention)
+- [Team](#team)
+- [Acknowledgments](#acknowledgments)
+  - [Resources \& References](#resources--references)
+- [License](#license)
+- [Why VIDHI.AI?](#why-vidhiai)
 
 ---
 
@@ -134,11 +136,11 @@ cd frontend
 npm run dev
 ````
 
-Open **http://localhost:5173** for React UI
+Open **http://localhost:3000** for React UI
 
 ---
 
-## 📖 Usage
+##  Usage
 
 ### Web Interface
 
@@ -164,7 +166,7 @@ response = requests.post(
     json={
         "question": "What are my fundamental rights?",
         "language": "en",
-        "max_sources": 5
+        "max_sources": 8
     }
 )
 
@@ -173,7 +175,7 @@ print(response.json())
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 ### Base URL
 
@@ -193,7 +195,7 @@ POST /query
 | ------------- | ------- | -------- | -------------------------------------- |
 | `question`    | string  | Yes      | The legal question to ask              |
 | `language`    | string  | No       | Response language (`en` or `ne`)       |
-| `max_sources` | integer | No       | Maximum sources to return (default: 5) |
+| `max_sources` | integer | No       | Maximum sources to return (default: 8) |
 
 **Response:**
 
@@ -208,22 +210,6 @@ POST /query
     }
   ],
   "processing_time": 1.23
-}
-```
-
-#### Health Check
-
-```http
-GET /health
-```
-
-**Response:**
-
-```json
-{
-  "status": "healthy",
-  "version": "1.0.0",
-  "uptime": "2h 30m"
 }
 ```
 
@@ -252,27 +238,13 @@ For complete API documentation, visit `/docs` when the server is running.
 
 ---
 
-## 📸 Demo
+##  Demo Video
 
-### Chat Interface
 
-Ask any legal question and get instant, cited answers:
-
-> **User:** "What are my fundamental rights according to Nepal's constitution?"
->
-> **Nyaya.exe:** "According to the Constitution of Nepal (2072), you have 31 fundamental rights including:
->
-> - Right to live with dignity (Article 16)
-> - Right to freedom (Article 17)
-> - Right to equality (Article 18)
-> - Right to communication (Article 19)
->   ..."
->
-> 📚 _Source: Constitution-of-Nepal(2072), Part 3_
 
 ---
 
-## 📜 Legal Documents Covered
+##  Legal Documents Covered
 
 <details>
 <summary><strong>Click to expand full list (35+ documents)</strong></summary>
@@ -320,16 +292,16 @@ _...and 15+ more_
 
 ```
 nyaya-exe/
-├── streamlit/          # 🖥️  Main UI (Streamlit app)
-├── frontend/           # ⚛️  React frontend (alternative)
-├── backend/            # 🔧 FastAPI server
-├── scripts/            # 🧠 Core RAG logic
-│   ├── embedding.py    #    Text embeddings
-│   ├── vector.py       #    FAISS operations
-│   ├── llm_wrapper.py  #    LLaMA integration
-│   └── voice.py        #    TTS/STT
-├── database/           # 📊 Vector index
-└── dataset/            # 📚 Legal documents
+├── streamlit/          #   Alternative UI
+├── frontend/           #   React frontend 
+├── backend/            #   FastAPI server
+├── scripts/            #   Core RAG logic
+│   ├── embedding.py    #   Text embeddings
+│   ├── vector.py       #   FAISS operations
+│   ├── llm_wrapper.py  #   LLaMA integration
+│   └── voice.py        #   TTS/STT
+├── database/           #   Vector index
+└── dataset/            #   Legal documents
 ```
 
 ---
@@ -343,7 +315,8 @@ nyaya-exe/
 vidhi-ai/
 ├── 📁 assets/
 │   └── images/              # Logo, screenshots, diagrams
-│
+│   └── videos/ 
+|
 ├── 📁 backend/
 │   ├── app/
 │   │   ├── __init__.py
@@ -399,51 +372,7 @@ vidhi-ai/
 
 ---
 
-## 🧪 Testing
-
-### Running Tests
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=app --cov-report=html
-
-# Run specific test file
-pytest tests/test_api.py
-
-# Run with verbose output
-pytest -v
-```
-
-### Test Structure
-
-```
-tests/
-├── conftest.py          # Pytest fixtures
-├── test_api.py          # API endpoint tests
-├── test_embedding.py    # Embedding generation tests
-├── test_vector.py       # FAISS operations tests
-└── test_llm.py          # LLM integration tests
-```
-
-### Writing Tests
-
-```python
-# Example test
-def test_query_endpoint(client):
-    response = client.post(
-        "/api/v1/query",
-        json={"question": "What is Article 16?"}
-    )
-    assert response.status_code == 200
-    assert "answer" in response.json()
-```
-
----
-
-## 💬 FAQ
+##  FAQ
 
 <details>
 <summary><strong>Q: Is this legal advice?</strong></summary>
@@ -455,7 +384,7 @@ def test_query_endpoint(client):
 <details>
 <summary><strong>Q: Which languages are supported?</strong></summary>
 
-**A:** Currently, the system supports English queries with plans to add full Nepali language support in future updates.
+**A:** Currently, the system supports English and Nepali queries.
 
 </details>
 
@@ -485,67 +414,32 @@ python scripts/vector.py --rebuild
 
 </details>
 
-<details>
-<summary><strong>Q: Can I use this commercially?</strong></summary>
+---
 
-**A:** Please refer to the [License](#-license) section. The MIT license allows commercial use with proper attribution.
-
-</details>
+##  Future Roadmap
+- Full Nepali language support
+- Analytics dashboard
+- User authentication
+- Mobile app (React Native)
+- Integration with Nepal Law Commission
+- Real-time document updates
+- Lawyer consultation matching
+- Document generation (legal templates)
+- Multi-jurisdictional support
 
 ---
 
-## 🔮 Future Roadmap
-
-### Version 1.1 (Q2 2026)
-
-- [ ] 🇳🇵 Full Nepali language support
-- [ ] 📊 Analytics dashboard
-- [ ] 🔐 User authentication
-
-### Version 1.2 (Q3 2026)
-
-- [ ] 📱 Mobile app (React Native)
-- [ ] 🏛️ Integration with Nepal Law Commission
-- [ ] 🔄 Real-time document updates
-
-### Version 2.0 (Q4 2026)
-
-- [ ] 🤝 Lawyer consultation matching
-- [ ] 📄 Document generation (legal templates)
-- [ ] 🌐 Multi-jurisdictional support
-
-See the [open issues](https://github.com/your-team/nyaya-exe/issues) for a full list of proposed features.
-
----
-
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions from the community! Here's how you can help:
 
 ### Ways to Contribute
 
-- 🐛 **Report Bugs** - Open an issue describing the bug
-- 💡 **Suggest Features** - Share your ideas via issues
-- 📖 **Improve Documentation** - Help us write better docs
-- 🔧 **Submit Code** - Fix bugs or implement features
+-  **Report Bugs** - Open an issue describing the bug
+-  **Suggest Features** - Share your ideas via issues
+-  **Improve Documentation** - Help us write better docs
+-  **Submit Code** - Fix bugs or implement features
 
-### Development Setup
-
-```bash
-# Fork and clone the repository
-git clone https://github.com/your-username/nyaya-exe.git
-cd nyaya-exe
-
-# Create a feature branch
-git checkout -b feature/amazing-feature
-
-# Make your changes and commit
-git add .
-git commit -m "feat: add amazing feature"
-
-# Push and create a Pull Request
-git push origin feature/amazing-feature
-```
 
 ### Commit Convention
 
@@ -561,49 +455,34 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 | `test`     | Adding tests          |
 | `chore`    | Maintenance tasks     |
 
-### Pull Request Process
-
-1. Update documentation if needed
-2. Add tests for new features
-3. Ensure all tests pass
-4. Request review from maintainers
-
-### Code of Conduct
-
-Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ---
 
-## 👥 Team
+##  Team
 
 <table>
   <tr>
     <td align="center">
-      <strong>Member 1</strong><br>
+      <strong>Milan Bastola</strong><br>
       <em>Full Stack Developer</em><br>
-      <a href="https://github.com/">GitHub</a>
+      <a href="https://github.com/Milan342">GitHub</a>
     </td>
     <td align="center">
-      <strong>Member 2</strong><br>
+      <strong>Prasanna Pahari</strong><br>
       <em>ML/AI Engineer</em><br>
-      <a href="https://github.com/">GitHub</a>
+      <a href="https://github.com/hopelessxD">GitHub</a>
     </td>
     <td align="center">
-      <strong>Member 3</strong><br>
-      <em>Backend Developer</em><br>
-      <a href="https://github.com/">GitHub</a>
-    </td>
-    <td align="center">
-      <strong>Member 4</strong><br>
-      <em>UI/UX Designer</em><br>
-      <a href="https://github.com/">GitHub</a>
+      <strong>Anish Karki</strong><br>
+      <em>ML/AI Engineer</em><br>
+      <a href="https://github.com/GitWitAnish">GitHub</a>
     </td>
   </tr>
 </table>
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 We would like to thank:
 
@@ -618,68 +497,31 @@ We would like to thank:
 ### Resources & References
 
 - [Nepal Law Commission](https://lawcommission.gov.np/)
-- [Constitution of Nepal (English)](https://lawcommission.gov.np/en/?cat=17)
 - [LLaMA Documentation](https://llama.meta.com/)
 - [FAISS Documentation](https://faiss.ai/)
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-```
-MIT License
-
-Copyright (c) 2026 VIDHI.AI Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-```
-
 ---
 
-## 💪 Support
+##  Why VIDHI.AI?
 
-If you find this project helpful, please consider:
-
-- ⭐ **Starring** the repository
-- 🐦 **Sharing** on social media
-- 🐛 **Reporting** bugs and issues
-- 💡 **Suggesting** new features
-- ☕ **Buying us a coffee** - [Support Link]
-
----
-
-## 🏆 Why VIDHI.AI?
-
-✅ **Solves a real problem** - Legal information gap in Nepal  
-✅ **Technically sound** - RAG architecture with state-of-the-art LLM  
-✅ **Scalable** - Easy to add more documents and languages  
-✅ **Accessible** - Voice support for low-literacy users  
-✅ **Open source** - Built for the community
+1. **Solves a real problem** - Legal information gap in Nepal  
+2. **Technically sound** - RAG architecture with state-of-the-art LLM  
+3. **Scalable** - Easy to add more documents and languages  
+4. **Accessible** - Voice support for low-literacy users  
+5. **Open source** - Built for the community
 
 ---
 
 <p align="center">
-  <strong>न्याय सबैको हक हो। Justice is everyone's right.</strong>
+  <strong> Justice is everyone's right. (न्याय सबैको हक हो)</strong>
 </p>
 
 <p align="center">
-  Made with ❤️ at [Hackathon Name]
-</p>
-
-<p align="center">
-  <a href="#-table-of-contents">⬆️ Back to Top</a>
+  Made with Passion at [Hackathon Nova](https://hackathon-nova.com/)
 </p>
