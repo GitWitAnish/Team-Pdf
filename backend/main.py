@@ -74,26 +74,33 @@ async def startup_event():
     """Load embedding model and FAISS store on startup."""
     global model, store
     
-    print("Loading embedding model...")
-    model = EmbeddingModel()
-    
-    print("Loading FAISS vector store...")
-    # Use absolute paths from project root
-    index_path = ROOT / "database" / "legal_faiss.index"
-    metadata_path = ROOT / "database" / "legal_faiss_meta.json"
-    
-    store = FaissVectorStore(
-        index_path=index_path,
-        metadata_path=metadata_path
-    )
-    
-    if index_path.exists() and metadata_path.exists():
-        store.load()
-        print(f"FAISS index loaded successfully! ({len(store.metadata)} chunks)")
-    else:
-        print("Building FAISS index from processed documents...")
-        store.build(processed_dir=ROOT / "dataset" / "processed", embedding_model=model)
-        print("FAISS index built successfully!")
+    print("[Startup] Starting up backend...")
+    try:
+        print("[Startup] Loading embedding model...")
+        model = EmbeddingModel()
+        print("[Startup] Embedding model loaded.")
+
+        print("[Startup] Loading FAISS vector store...")
+        index_path = ROOT / "database" / "legal_faiss.index"
+        metadata_path = ROOT / "database" / "legal_faiss_meta.json"
+        print(f"[Startup] Index path: {index_path}, Metadata path: {metadata_path}")
+
+        store = FaissVectorStore(
+            index_path=index_path,
+            metadata_path=metadata_path
+        )
+
+        if index_path.exists() and metadata_path.exists():
+            print("[Startup] Index files found. Loading...")
+            store.load()
+            print(f"[Startup] FAISS index loaded successfully! (chunks: {len(store.metadata)})")
+        else:
+            print("[Startup] Index files not found. Building FAISS index from processed documents...")
+            store.build(processed_dir=ROOT / "dataset" / "processed", embedding_model=model)
+            print("[Startup] FAISS index built successfully!")
+    except Exception as e:
+        print(f"[Startup] ERROR: {e}")
+        raise
 
 
 @app.get("/health")
@@ -110,12 +117,17 @@ async def health_check():
 async def search_and_answer(request: SearchRequest):
     """Search FAISS and optionally generate LLM answer."""
     if model is None or store is None:
+        print("[Search] ERROR: Resources not loaded yet (model or store is None)")
         raise HTTPException(status_code=503, detail="Resources not loaded yet")
-    
+
+    print(f"[Search] Received question: {request.question}")
+    print(f"[Search] top_k: {request.top_k}, use_llm: {request.use_llm}, llm_model: {request.llm_model}")
     try:
         # Search FAISS
+        print("[Search] Searching FAISS index...")
         hits = store.search(request.question, embedding_model=model, top_k=request.top_k)
-        
+        print(f"[Search] Found {len(hits)} hits.")
+
         # Build sources text
         sources_text = ""
         for i, hit in enumerate(hits, 1):
@@ -124,25 +136,30 @@ async def search_and_answer(request: SearchRequest):
             year = meta.get("year", "")
             text_preview = hit["text"][:400] + "..." if len(hit["text"]) > 400 else hit["text"]
             sources_text += f"\n\n**{i}. {source}** ({year})\n> {text_preview}"
-        
+
         if request.use_llm:
             try:
+                print("[Search] Generating answer with LLM...")
                 context = [h["text"] for h in hits]
                 metadata = [h.get("metadata", {}) for h in hits]
                 answer = generate_answer(request.question, context, chunk_metadata=metadata, model=request.llm_model)
+                print("[Search] LLM answer generated.")
                 return SearchResponse(answer=answer, sources=sources_text)
             except Exception as e:
+                print(f"[Search] ERROR during LLM answer generation: {e}")
                 return SearchResponse(
                     answer=f"⚠️ Error generating response: {e}",
                     sources=sources_text
                 )
         else:
+            print("[Search] Returning sources only (no LLM answer)")
             return SearchResponse(
                 answer="Here are the relevant sources I found:",
                 sources=sources_text
             )
-    
+
     except Exception as e:
+        print(f"[Search] ERROR: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
